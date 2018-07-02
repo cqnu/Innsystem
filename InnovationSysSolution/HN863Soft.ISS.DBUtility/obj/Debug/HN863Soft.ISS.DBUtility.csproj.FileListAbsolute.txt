@@ -1,0 +1,9 @@
+E:\SVN\VSS\创孵\04.Code\InnovationSysSolution.root\InnovationSysSolution\HN863Soft.ISS.DBUtility\bin\Debug\HN863Soft.ISS.DBUtility.dll
+E:\SVN\VSS\创孵\04.Code\InnovationSysSolution.root\InnovationSysSolution\HN863Soft.ISS.DBUtility\bin\Debug\HN863Soft.ISS.DBUtility.pdb
+E:\SVN\VSS\创孵\04.Code\InnovationSysSolution.root\InnovationSysSolution\HN863Soft.ISS.DBUtility\obj\Debug\HN863Soft.ISS.DBUtility.csprojResolveAssemblyReference.cache
+E:\SVN\VSS\创孵\04.Code\InnovationSysSolution.root\InnovationSysSolution\HN863Soft.ISS.DBUtility\obj\Debug\HN863Soft.ISS.DBUtility.dll
+E:\SVN\VSS\创孵\04.Code\InnovationSysSolution.root\InnovationSysSolution\HN863Soft.ISS.DBUtility\obj\Debug\HN863Soft.ISS.DBUtility.pdb
+F:\公司项目\InnovationSysSolution\HN863Soft.ISS.DBUtility\bin\Debug\HN863Soft.ISS.DBUtility.dll
+F:\公司项目\InnovationSysSolution\HN863Soft.ISS.DBUtility\bin\Debug\HN863Soft.ISS.DBUtility.pdb
+F:\公司项目\InnovationSysSolution\HN863Soft.ISS.DBUtility\obj\Debug\HN863Soft.ISS.DBUtility.dll
+F:\公司项目\InnovationSysSolution\HN863Soft.ISS.DBUtility\obj\Debug\HN863Soft.ISS.DBUtility.pdb

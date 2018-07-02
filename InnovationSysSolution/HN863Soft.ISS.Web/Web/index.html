@@ -1,0 +1,460 @@
+﻿<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="browsermode" content="application">
+    <meta name="x5-page-mode" content="app">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no, width=device-width" name="viewport">
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+    <link rel="shortcut icon" href="fav.ico" type="image/x-icon" />
+    <title>三原色孵化平台</title>
+
+    <!--bootstrapcss-->
+    <link rel="stylesheet" type="text/css" href="/web/skin_v2/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/web/skin_v2/css/responsive.min.css" />
+    <link rel="stylesheet" type="text/css" href="/web/skin_v2/css/font-awesome.min.css" />
+    <link href="skin_v2/css/ad.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/web/skin_v2/css/global.css" />
+    <link rel="stylesheet" type="text/css" href="/web/skin_v2/css/base.css" /> 
+    <link rel="stylesheet" type="text/css" href="/web/skin_v2/css/page.css" />
+    <link rel="stylesheet" type="text/css" href="/web/skin_v2/css/index.css" />
+    <!--bootstrapjs-->
+
+    <script type="text/javascript" src="/web/skin_v2/js/jquery.js"></script>
+    <script src="/web/User/resources/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/web/skin_v2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/web/skin_v2/js/responsive.min.js"></script>
+    <script type="text/javascript" src="/web/skin_v2/js/base.js"></script>
+    <script type="text/javascript" src="/web/skin_v2/js/global.js"></script>
+    <script type="text/javascript" src="/web/skin_v2/js/index.js"></script>
+    <script src="skin_v2/js/ad.js"></script>
+    <script src="skin_v2/js/scroll.js"></script>
+
+    <link href="/web/CSS/Show/base.css" rel="stylesheet" />
+    <link href="/web/CSS/Heard/css.css" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .myscroll {
+            width: 300px;
+            height: 160px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            line-height: 26px;
+            font-size: 12px;
+            overflow: hidden;
+        }
+
+            .myscroll li {
+                height: 26px;
+                margin-left: 25px;
+            }
+
+            .myscroll a {
+                color: #333;
+                text-decoration: none;
+            }
+
+                .myscroll a:hover {
+                    color: #ED5565;
+                    text-decoration: underline;
+                }
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            $('.myscroll').myScroll({
+                speed: 40, //数值越大，速度越慢
+                rowHeight: 26 //li的高度
+            });
+            
+        });
+
+    </script>
+    <!-- <link href="../Manage/skin/default/style.css" rel="stylesheet" />-->
+</head>
+<body>
+    <!--[if lte IE 7]>
+		<style type="text/css">
+		    * {
+		        display: none;
+		    }
+		</style>
+		<script>
+		    alert("对不起，您的浏览器版本太低，建议使用IE8以上版本或chrome、firefox浏览器！");
+		</script>
+		<![endif]-->
+
+    <div class="section1 section1-min-hidden">
+
+        <div class="header">
+            <div style="width: 1080px; margin: 0 auto;">
+                <div style="float: left; margin: 6px 10px 0 0;">
+                    <img src="../../Manage/skin/default/logo.png" style="width: 220px;" />
+                </div>
+                <ul class="menu" style="float: left;">
+                    <li><a href="#" class="selected">主页</a></li>
+                    <li><a href="#">投融资服务</a>
+                        <ul class="submenu">
+                            <li><a href="/web/ProjectFinancing/ProjectFinancing_List.aspx">众筹</a></li>
+
+                            <li><a href="/web/Roadshow/Roadshow_List.aspx">路演</a></li>
+                        </ul>
+                    </li>
+                    <li class="active on"><a href="#s2">工商财税</a>
+                        <ul class="submenu">
+                            <li><a href="/web/EnterpriseRegistration/EnterpriseRegistration_List.aspx">工商注册</a></li>
+                            <li><a href="/web/Fiscal/Fiscal_List.aspx">财税服务</a></li>
+                            <li><a href="/web/Intellectual/Intellectual_List.aspx">知识产权</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">专业技术服务</a>
+                        <ul class="submenu">
+                            <li><a href="/web/Ariticle/Ariticle_List.aspx">工业设计</a></li>
+                            <li><a href='/web/SoftWareS/List.aspx?TypeName=SoftwareServiceType'>软件服务</a></li>
+                            <li><a href='/web/SoftWareS/List.aspx?TypeName=HSEConsulting'>高企认定咨询</a></li>
+                            <li><a href='/web/SoftWareS/List.aspx?TypeName=SoftConsulting'>双软认定咨询</a></li>
+                            <li><a href="/web/TalentService/TalentService_List.aspx">人才服务</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/web/EnterIncubating/EIIndex.aspx">孵化器</a></li>
+                    <li><a href="/web/MeetingActivity/MeetingActiveList.aspx">难题吐槽 </a></li>
+                    <li><a href="/web/PolicyHall/PHList.aspx">政策大厅 </a></li>
+                </ul>
+                <!--      <div class="top_right">
+                    <a href="javascript:" class="nav-btn-login">登录</a>
+                    <a href="/Web/User/newLogin.aspx" target="_blank">注册</a>
+                </div>-->
+                <div class="header-right" id="min-nav">
+                    <div class="login-register" id="min-zhuce" style="display: none">
+                        <a class="nav-btn-login" href="javascript:">登录</a>
+                        <a class="nav-btn-reg" href="/Web/User/NewRegister.html" target="_blank">注册</a>
+                    </div>
+                    <div class="login-register" style="display: none" id="web">
+
+                        <div class="dropdown">
+
+                            <a id="aName" href="" class="dropdown-toggle top-avatar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="float: right; text-align: center">您好：
+                                &nbsp;&nbsp;	  	
+			  </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li id="liManage" style="display: none"><a href="../Manage/index.aspx">后台管理</a></li>
+                                <li><a href="/Web/User/ModifyPassword.html">修改密码</a></li>
+                                <li><a href="javascript:void(0)" onclick='delCookie()'>注销登录</a></li>
+                            </ul>
+                        </div>
+                        <script type="text/javascript">
+                            $.ajax({
+                                url: "/WebService/JudgeSess.ashx?state=0",
+                                type: "post",
+
+                                dataType: "text",
+                                async: false,
+                                success: function (data) {
+                                    var a = data;
+
+                                    if (a == "") {
+                                        $("#min-zhuce").show();
+                                        $("#web").hide();
+                                    }
+                                    else {
+                                        $("#min-zhuce").hide();
+                                        $("#web").show();
+                                        $("#aName").text("欢迎您：" + a);
+                                    }
+
+                                }
+                            })
+
+
+                            $.ajax({
+                                url: "/WebService/JudgeSess.ashx?state=2",
+                                type: "post",
+
+                                dataType: "text",
+                                async: false,
+                                success: function (data) {
+                                    var a = data;
+
+                                    if (a == "") {
+
+                                        $("#liManage").hide();
+                                    }
+                                    else {
+
+                                        $("#liManage").show();
+
+                                    }
+
+                                }
+                            })
+
+                            function delCookie() {
+                                var a = 0;
+                                $.ajax({
+                                    url: "/WebService/JudgeSess.ashx?state=1",
+                                    type: "post",
+
+                                    dataType: "text",
+                                    async: false,
+                                    success: function (data) {
+                                        var a = data;
+                                        if (a == "0") {
+                                            location.reload();
+                                        }
+                                    }
+                                })
+                            }
+
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: 180px;">
+            <h1 class="text-center">期待您的加入</h1>
+            <p class="text-center">Looking Forward To Your Joining</p>
+            <p class="text-center" style="margin-top: 30px;">
+                <a href="/Web/User/NewRegister.html" target="_blank" class="btn btn-default niui-btn-big-w">现在加入 
+                <i class="glyphicon glyphicon-arrow-right" style="font-size: 20px;"></i></a>
+            </p>
+        </div>
+    </div>
+
+    <div class="section2 niui-w">
+        <div class="section2-main-top">
+            <div class="main-left">
+                <img src="/Web/skin_v2/image/index/icon_1.png">
+            </div>
+            <div class="main-right">
+                <h2>成为认证会员</h2>
+                <p>注册用户并完善您的资料，成为认证用户</p>
+                <p>免费认证成为认证用户，需要高级服务，可申请成为会员</p>
+                <p class="">
+                    <a href="/Web/User/NewRegister.html" target="_blank">马上注册 <i class="glyphicon glyphicon-menu-right"></i></a>
+                </p>
+            </div>
+        </div>
+        <div class="section2-main-top niui-w" style="border-top: 1px #eee solid;">
+            <div class="main-left">
+                <h2>孵化器</h2>
+                <p>众多地区的不同孵化器，舒适的办公环境等您加入</p>
+                <p>在线预约参观及申请入驻</p>
+                <p>
+                    <a href="/Web/EnterIncubating/EIIndex.aspx">查看孵化器 <i class="glyphicon glyphicon-menu-right"></i></a>
+                </p>
+            </div>
+            <div class="main-right">
+                <img src="/Web/skin_v2/image/index/icon_2.png">
+            </div>
+        </div>
+        <div class="section2-main-top niui-w" style="border-top: 1px #eee solid;">
+            <div class="main-left">
+                <img src="/Web/skin_v2/image/index/icon_3.png">
+            </div>
+            <div class="main-right">
+                <h2>专业技术服务</h2>
+                <p>获取工业设计、软件服务、高企/双软认证咨询、人才服务等专业服务的支持</p>
+                <p>高精尖的技术服务支持，超级优惠的服务方案，为起步添翼</p>
+                <p class="">
+                    <a href="/Web/Ariticle/Ariticle_List.aspx">获取工业设计服务 <i class="glyphicon glyphicon-menu-right"></i></a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="section3">
+        <div class="section3-main-top niui-w">
+            <h2>还有更多等着您</h2>
+            <p class="text-center">THERE ARE MORE WAITING FOR YOU</p>
+            <div class="niui-w exhibition">
+                <ul>
+                    <li>
+                        <h3>政策服务大厅</h3>
+                        <p>获取行业新规、政府机构等最新消息</p>
+                    </li>
+
+                    <li>
+                        <h3>投融资服务</h3>
+                        <p>好的产品或服务需要资金支持，投融资服务等您加入</p>
+                    </li>
+                    <li>
+                        <h3>难题吐槽</h3>
+                        <p>开放的问答式吐槽平台，让您与其他用户互动交流，帮助您分析解决疑难问题</p>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="section3-main-bottom" id="cooperation">
+            <p class="text-center">我要认证</p>
+            <p class="text-center" style="margin-top: 5px;">我需要专业的服务，我需要项目融资，我想入驻孵化器，我想吐槽难题...</p>
+            <p class="text-center" style="font-size: 25px; margin-top: 15px;">现在注册并认证，马上就能得到您想要的！</p>
+            <p class="text-center" style="margin-top: 20px;">
+                <a href="/Web/User/NewRegister.html" target="_blank" class="btn btn-default niui-btn-big">我要认证</a>
+            </p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-main niui-w">
+            <div class="footer-main-left">
+                <dl>
+                    <dt>关于</dt>
+                    <dd><a href="../Web/About.html" target="_blank">公司简介</a></dd>
+                    <dd><a href="../Web/ServiceTerms.html" target="_blank">服务条款</a></dd>
+                </dl>
+                <dl>
+                    <dt>专业技术服务</dt>
+                    <dd><a href="../Web/Ariticle/Ariticle_List.aspx">工业设计</a></dd>
+                    <dd><a href="../Web/SoftWareS/List.aspx?TypeName=SoftwareServiceType ">软件服务</a></dd>
+                    <dd><a href="../web/SoftWareS/List.aspx?TypeName=HSEConsulting ">高企认定咨询</a></dd>
+                    <dd><a href="../web/SoftWareS/List.aspx?TypeName=SoftConsulting ">双软认定咨询</a></dd>
+                    <dd><a href="../web/TalentService/TalentService_List.aspx">人才服务</a></dd>
+                </dl>
+                <dl>
+                    <dt>工商财税</dt>
+                    <dd><a href="../Web/EnterpriseRegistration/EnterpriseRegistration_List.aspx">工商注册</a></dd>
+                    <dd><a href="../Web/Fiscal/Fiscal_List.aspx">财税服务</a></dd>
+                    <dd><a href="../Web/Intellectual/Intellectual_List.aspx">知识产权</a></dd>
+                </dl>
+                <dl>
+                    <dt>孵化器</dt>
+                    <dd><a href="../Web/EnterIncubating/EIIndex.aspx">孵化器</a></dd>
+                </dl>
+                <dl>
+                    <dt>难题吐槽</dt>
+                    <dd><a href="../Web/MeetingActivity/MeetingActiveList.aspx">难题吐槽</a></dd>
+                </dl>
+                <dl>
+                    <dt>政策大厅</dt>
+                    <dd><a href="../Web/PolicyHall/PHList.aspx">政策大厅</a></dd>
+                </dl>
+                <dl style="width: 28%;">
+                    <dt>联系</dt>
+                    <dd class="consult" style="border-bottom: 1px #eee solid; margin-right: 50px; margin-bottom: 10px;">
+                        <span style="font-size: 14px; font-weight: 600; color: #464646;"><i class="glyphicon glyphicon-earphone" style="color: #717171; font-weight: 400;"></i>&nbsp;电话：</span>
+                        <span style="font-size: 16px; font-weight: 600; color: #6eb92b;">0371-67579123</span>
+                    </dd>
+                    <dd class="consult"><span><i class="glyphicon glyphicon-print"></i>&nbsp;传真：</span><span style="">0371-67579123</span>
+                    </dd>
+                    <dd><span><i class="glyphicon glyphicon-envelope"></i>&nbsp;邮箱：</span><span class="">hnppc@163.com</span></dd>
+                    <dd><span><i class="glyphicon glyphicon-map-marker"></i>&nbsp;地址：</span><span class="">郑州市高新技术开发区翠竹街6号国家863中部软件园</span></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="record">
+        <div class="niui-w">
+            <div class="row">
+                <div class="col-xs-4 col-sm-4 col-md-4" style="text-align: left;">
+                    三原色创孵在线孵化平台
+                </div>
+                <div class="col-xs-8 col-sm-8 col-md-8" style="text-align: right;">
+                    All content Copyright <span>©</span> 豫ICP备14017015号-3. all rights reserved　
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- pop -->
+    <div class="pop-layer"></div>
+    <!-- login -->
+    <div class="pop-login">
+        <div class="pop-close pop-login-close">
+            <img src="/Web/skin_v2/image/close.png" style="width: 26px; height: 26px" />
+        </div>
+        <h3>登录</h3>
+        <div class="pop-login-co">
+            <form class="form-login" name="form3" method="post">
+                <label><span>用户名</span><input type="text" id="username" name="username" value="" placeholder="用户名"></label>
+                <label><span>密码</span><input type="password" id="password" name="password" value="" placeholder="密码"></label>
+                <div class="login-check">
+                    <label>
+                        <input type="checkbox" name="checkr" id="checkr" style="width: 16px; font-size: 14px" />记住我
+                    </label>
+                    <a href="/Web/User/RetrievePassword.html" target="_blank">忘记密码</a>
+                </div>
+                <div class="login-btn">登录</div>
+                <div class="logup-btn">还没有平台帐号 <a href="/Web/User/NewRegister.html" target="_blank">立即注册</a></div>
+            </form>
+        </div>
+    </div>
+    <div class="float_layer" id="miaov_float_layer" style="z-index: 10001">
+        <h2><b>精品服务</b> <a id="btn_min" href="javascript:;" class="min"></a><a id="btn_close" href="javascript:;" class="close"></a></h2>
+
+        <div class="content2" >
+            <div id="myscroll" class="myscroll" style="background:#ccc"  >
+            </div>
+        </div>
+    </div>
+    <script>
+        $.ajax({
+            url: "/WebService/Report.ashx?state=2",
+            type: "post",
+            dataType: "json",
+
+            success: function (data) {
+                var json = data;
+
+
+                if (json.ok == true) {
+
+                    var tableStr = "";
+
+                    var tableStr = "<ul>";
+
+                    var len = json.ds.length;
+                    for (var i = 0 ; i < len ; i++) {
+
+                        var title = json.ds[i].Title;
+
+                        if (title.length > 20) {
+                            title = title.substr(0, 20) + "...";
+                        }
+
+                        tableStr = tableStr + "<li><a target='_blank' href=" + json.ds[i].Url + ">" + title + "</a></li>";
+                    }
+
+                    tableStr = tableStr + "</ul>";
+                    ////将动态生成的table添加的事先隐藏的div中.
+                    $("#myscroll").html(tableStr);
+
+                }
+            }
+        })
+    </script>
+    <script src="/web/skin_v2/js/niuge.confirm.js"></script>
+    <script>
+
+        $().ready(function () {
+
+
+            //获取cookie的值
+            var username = $.cookie('username');
+            var password = $.cookie('password');
+
+            //将获取的值填充入输入框中
+            $('#username').val(username);
+            $('#password').val(password);
+            if (username != null && username != '' && password != null && password != '') {//选中保存秘密的复选框
+                $("#checkr").attr('checked', true);
+            }
+
+        })
+    </script>
+</body>
+</html>

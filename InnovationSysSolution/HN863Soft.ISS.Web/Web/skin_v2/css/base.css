@@ -1,0 +1,636 @@
+
+@media screen and (min-width: 1200px) {
+html {
+    font-size: 40px;
+}
+}
+@media screen and (min-width: 320px) and (max-width: 1200px) {
+html {
+    font-size: 35px;
+}
+}
+@media screen and (max-width: 320px) {
+html {
+    font-size: 30px;
+}
+}
+html {
+    height: 100%;
+}
+body {
+    color: #646464;
+    font-size: 14px;
+}
+a {
+    color: #646464;
+    text-decoration: none;
+}
+a:hover {
+    color: #679cd2;
+}
+.f14 {
+    font-size: 14px;
+}
+.f20 {
+    font-size: 20px !important;
+}
+.nobd {
+    border: 0 none !important;
+}
+.nomr {
+    margin: 0;
+}
+.nopl {
+    padding-left: 0 !important;
+}
+.color33 {
+    color: #333333 !important;
+}
+.color46 {
+    color: #464646 !important;
+}
+.section1 h1, .section1 h6 {
+    color: #fff;
+    font-size: 1.125rem;
+    overflow: hidden;
+    width: 100%;
+}
+.section1 > p {
+    color: #ffffff;
+    font-size: 0.75rem;
+}
+.section1 {
+    padding-top: 70px;
+    width: 100%;
+}
+.header {
+    box-shadow: 0 0 3px #666;
+    color: #787878;
+    height: 70px;
+    width: 100%;
+    z-index: 9999;
+}
+.logo {
+    margin-top: 16px;
+}
+.logo2 {
+    display: none;
+}
+.niui-w {
+    margin: 0 auto;
+    width: 1000px;
+}
+.header .niui-w > *, .header-right > *, .nav > li {
+    float: left;
+}
+.header-right {
+    float: right !important;
+}
+.header a {
+    color: #787878;
+}
+.header a span.point-box {
+    position: relative;
+}
+.header a span.point-box i.point {
+    background: #ff0000 none repeat scroll 0 0;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    height: 8px;
+    left: -4px;
+    position: absolute;
+    top: -10px;
+    width: 8px;
+}
+.nav > li {
+    margin: 0 0.5rem;
+}
+.header-right .nav {
+    float: right;
+    /*padding-right: 30px;*/
+}
+.nav li {
+    width: auto;
+}
+.header > div strong {
+    line-height: 80px;
+}
+.nav > li > a {
+    height: 37px;
+    line-height: 35px;
+    margin-top: 18px;
+    padding: 0 4px;
+}
+.nav a:hover {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+}
+.nav ul a {
+    color: #3f3f3f;
+    padding: 5px;
+}
+.nav ul {
+    background: rgba(220, 220, 220, 0.8) none repeat scroll 0 0;
+    left: 50%;
+    margin-left: -40px;
+    position: absolute;
+    text-align: center;
+    top: 70px;
+    width: 80px !important;
+}
+.nav ul li:hover {
+    background: #ffffff none repeat scroll 0 0;
+}
+.nav li.on > a, .nav ul li:hover a {
+    color: #67b2dd;
+}
+.login-register {
+    float: right;
+    height: 60px;
+    line-height: 43px;
+}
+.login-register a {
+    border: 1px solid #dcdcdc;
+    border-radius: 2px;
+    float: left;
+    height: 34px;
+    line-height: 32px;
+    margin: 18px 0.15rem;
+    text-align: center;
+    width: 70px;
+}
+.login-register a:hover {
+    border: 1px solid #679cd2;
+    color: #679cd2;
+}
+.login-register a:nth-of-type(3) {
+    border: 0 none;
+    color: #787878;
+    float: left;
+    font-weight: normal;
+    line-height: 35px;
+    margin: 18px 0;
+    text-align: center;
+    width: 82px;
+}
+.js .nav-collapse {
+    clip: rect(0px, 0px, 0px, 0px) !important;
+    overflow: visible;
+}
+@font-face {
+    font-family: "responsivenav";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../icons/responsivenav.eot?#iefix") format("embedded-opentype"), url("../icons/responsivenav.ttf") format("truetype"), url("../icons/responsivenav.woff") format("woff"), url("../icons/responsivenav.svg#responsivenav") format("svg");
+}
+a:hover {
+    outline: 0 none;
+    text-decoration: none;
+}
+a:focus {
+    text-decoration: none;
+}
+.nav-collapse ul {
+    display: block;
+    list-style: outside none none;
+    width: auto;
+}
+.nav ul {
+    display: none;
+}
+.nav-collapse a {
+    box-sizing: border-box;
+    display: block;
+}
+.nav-toggle {
+    display: none;
+}
+@media screen and (min-width: 40em) {
+.header-right {
+}
+.nav-header .nav > li {
+    margin: 0 2px;
+}
+.login-register a {
+    margin: 19px 5px;
+}
+}
+@media screen and (max-width: 768px) {
+.login-register a:nth-of-type(3) {
+    text-align: left;
+}
+.nav ul {
+    display: none !important;
+}
+.nav > li > a:hover {
+    background: #14487c none repeat scroll 0 0 !important;
+}
+.nav-collapse ul {
+    display: block;
+    left: 0;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+    width: 100% !important;
+}
+.js .nav-collapse-0.opened {
+    min-height: 340px !important;
+}
+.header {
+    height: 71px;
+}
+.header > div strong {
+    line-height: 70px;
+}
+.logo {
+    line-height: 20px !important;
+    margin-top: 27px;
+    width: 90px;
+}
+.logo img {
+    padding-left: 10px;
+    width: 90px;
+}
+.logo span {
+    font-size: 12px;
+}
+.nav > li {
+    margin: 0;
+}
+.nav > li > a {
+    margin: -1px 0 0;
+}
+.nav li.on > a {
+    color: #ffffff !important;
+}
+.nav ul {
+    border: 0 none;
+    display: none;
+}
+.section1 {
+    background-size: cover;
+    overflow: hidden;
+    padding: 40px 0;
+}
+.section1 h1, .section1 h6 {
+    font-size: 15px;
+}
+.section1 > p {
+    font-size: 12px;
+}
+.nav-collapse a {
+    padding: 10px 15px !important;
+    transition: background 0.3s ease 0s;
+}
+.on > span::before {
+    display: none !important;
+}
+.login-register a, .nav > li > a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    height: auto !important;
+    line-height: 20px !important;
+    padding: 10px 15px !important;
+    text-align: left;
+}
+.login-register a {
+    display: block;
+    margin: 0;
+    padding: 6px 0;
+    position: relative;
+}
+.nav-collapse a {
+    margin: 0 !important;
+    width: 100% !important;
+}
+.login-register a {
+    border: medium none !important;
+    color: #fff !important;
+    margin-top: -1px !important;
+}
+.js .nav-collapse {
+    background: #5191d1 none repeat scroll 0 0 !important;
+    display: block;
+    max-height: 0;
+    overflow-y: scroll;
+    padding: 4px 0;
+    position: absolute;
+    width: 100% !important;
+}
+.nav-collapse.opened {
+    max-height: 9999px;
+}
+.nav-collapse a {
+    font-weight: 400 !important;
+}
+.nav-toggle {
+    -moz-user-select: none;
+    display: block;
+    float: right !important;
+    height: 48px;
+    margin: 0 -2em 1em 0;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    text-indent: -999px;
+    width: 70px;
+    z-index: 2;
+}
+.nav-toggle::before {
+    color: #5191d1 !important;
+    content: "≡";
+    font-family: responsivenav;
+    font-size: 28px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 65px;
+    position: absolute;
+    right: 14px;
+    text-align: center;
+    text-indent: 0;
+    text-transform: none;
+    top: 0;
+    width: 100%;
+}
+.nav-toggle.active::before {
+    content: "≡";
+    font-size: 24px;
+}
+.header-right {
+    float: right;
+}
+.nav li {
+    width: 100%;
+}
+.header-right .nav {
+    padding-right: 0;
+    width: 100%;
+}
+.login-register {
+    height: auto;
+    width: 100%;
+}
+.header-right a:hover {
+    background: #14487c none repeat scroll 0 0 !important;
+}
+.nav ul a {
+    background: #5191d1 none repeat scroll 0 0 !important;
+    color: #fff;
+    display: block !important;
+    font-weight: 400;
+    padding: 0 0 0 52%;
+    text-align: left;
+}
+.free {
+    font-size: 14px !important;
+}
+.header {
+    height: 50px;
+}
+.logo {
+    height: 30px;
+    line-height: 16px;
+    margin-top: 16px;
+}
+.nav-toggle {
+    height: 36px;
+}
+.nav-toggle::before {
+    top: -8px;
+}
+}
+@media screen and (max-width: 1000px) {
+.niui-w {
+    padding: 0 10px;
+}
+.logo, .logo2 {
+    max-width: 120px;
+}
+.header-right {
+    /*max-width: 550px;*/
+}
+}
+@keyframes myanimation1 {
+0% {
+    width: 0;
+}
+100% {
+    width: 100%;
+}
+}
+@keyframes myanimation1 {
+0% {
+    width: 0;
+}
+100% {
+    width: 100%;
+}
+}
+@keyframes myanimation1 {
+0% {
+    width: 0;
+}
+100% {
+    width: 100%;
+}
+}
+.nav-hover > span {
+    bottom: 0;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.nav-hover > span::before {
+    animation: 0.5s ease 0s normal none 1 running myanimation1;
+    background: #67b2dd none repeat scroll 0 0;
+    content: "";
+    display: block;
+    height: 1px;
+    margin: 0 auto;
+}
+.nav li.on > span {
+    bottom: 0;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.nav li.on > span::before {
+    animation: 0.5s ease 0s normal none 1 running myanimation1;
+    background: #67b2dd none repeat scroll 0 0;
+    content: "";
+    display: block;
+    height: 1px;
+    margin: 0 auto;
+}
+.footer {
+    background: #ddd none repeat scroll 0 0;
+    padding: 0.8rem 0 0.5rem;
+    width: 100%;
+}
+.footer-main {
+    margin: 0 auto;
+    overflow: hidden;
+}
+.footer-main-left {
+    float: left;
+    min-width: 470px;
+    overflow: hidden;
+    width: 100%;
+}
+.footer-main-left dl:nth-of-type(3) a, .footer-main-left dl:nth-of-type(3) span {
+    float: left;
+}
+.footer-main-left dl:nth-of-type(3) dd {
+    overflow: hidden;
+}
+.footer-main dl {
+    float: left;
+    width: 12%;
+}
+.footer-main dt {
+    color: #000;
+    font-size: 0.45rem;
+    font-weight: 400;
+    margin-bottom: 0.3rem;
+}
+.footer-main dd {
+    color: #717171;
+    font-size: 12px;
+    padding-bottom: 6px;
+}
+.footer-main dd a {
+    color: #717171;
+    font-size: 12px;
+}
+.footer-main-right {
+    float: left;
+    width: 20%;
+}
+.footer-main .fontwhite {
+    color: #fff;
+    letter-spacing: 1px;
+}
+.qr {
+    color: #888;
+    float: right;
+    font-size: 12px;
+    max-width: 130px;
+    min-width: 80px;
+    text-align: center;
+    width: 100%;
+}
+.qr img {
+    height: auto;
+    margin: 2px auto 10px;
+    max-width: 130px;
+    min-width: 80px;
+    width: 100%;
+}
+.qr .gaoliang {
+    opacity: 1;
+}
+.other-menu {
+    margin: 0 auto;
+    width: 94px;
+}
+.other-menu a {
+    background: rgba(0, 0, 0, 0) url("../../fav.ico") no-repeat scroll 0 0;
+    float: left;
+    height: 26px;
+    margin: 4px;
+    width: 26px;
+}
+.other-menu a:nth-of-type(1) {
+    margin-left: 0;
+}
+.other-menu a:nth-of-type(3) {
+    background-position: 0 -72px;
+    margin-right: 0;
+}
+.other-menu a:nth-of-type(2) {
+    background-position: 0 -36px;
+}
+.other-menu a:nth-of-type(1):hover {
+    background-position: -28px 0;
+}
+.other-menu a:nth-of-type(2):hover {
+    background-position: -28px -36px;
+}
+.other-menu a:nth-of-type(3):hover {
+    background-position: -28px -72px;
+}
+.record {
+    background: #fff none repeat scroll 0 0;
+    border-top: 1px solid #eee;
+    color: #666;
+    font-size: 12px;
+    padding: 12px 0;
+    text-align: center;
+    width: 100%;
+}
+.record span {
+}
+.record a {
+    color: #cfd1d4;
+}
+@media screen and (max-width: 957px) {
+.footer-main-left {
+    min-width: auto;
+}
+.footer-main-left {
+    width: 100%;
+}
+.qr {
+    float: left;
+}
+.footer-main {
+    width: 92%;
+}
+.qr img {
+    width: 80px;
+}
+.footer-main dl {
+    height: 152px;
+    overflow: hidden;
+}
+}
+.nomrr {
+    margin-right: 0 !important;
+}
+.noml {
+    margin-left: 0 !important;
+}
+.mrr10 {
+    margin-right: 10px !important;
+}
+@media screen and (max-width: 40em) {
+.footer-main dt {
+    font-size: 14px !important;
+}
+}
+@media screen and (max-width: 677px) {
+.qr p {
+    text-align: left;
+}
+.qr img {
+    margin: 0 0 10px;
+}
+.other-menu {
+    margin: 0;
+}
+}
+@media screen and (max-width: 374px) {
+.record a {
+    display: block;
+    padding-top: 4px;
+}
+.footer-main dl {
+    width: 50% !important;
+}
+}

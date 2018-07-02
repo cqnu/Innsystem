@@ -1,0 +1,283 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>关于我们</title>
+    <link rel="stylesheet" type="text/css" href="skin_v2/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="skin_v2/css/responsive.min.css" />
+    <link rel="stylesheet" type="text/css" href="skin_v2/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="skin_v2/css/global.css" />
+    <link rel="stylesheet" type="text/css" href="skin_v2/css/base.css" />
+    <link rel="stylesheet" type="text/css" href="skin_v2/css/page.css" />
+    <link rel="stylesheet" type="text/css" href="skin_v2/css/index.css" />
+
+    <!--bootstrapjs-->
+    <script type="text/javascript" src="skin_v2/js/jquery.js"></script>
+    <script src="User/resources/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="skin_v2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="skin_v2/js/responsive.min.js"></script>
+    <script type="text/javascript" src="skin_v2/js/base.js"></script>
+    <script type="text/javascript" src="skin_v2/js/global.js"></script>
+    <script type="text/javascript" src="skin_v2/js/index.js"></script>
+
+    <link href="CSS/Show/base.css" rel="stylesheet" />
+    <link href="CSS/Heard/css.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!--[if lte IE 7]>
+		<style type="text/css">
+		    * {
+		        display: none;
+		    }
+		</style>
+		<script>
+		    alert("对不起，您的浏览器版本太低，建议使用IE8以上版本或chrome、firefox浏览器！");
+		</script>
+		<![endif]-->
+    <div class="header">
+        <div style="width: 1080px; margin: 0 auto;">
+            <div style="float: left; margin: 6px 10px 0 0;">
+                <img src="../../Manage/skin/default/logo.png" style="width: 220px;" />
+            </div>
+            <ul class="menu" style="float: left;">
+                <li><a href="/Web/Index.html">主页</a></li>
+                <li><a href="#">投融资服务</a>
+                    <ul class="submenu">
+                        <li><a href="/web/ProjectFinancing/ProjectFinancing_List.aspx">众筹</a></li>
+
+                        <li><a href="/web/Roadshow/Roadshow_List.aspx">路演</a></li>
+                    </ul>
+                </li>
+                <li class="active on"><a href="#s2">工商财税</a>
+                    <ul class="submenu">
+                        <li><a href="/web/EnterpriseRegistration/EnterpriseRegistration_List.aspx">工商注册</a></li>
+                        <li><a href="/web/Fiscal/Fiscal_List.aspx">财税服务</a></li>
+                        <li><a href="/web/Intellectual/Intellectual_List.aspx">知识产权</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">专业技术服务</a>
+                    <ul class="submenu">
+                        <li><a href="/web/Ariticle/Ariticle_List.aspx">工业设计</a></li>
+                        <li><a href='/web/SoftWareS/List.aspx?TypeName=SoftwareServiceType'>软件服务</a></li>
+                        <li><a href='/web/SoftWareS/List.aspx?TypeName=HSEConsulting'>高企认定咨询</a></li>
+                        <li><a href='/web/SoftWareS/List.aspx?TypeName=SoftConsulting'>双软认定咨询</a></li>
+                        <li><a href="/web/TalentService/TalentService_List.aspx">人才服务</a></li>
+                    </ul>
+                </li>
+                <li><a href="/web/EnterIncubating/EIIndex.aspx">孵化器</a></li>
+                <li><a href="/web/MeetingActivity/MeetingActiveList.aspx">难题吐槽 </a></li>
+                <li><a href="/web/PolicyHall/PHList.aspx">政策大厅 </a></li>
+
+            </ul>
+            <div class="header-right" id="min-nav">
+                <div class="login-register" id="min-zhuce" style="display: none">
+                    <a class="nav-btn-login" href="javascript:">登录</a>
+                    <a class="nav-btn-reg" href="/Web/User/NewRegister.html" target="_blank">注册</a>
+                </div>
+                <div class="login-register" style="display: none" id="web">
+
+                    <div class="dropdown">
+
+                        <a id="aName" href="" class="dropdown-toggle top-avatar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="float: right; text-align: center">您好：
+                                &nbsp;&nbsp;	  	
+			  </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                             <li id="liManage" style="display: none"><a href="../Manage/index.aspx">后台管理</a></li>
+                            <li><a href="User/ModifyPassword.html">修改密码</a></li>
+                            <li><a href="javascript:void(0)" onclick='delCookie()'>注销登录</a></li>
+
+                        </ul>
+                    </div>
+                   <script type="text/javascript">
+                       $.ajax({
+                           url: "/WebService/JudgeSess.ashx?state=0",
+                           type: "post",
+
+                           dataType: "text",
+                           async: false,
+                           success: function (data) {
+                               var a = data;
+
+                               if (a == "") {
+                                   $("#min-zhuce").show();
+                                   $("#web").hide();
+                               }
+                               else {
+                                   $("#min-zhuce").hide();
+                                   $("#web").show();
+                                   $("#aName").text("欢迎您：" + a);
+                               }
+
+                           }
+                       })
+
+
+                       $.ajax({
+                           url: "/WebService/JudgeSess.ashx?state=2",
+                           type: "post",
+
+                           dataType: "text",
+                           async: false,
+                           success: function (data) {
+                               var a = data;
+
+                               if (a == "") {
+
+                                   $("#liManage").hide();
+                               }
+                               else {
+
+                                   $("#liManage").show();
+
+                               }
+
+                           }
+                       })
+
+                       function delCookie() {
+                           var a = 0;
+                           $.ajax({
+                               url: "/WebService/JudgeSess.ashx?state=1",
+                               type: "post",
+
+                               dataType: "text",
+                               async: false,
+                               success: function (data) {
+                                   var a = data;
+                                   if (a == "0") {
+                                       location.reload();
+                                   }
+                               }
+                           })
+                       }
+                        </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row niui-content-1" style="margin-top: 70px;">
+        <div class="niui-w">
+            <div class="art">
+                <div id="about" class="row">
+                    <div class="col-md-12" style="font-size: 14px; line-height: 220%; padding: 25px 100px;">
+                        <h2 style="font-size: 25px; text-align: center; padding: 20px 0;">关于我们</h2>
+                        <p>河南省生产力促进中心始建于1993年8月，1995年12月河南省编委批准成立。</p>
+                        <p>几年来，河南省生产力促进中心本着“聚一流人才，联万家企业，促生产力发展”的宗旨，一直是：政府实施“科教兴豫”、可持续发展和对外开放三大战略的“助手”，国内外科技、经济信息传播的“媒介”，科技成果有效转化的“催化剂”，培育现代科技企业的“智囊”，提升企业市场竞争力的“参谋”，科研单位、高等院校与企业合作交流的“桥梁”。 </p>
+                        <p>中心始终坚持“科学技术是第一生产力”这一伟大真理，并常年网聚尖端科技人才，把脉于万家企业，不断地促进科技成果有效转化。1997年8月被国家科委评为国家级生产力中心；1999年9月和2000年11月成功承办了两届“河南科技成果交易会”，在2002年6月成功承办了“2002郑州先进使用技术交易会”。为“科技转化生产力”进行了积极的尝试，为塑造中心品牌形象垫下了基石；2000年8月，河南省生产力促进协会成立，秘书处设在我中心。</p>
+                        <br />
+                        <p>联系方式∶ </p>
+                        <p>电 话：0371-67579123 </p>
+                        <p>传 真：0371-67579123 </p>
+                        <p>Email：hnppc@163.com</p>
+                        <p>通讯地址：郑州市高新技术开发区翠竹街6号国家863中部软件园</p>
+                        <p>邮 编：450000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-main niui-w">
+            <div class="footer-main-left">
+                <dl>
+                    <dt>关于</dt>
+                    <dd><a href="../Web/About.html" target="_blank">公司简介</a></dd>
+                    <dd><a href="../Web/ServiceTerms.html" target="_blank">服务条款</a></dd>
+                </dl>
+                <dl>
+                    <dt>专业技术服务</dt>
+                    <dd><a href="../Web/Ariticle/Ariticle_List.aspx">工业设计</a></dd>
+                    <dd><a href="../Web/SoftWareS/List.aspx?TypeName=SoftwareServiceType ">软件服务</a></dd>
+                    <dd><a href="../web/SoftWareS/List.aspx?TypeName=HSEConsulting ">高企认定咨询</a></dd>
+                    <dd><a href="../web/SoftWareS/List.aspx?TypeName=SoftConsulting ">双软认定咨询</a></dd>
+                    <dd><a href="../web/TalentService/TalentService_List.aspx">人才服务</a></dd>
+                </dl>
+                <dl>
+                    <dt>工商财税</dt>
+                    <dd><a href="../Web/EnterpriseRegistration/EnterpriseRegistration_List.aspx">工商注册</a></dd>
+                    <dd><a href="../Web/Fiscal/Fiscal_List.aspx">财税服务</a></dd>
+                    <dd><a href="../Web/Intellectual/Intellectual_List.aspx">知识产权</a></dd>
+                </dl>
+                <dl>
+                    <dt>孵化器</dt>
+                    <dd><a href="../Web/EnterIncubating/EIIndex.aspx">孵化器</a></dd>
+                </dl>
+                <dl>
+                    <dt>难题吐槽</dt>
+                    <dd><a href="../Web/MeetingActivity/MeetingActiveList.aspx">难题吐槽</a></dd>
+                </dl>
+                <dl>
+                    <dt>政策大厅</dt>
+                    <dd><a href="../Web/PolicyHall/PHList.aspx">政策大厅</a></dd>
+                </dl>
+                <dl style="width: 28%;">
+                    <dt>联系</dt>
+                    <dd class="consult" style="border-bottom: 1px #eee solid; margin-right: 50px; margin-bottom: 10px;">
+                        <span style="font-size: 14px; font-weight: 600; color: #464646;"><i class="glyphicon glyphicon-earphone" style="color: #717171; font-weight: 400;"></i>&nbsp;电话：</span>
+                        <span style="font-size: 16px; font-weight: 600; color: #6eb92b;">0371-67579123</span>
+                    </dd>
+                    <dd class="consult"><span><i class="glyphicon glyphicon-print"></i>&nbsp;传真：</span><span style="">0371-67579123</span>
+
+                    </dd>
+                    <dd><span><i class="glyphicon glyphicon-envelope"></i>&nbsp;邮箱：</span><span class="">hnppc@163.com</span></dd>
+                    <dd><span><i class="glyphicon glyphicon-map-marker"></i>&nbsp;地址：</span><span class="">郑州市高新技术开发区翠竹街6号国家863中部软件园</span></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="record">
+        <div class="niui-w">
+            <div class="row">
+                <div class="col-xs-4 col-sm-4 col-md-4" style="text-align: left;">
+                    三原色创孵在线孵化平台
+                </div>
+                <div class="col-xs-8 col-sm-8 col-md-8" style="text-align: right;">
+                    All content Copyright <span>©</span> 豫ICP备14017015号-3. all rights reserved　
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- pop -->
+    <div class="pop-layer"></div>
+    <!-- login -->
+    <div class="pop-login">
+        <div class="pop-close pop-login-close">
+            <img src="skin_v2/image/close.png" style="width: 26px; height: 26px" />
+        </div>
+        <h3>登录</h3>
+        <div class="pop-login-co">
+            <form class="form-login" name="form3" method="post">
+                <label><span>用户名</span><input type="text" id="username" name="username" value="" placeholder="用户名"></label>
+                <label><span>密码</span><input type="password" id="password" name="password" value="" placeholder="密码"></label>
+                <div class="login-check">
+                    <label>
+                        <input type="checkbox" name="checkr" id="checkr" style="width: 16px; font-size: 14px" />记住我
+                    </label>
+                    <a href="/Web/User/RetrievePassword.html" target="_blank">忘记密码</a>
+                </div>
+                <div class="login-btn">登录</div>
+                <div class="logup-btn">还没有平台帐号 <a href="/Web/User/NewRegister.html" target="_blank">立即注册</a></div>
+            </form>
+        </div>
+    </div>
+    <script src="skin_v2/js/niuge.confirm.js"></script>
+    <script>
+
+        $().ready(function () {
+            //获取cookie的值
+            var username = $.cookie('username');
+            var password = $.cookie('password');
+
+            //将获取的值填充入输入框中
+            $('#username').val(username);
+            $('#password').val(password);
+            if (username != null && username != '' && password != null && password != '') {//选中保存秘密的复选框
+                $("#checkr").attr('checked', true);
+            }
+        })
+    </script>
+</body>
+</html>
+

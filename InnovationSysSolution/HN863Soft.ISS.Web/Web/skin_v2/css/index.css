@@ -1,0 +1,313 @@
+
+body {
+    height: 100%;
+}
+.niui-w {
+    position: relative;
+}
+.logo2 {
+    display: none;
+}
+.nobg {
+    border: 0 none !important;
+    box-shadow: none;
+}
+.nobg a {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+    color: #fff !important;
+    font-weight: 400;
+}
+.nobg .login-register a {
+    border-color: #6383c1;
+    color: #ffffff;
+}
+.nobg .login-register a:hover {
+    border-color: #fff;
+    color: #ffffff;
+}
+.nobg .logo1 {
+    display: none;
+}
+.nobg .logo2 {
+    display: block;
+}
+.section1 {
+    background: rgba(0, 0, 0, 0) url("../image/index/kv.jpg") no-repeat scroll center top / cover ;
+    display: table !important;
+    height: 600px;
+    padding: 0 !important;
+    position: relative;
+    table-layout: fixed;
+    width: 100%;
+}
+.section1 p {
+    color: #fff;
+    font-size: 0.6rem;
+}
+.section1 h1, .section1 h2 {
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+    margin-top: -80px !important;
+    padding-top: 0;
+}
+.section1 h3 {
+    color: #fff;
+    text-align: center;
+}
+.main-right {
+    text-align: right;
+}
+.section2-main-top {
+    display: inline-block;
+    padding: 50px 0;
+    width: 100%;
+}
+.section2-main-top .main-left {
+    width: 50%;
+}
+.section2-main-top .main-right {
+    width: 50%;
+}
+.section2-main-top .main-left img {
+    float: left;
+    width: 320px;
+}
+.section2-main-top .main-right img {
+    float: right;
+    width: 320px;
+}
+.section2-main-top .main-right p, .section2-main-top .main-left p {
+    margin: 8px 0;
+}
+.section2-main-top .main-right h2, .section2-main-top .main-left h2 {
+    color: #000;
+    font-size: 30px;
+    font-weight: 400;
+    height: 40px;
+    margin-top: 50px;
+}
+.section2 {
+    overflow: hidden;
+}
+.section2 a {
+    color: #679cd2;
+}
+.section2 a:hover {
+    color: #3891f8;
+}
+.section2 .main-left, .section2 .main-right {
+    float: left;
+}
+.section3 {
+    background: #e3e3e3 none repeat scroll 0 0;
+    width: 100%;
+}
+.section3-main-bottom, .section3-main-top {
+    overflow: hidden;
+    padding: 1.3rem 0;
+}
+.section3-main-bottom {
+    background: #679cd2 url("../image/index/4_bg.png") no-repeat scroll center bottom / 1400px auto;
+    color: #fff;
+    padding-bottom: 2.35rem;
+}
+.section3-main-top h2 {
+    color: #000000;
+    font-size: 0.7rem;
+    font-weight: 400;
+    height: 1rem;
+    text-align: center;
+    width: 100%;
+}
+.section3-main-top h3 {
+    color: #000000;
+    font-size: 0.5rem;
+    font-weight: 400;
+    height: 0.8rem;
+    text-align: center;
+    width: 100%;
+}
+.exhibition {
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 40px;
+}
+.exhibition li:last-child {
+    margin-left: 11%;
+}
+.exhibition li:first-child {
+    margin-right: 11%;
+}
+.exhibition li {
+    float: left;
+    font-size: 12px;
+    min-height: 60px;
+    overflow: hidden;
+    padding: 0 0.35rem;
+    text-align: center;
+    width: 26%;
+}
+.exhibition li a {
+    display: block;
+    margin: 11px 0;
+}
+.exhibition li:nth-of-type(1) {
+    margin-left: 0;
+}
+.exhibition li:last-of-type {
+    margin-right: 0;
+}
+.exhibition img {
+    height: 80px;
+    margin-bottom: 0.3rem;
+}
+@media screen and (max-width: 1459px) {
+}
+@media screen and (min-width: 1236px) and (max-width: 1490px) {
+}
+.section2-main-bottom-min strong {
+    font-weight: normal;
+}
+@media screen and (max-width: 1236px) {
+.section2 .main-left, .section2 .main-right {
+}
+.section2-main-bottom-min {
+    display: block !important;
+}
+.section2-main-bottom {
+    display: none;
+}
+.section2-main-bottom-min .main-left {
+    background-position: center bottom;
+}
+.section2-main-bottom .main-left, .section2-main-bottom-min .main-left, .section2-main-top .main-right {
+    position: relative;
+}
+}
+@media screen and (max-width: 1024px) {
+.section2 .main-left, .section2 .main-right {
+    text-align: center;
+    width: 100%;
+}
+.section2-main-top .main-left img, .section2-main-top .main-right img {
+    float: none;
+}
+.exhibition li {
+    padding: 15px 0;
+    width: 100%;
+}
+.exhibition li:last-child {
+    margin-left: 0;
+}
+.niui-w {
+    width: 100%;
+}
+.footer {
+    display: none;
+}
+}
+@media screen and (max-width: 500px) {
+.section2 {
+    padding-left: 0;
+    padding-right: 0;
+}
+}
+.noml {
+    margin-left: 0 !important;
+}
+.nomrr {
+    margin-right: 0 !important;
+}
+.section3-main-bottom ol {
+    bottom: 0;
+    height: 20px;
+    left: 50%;
+    margin: 0 auto 0 -25px;
+    position: absolute;
+    width: 50px;
+}
+.carousel-indicators li {
+    border: 0 none !important;
+    float: left;
+}
+.section3-main-bottom ol li {
+    background: #ccc none repeat scroll 0 0;
+    border-radius: 8px;
+    cursor: pointer;
+    float: left;
+    height: 15px;
+    margin: 0 5px;
+    width: 15px;
+}
+.section3-main-bottom ol li.active {
+    background: #333 none repeat scroll 0 0;
+    height: 15px;
+    width: 15px;
+}
+.section3-main-bottom ol li.active {
+    background: #333 none repeat scroll 0 0;
+    height: 15px;
+    margin: 0 5px !important;
+    width: 15px;
+}
+.section1 h2 {
+    color: #fff !important;
+}
+.section1 > div {
+    border: 0 none;
+    padding: 0;
+    width: 100%;
+}
+@media (min-width: 40em) and (max-width: 1200px) {
+.partner {
+    height: 10rem;
+}
+.section1 h1, .section1 h2 {
+    font-size: 30px;
+}
+.section1 p {
+    font-size: 20px;
+}
+.section2 .niui-w {
+    width: 100%;
+}
+.comb {
+    left: 50%;
+    margin-left: -200px;
+    right: 0;
+}
+}
+.section1-min {
+    display: none !important;
+}
+.free {
+    background: #3891f8 none repeat scroll 0 0;
+    color: #fff !important;
+    font-size: 0.45rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    min-height: 40px;
+    padding: 0;
+    width: 7.5rem;
+}
+.free:hover {
+    background: #3587e6 none repeat scroll 0 0 !important;
+}
+.nobg .nav ul a:hover {
+    color: #3891f8 !important;
+}
+.niui-next {
+    border: 2px solid #fff;
+    border-radius: 100%;
+    bottom: 20px;
+    color: #fff;
+    cursor: pointer;
+    height: 32px;
+    left: 50%;
+    line-height: 32px;
+    margin-left: -16px;
+    opacity: 0.8;
+    position: absolute;
+    text-align: center;
+    width: 32px;
+}

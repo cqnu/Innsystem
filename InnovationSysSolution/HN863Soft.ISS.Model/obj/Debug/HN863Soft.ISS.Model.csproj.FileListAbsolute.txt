@@ -1,0 +1,14 @@
+E:\SVN\VSS\创孵\04.Code\InnovationSysSolution.root\InnovationSysSolution\HN863Soft.ISS.Model\bin\Debug\HN863Soft.ISS.Model.dll
+E:\SVN\VSS\创孵\04.Code\InnovationSysSolution.root\InnovationSysSolution\HN863Soft.ISS.Model\bin\Debug\HN863Soft.ISS.Model.pdb
+E:\SVN\VSS\创孵\04.Code\InnovationSysSolution.root\InnovationSysSolution\HN863Soft.ISS.Model\obj\Debug\HN863Soft.ISS.Model.csprojResolveAssemblyReference.cache
+E:\SVN\VSS\创孵\04.Code\InnovationSysSolution.root\InnovationSysSolution\HN863Soft.ISS.Model\obj\Debug\HN863Soft.ISS.Model.dll
+E:\SVN\VSS\创孵\04.Code\InnovationSysSolution.root\InnovationSysSolution\HN863Soft.ISS.Model\obj\Debug\HN863Soft.ISS.Model.pdb
+C:\Users\admin\Desktop\InnovationSysSolution\HN863Soft.ISS.Model\bin\Debug\HN863Soft.ISS.Model.dll
+C:\Users\admin\Desktop\InnovationSysSolution\HN863Soft.ISS.Model\bin\Debug\HN863Soft.ISS.Model.pdb
+C:\Users\admin\Desktop\InnovationSysSolution\HN863Soft.ISS.Model\obj\Debug\HN863Soft.ISS.Model.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\InnovationSysSolution\HN863Soft.ISS.Model\obj\Debug\HN863Soft.ISS.Model.dll
+C:\Users\admin\Desktop\InnovationSysSolution\HN863Soft.ISS.Model\obj\Debug\HN863Soft.ISS.Model.pdb
+F:\公司项目\InnovationSysSolution\HN863Soft.ISS.Model\bin\Debug\HN863Soft.ISS.Model.dll
+F:\公司项目\InnovationSysSolution\HN863Soft.ISS.Model\bin\Debug\HN863Soft.ISS.Model.pdb
+F:\公司项目\InnovationSysSolution\HN863Soft.ISS.Model\obj\Debug\HN863Soft.ISS.Model.dll
+F:\公司项目\InnovationSysSolution\HN863Soft.ISS.Model\obj\Debug\HN863Soft.ISS.Model.pdb

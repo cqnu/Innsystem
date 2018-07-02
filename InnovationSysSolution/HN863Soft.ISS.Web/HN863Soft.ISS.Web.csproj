@@ -1,0 +1,2643 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{23A54E52-8DD8-4563-A9BB-A63CFF7297E1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HN863Soft.ISS.Web</RootNamespace>
+    <AssemblyName>HN863Soft.ISS.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\..\..\..\新建文件夹 (4)\InnovationSysSolution\863soft.ISS.Web\Bin\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.JScript" />
+    <Reference Include="MyXls.SL2, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MyXls.SL2.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Ueditor\net\Bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Manage\Images\logo2.png" />
+    <Content Include="Manage\JS\blocksit.js" />
+    <Content Include="Manage\JS\blocksit.min.js" />
+    <Content Include="Manage\JS\ImgUp\images\20140107145946140.png" />
+    <Content Include="Manage\JS\ImgUp\images\add_img.png" />
+    <Content Include="Manage\JS\ImgUp\images\bg.png" />
+    <Content Include="Manage\JS\ImgUp\images\close.png" />
+    <Content Include="Manage\JS\ImgUp\images\delete_blue.png" />
+    <Content Include="Manage\JS\ImgUp\images\delete_white.png" />
+    <Content Include="Manage\JS\ImgUp\images\edit_blue.png" />
+    <Content Include="Manage\JS\ImgUp\images\edit_white.png" />
+    <Content Include="Manage\JS\ImgUp\images\finish.png" />
+    <Content Include="Manage\JS\ImgUp\images\Jcrop.gif" />
+    <Content Include="Manage\JS\ImgUp\images\loading.gif" />
+    <Content Include="Manage\JS\ImgUp\images\success.png" />
+    <Content Include="Manage\JS\ImgUp\jquery.js" />
+    <Content Include="Manage\JS\ImgUp\zyupload-1.0.0.min.css" />
+    <Content Include="Manage\JS\ImgUp\zyupload-1.0.0.min.js" />
+    <Content Include="Manage\Office\OfficeList.aspx" />
+    <Content Include="Manage\skin\default\Office.jpg" />
+    <Content Include="Manage\skin\default\PolicyManage.png" />
+    <Content Include="Manage\skin\default\Options.png" />
+    <Content Include="Manage\skin\default\Owner.png" />
+    <Content Include="Manage\skin\default\MailBook.png" />
+    <Content Include="Manage\skin\default\Notes.png" />
+    <Content Include="Manage\skin\default\Organize.png" />
+    <Content Include="Manage\skin\default\SystemNav.png" />
+    <Content Include="Manage\skin\default\SystemManage.png" />
+    <Content Include="Manage\skin\default\User.png" />
+    <Content Include="Manage\skin\default\userAudit.png" />
+    <Content Include="Manage\skin\default\KeyManage.png" />
+    <Content Include="Manage\skin\default\PolicySearch.png" />
+    <Content Include="Manage\skin\default\Message.png" />
+    <Content Include="Manage\skin\default\Policy.png" />
+    <Content Include="Manage\skin\default\HelpAudit.png" />
+    <Content Include="Manage\skin\default\help.png" />
+    <Content Include="Manage\skin\default\IntellectualAudit.png" />
+    <Content Include="Manage\skin\default\Intellectual.png" />
+    <Content Include="Manage\skin\default\FiscalAudit.png" />
+    <Content Include="Manage\skin\default\Fiscal.png" />
+    <Content Include="Manage\skin\default\RegAudit.png" />
+    <Content Include="Manage\skin\default\Reg.png" />
+    <Content Include="Manage\skin\default\TalentAudit.png" />
+    <Content Include="Manage\skin\default\Talent.png" />
+    <Content Include="Manage\skin\default\SoftAudit.png" />
+    <Content Include="Manage\skin\default\Soft.png" />
+    <Content Include="Manage\skin\default\CompanyAudit.png" />
+    <Content Include="Manage\skin\default\Company.png" />
+    <Content Include="Manage\skin\default\SoftwareAudit.png" />
+    <Content Include="Manage\skin\default\ArticleAudit.png" />
+    <Content Include="Manage\skin\default\Article.png" />
+    <Content Include="Manage\skin\default\RoadshowAudit.png" />
+    <Content Include="Manage\skin\default\FinancingAudit.png" />
+    <Content Include="Manage\skin\default\Roadshow.png" />
+    <Content Include="Manage\skin\default\ProjectFinancing.png" />
+    <Content Include="Manage\skin\default\BookingInfo.png" />
+    <Content Include="Manage\skin\default\AuditManage.png" />
+    <Content Include="Manage\skin\default\people.png" />
+    <Content Include="Manage\skin\default\60.png" />
+    <Content Include="Manage\skin\default\logo.png" />
+    <Content Include="Manage\skin\default\Software.png" />
+    <Content Include="Manage\SysManage\Report_List.aspx" />
+    <Content Include="Manage\SysManage\TypeAdd.aspx" />
+    <Content Include="Manage\SysManage\TypeEdit.aspx" />
+    <Content Include="Manage\SysManage\TypeList.aspx" />
+    <Content Include="map\demo\api\api.js" />
+    <Content Include="map\demo\f0_3.htm" />
+    <Content Include="Scripts\artDialog\artDialog.js" />
+    <Content Include="Scripts\artDialog\artDialog.source.js" />
+    <Content Include="Scripts\artDialog\dialog-plus-min.js" />
+    <Content Include="Scripts\artDialog\iframeTools.source.js" />
+    <Content Include="Scripts\artDialog\jquery.artDialog.js" />
+    <Content Include="Scripts\artDialog\jquery.artDialog.source.js" />
+    <Content Include="Scripts\artDialog\skins\blue.css" />
+    <Content Include="Scripts\artDialog\skins\blue\bg.png" />
+    <Content Include="Scripts\artDialog\skins\blue\bg2.png" />
+    <Content Include="Scripts\artDialog\skins\blue\bg_css3.png" />
+    <Content Include="Scripts\artDialog\skins\blue\bg_css3_2.png" />
+    <Content Include="Scripts\artDialog\skins\blue\ie6\close.hover.png" />
+    <Content Include="Scripts\artDialog\skins\blue\ie6\close.png" />
+    <Content Include="Scripts\artDialog\skins\blue\ie6\e.png" />
+    <Content Include="Scripts\artDialog\skins\blue\ie6\n.png" />
+    <Content Include="Scripts\artDialog\skins\blue\ie6\ne.png" />
+    <Content Include="Scripts\artDialog\skins\blue\ie6\nw.png" />
+    <Content Include="Scripts\artDialog\skins\blue\ie6\s.png" />
+    <Content Include="Scripts\artDialog\skins\blue\ie6\se.png" />
+    <Content Include="Scripts\artDialog\skins\blue\ie6\sw.png" />
+    <Content Include="Scripts\artDialog\skins\blue\ie6\w.png" />
+    <Content Include="Scripts\artDialog\skins\icons\error.png" />
+    <Content Include="Scripts\artDialog\skins\icons\face-sad.png" />
+    <Content Include="Scripts\artDialog\skins\icons\face-smile.png" />
+    <Content Include="Scripts\artDialog\skins\icons\loading.gif" />
+    <Content Include="Scripts\artDialog\skins\icons\question.png" />
+    <Content Include="Scripts\artDialog\skins\icons\succeed.png" />
+    <Content Include="Scripts\artDialog\skins\icons\warning.png" />
+    <Content Include="Scripts\artDialog\ui-dialog.css" />
+    <Content Include="Scripts\common.js" />
+    <Content Include="Scripts\FunctionJS.js" />
+    <Content Include="Scripts\laymain.js" />
+    <Content Include="skin_v2\default\style.css" />
+    <Content Include="WebService\IsLoginAjax.aspx" />
+    <Content Include="Web\MeetingActivity\MeetingActiveAdd.aspx" />
+    <Content Include="Web\Report.html" />
+    <Content Include="Web\skin_v2\CssF\arttemplate\arttemplate.js" />
+    <Content Include="Web\skin_v2\CssF\js\index.js" />
+    <Content Include="Web\About.html" />
+    <Content Include="bin\HN863Soft.ISS.BLL.dll" />
+    <Content Include="bin\HN863Soft.ISS.Common.dll" />
+    <Content Include="bin\HN863Soft.ISS.DAL.dll" />
+    <Content Include="bin\HN863Soft.ISS.DBUtility.dll" />
+    <Content Include="bin\HN863Soft.ISS.Model.dll" />
+    <Content Include="bin\HN863Soft.ISS.Web.Core.dll" />
+    <Content Include="bin\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Common.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Data.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Data.SqlCe.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Logging.dll" />
+    <Content Include="bin\Microsoft.Practices.ServiceLocation.dll" />
+    <Content Include="bin\Microsoft.Practices.Unity.dll" />
+    <Content Include="bin\Microsoft.Practices.Unity.Interception.dll" />
+    <Content Include="bin\MyXls.SL2.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\NPOI.dll" />
+    <Content Include="bin\NPOI.OOXML.dll" />
+    <Content Include="bin\NPOI.OpenXml4Net.dll" />
+    <Content Include="bin\NPOI.OpenXmlFormats.dll" />
+    <Content Include="Css\095838603.jpg" />
+    <Content Include="Css\Button Delete.png" />
+    <Content Include="Css\valid_icons.png" />
+    <Content Include="Img\QQ.ico" />
+    <Content Include="Img\yx.ico" />
+    <Content Include="Img\地址.ico" />
+    <Content Include="Img\微信.ico" />
+    <Content Include="Img\电话.ico" />
+    <Content Include="Img\邮箱.ico" />
+    <Content Include="Manage\Ariticle\AriticleAuditShow.aspx" />
+    <Content Include="Manage\Ariticle\AriticleAuditList.aspx" />
+    <Content Include="Manage\Ariticle\AriticleAuditModify.aspx" />
+    <Content Include="Manage\Ariticle\AriticleShow.aspx" />
+    <Content Include="Manage\Ariticle\Ariticle_Add.aspx" />
+    <Content Include="Manage\Ariticle\Ariticle_List.aspx" />
+    <Content Include="Manage\Ariticle\Ariticle_Modify.aspx" />
+    <Content Include="Manage\BookingInfo\VisitBDetail.aspx" />
+    <Content Include="Manage\BookingInfo\VisitBList.aspx" />
+    <Content Include="Manage\Center.aspx" />
+    <Content Include="Manage\Crawler\CrawlerEdit.aspx" />
+    <Content Include="Manage\Crawler\CrawlerKeyEdit.aspx" />
+    <Content Include="Manage\Crawler\CrawlerKeyList.aspx" />
+    <Content Include="Manage\Crawler\CrawlerList.aspx" />
+    <Content Include="Manage\css\bootstrap-theme.css.map" />
+    <Content Include="Manage\css\bootstrap.css.map" />
+    <Content Include="Manage\EnterIncubating\EIDetail.aspx" />
+    <Content Include="Manage\EnterpriseRegistration\EnterpriseRegistrationAuditList.aspx" />
+    <Content Include="Manage\EnterpriseRegistration\EnterpriseRegistrationAuditModify.aspx" />
+    <Content Include="Manage\EnterpriseRegistration\EnterpriseRegistrationAuditShow.aspx" />
+    <Content Include="Manage\EnterpriseRegistration\EnterpriseRegistration_Add.aspx" />
+    <Content Include="Manage\EnterpriseRegistration\EnterpriseRegistration_List.aspx" />
+    <Content Include="Manage\EnterpriseRegistration\EnterpriseRegistration_Modify.aspx" />
+    <Content Include="Manage\EnterpriseRegistration\EnterpriseRegistration_Show.aspx" />
+    <Content Include="Manage\Fiscal\FiscalAuditList.aspx" />
+    <Content Include="Manage\Fiscal\FiscalAuditModify.aspx" />
+    <Content Include="Manage\Fiscal\FiscalAuditShow.aspx" />
+    <Content Include="Manage\Fiscal\Fiscal_Add.aspx" />
+    <Content Include="Manage\Fiscal\Fiscal_List.aspx" />
+    <Content Include="Manage\Fiscal\Fiscal_Modify.aspx" />
+    <Content Include="Manage\Fiscal\Fiscal_Show.aspx" />
+    <Content Include="Manage\HSEConsulting\HSECAuditEdit.aspx" />
+    <Content Include="Manage\HSEConsulting\HSECAuditList.aspx" />
+    <Content Include="Manage\HSEConsulting\HSECAuditShow.aspx" />
+    <Content Include="Manage\HSEConsulting\HSECEdit.aspx" />
+    <Content Include="Manage\HSEConsulting\HSECList.aspx" />
+    <Content Include="Manage\HSEConsulting\HSECShow.aspx" />
+    <Content Include="Manage\ImageCodePage.aspx" />
+    <Content Include="Manage\Intellectual\IntellectualAuditList.aspx" />
+    <Content Include="Manage\Intellectual\IntellectualAuditModify.aspx" />
+    <Content Include="Manage\Intellectual\IntellectualAuditShow.aspx" />
+    <Content Include="Manage\Intellectual\Intellectual_Add.aspx" />
+    <Content Include="Manage\Intellectual\Intellectual_List.aspx" />
+    <Content Include="Manage\Intellectual\Intellectual_Modify.aspx" />
+    <Content Include="Manage\Intellectual\Intellectual_Show.aspx" />
+    <Content Include="Manage\JS\webuploader\uploader.swf" />
+    <Content Include="Manage\JS\webuploader\webuploader.min.js" />
+    <Content Include="Manage\JS\WebUpload\css\icons.psd" />
+    <Content Include="Manage\JS\WebUpload\css\progress.psd" />
+    <Content Include="Manage\JS\WebUpload\dist\README.md" />
+    <None Include="Scripts\jquery-1.7.1-vsdoc.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Manage\css\bootstrap-theme.css" />
+    <Content Include="Manage\css\bootstrap-theme.min.css" />
+    <Content Include="Manage\css\bootstrap.css" />
+    <Content Include="Manage\css\bootstrap.min.css" />
+    <Content Include="Manage\css\css.css" />
+    <Content Include="Manage\css\font.css" />
+    <Content Include="Manage\css\main.css" />
+    <Content Include="Manage\css\pagination.css" />
+    <Content Include="Manage\EnterIncubating\EIList.aspx" />
+    <Content Include="Manage\Images\beijingtu.png" />
+    <Content Include="Manage\Images\bjt.png" />
+    <Content Include="Manage\Images\fengexian.png" />
+    <Content Include="Manage\Images\tc.png" />
+    <Content Include="Manage\Index.aspx" />
+    <Content Include="Manage\JS\layindex.js" />
+    <Content Include="Manage\JS\WebUpload\css\bg.png" />
+    <Content Include="Manage\JS\WebUpload\css\expressInstall.swf" />
+    <Content Include="Manage\JS\WebUpload\css\icons.png" />
+    <Content Include="Manage\JS\WebUpload\css\image.png" />
+    <Content Include="Manage\JS\WebUpload\css\progress.png" />
+    <Content Include="Manage\JS\WebUpload\css\style.css" />
+    <Content Include="Manage\JS\WebUpload\css\success.png" />
+    <Content Include="Manage\JS\WebUpload\css\webuploader.css" />
+    <Content Include="Manage\JS\WebUpload\dist\jquery.js" />
+    <Content Include="Manage\JS\WebUpload\dist\upload.js" />
+    <Content Include="Manage\JS\WebUpload\dist\Uploader.swf" />
+    <Content Include="Manage\JS\WebUpload\dist\webuploader.css" />
+    <Content Include="Manage\JS\WebUpload\dist\webuploader.custom.js" />
+    <Content Include="Manage\JS\WebUpload\dist\webuploader.custom.min.js" />
+    <Content Include="Manage\JS\WebUpload\dist\webuploader.fis.js" />
+    <Content Include="Manage\JS\WebUpload\dist\webuploader.flashonly.js" />
+    <Content Include="Manage\JS\WebUpload\dist\webuploader.flashonly.min.js" />
+    <Content Include="Manage\JS\WebUpload\dist\webuploader.html5nodepend.js" />
+    <Content Include="Manage\JS\WebUpload\dist\webuploader.html5only.js" />
+    <Content Include="Manage\JS\WebUpload\dist\webuploader.html5only.min.js" />
+    <Content Include="Manage\JS\WebUpload\dist\webuploader.js" />
+    <Content Include="Manage\JS\WebUpload\dist\webuploader.min.js" />
+    <Content Include="Manage\JS\WebUpload\dist\webuploader.noimage.js" />
+    <Content Include="Manage\JS\WebUpload\dist\webuploader.noimage.min.js" />
+    <Content Include="Manage\JS\WebUpload\dist\webuploader.nolog.js" />
+    <Content Include="Manage\JS\WebUpload\dist\webuploader.nolog.min.js" />
+    <Content Include="Manage\JS\WebUpload\dist\webuploader.withoutimage.js" />
+    <Content Include="Manage\JS\WebUpload\dist\webuploader.withoutimage.min.js" />
+    <Content Include="Manage\Login.aspx" />
+    <Content Include="Manage\JS\artDialog\artDialog.js" />
+    <Content Include="Manage\JS\artDialog\artDialog.source.js" />
+    <Content Include="Manage\JS\artDialog\dialog-min.js" />
+    <Content Include="Manage\JS\artDialog\dialog-plus-min.js" />
+    <Content Include="Manage\JS\artDialog\iframeTools.source.js" />
+    <Content Include="Manage\JS\artDialog\jquery.artDialog.js" />
+    <Content Include="Manage\JS\artDialog\jquery.artDialog.source.js" />
+    <Content Include="Manage\JS\artDialog\skins\blue.css" />
+    <Content Include="Manage\JS\artDialog\skins\blue\bg.png" />
+    <Content Include="Manage\JS\artDialog\skins\blue\bg2.png" />
+    <Content Include="Manage\JS\artDialog\skins\blue\bg_css3.png" />
+    <Content Include="Manage\JS\artDialog\skins\blue\bg_css3_2.png" />
+    <Content Include="Manage\JS\artDialog\skins\blue\ie6\close.hover.png" />
+    <Content Include="Manage\JS\artDialog\skins\blue\ie6\close.png" />
+    <Content Include="Manage\JS\artDialog\skins\blue\ie6\e.png" />
+    <Content Include="Manage\JS\artDialog\skins\blue\ie6\n.png" />
+    <Content Include="Manage\JS\artDialog\skins\blue\ie6\ne.png" />
+    <Content Include="Manage\JS\artDialog\skins\blue\ie6\nw.png" />
+    <Content Include="Manage\JS\artDialog\skins\blue\ie6\s.png" />
+    <Content Include="Manage\JS\artDialog\skins\blue\ie6\se.png" />
+    <Content Include="Manage\JS\artDialog\skins\blue\ie6\sw.png" />
+    <Content Include="Manage\JS\artDialog\skins\blue\ie6\w.png" />
+    <Content Include="Manage\JS\artDialog\skins\icons\error.png" />
+    <Content Include="Manage\JS\artDialog\skins\icons\face-sad.png" />
+    <Content Include="Manage\JS\artDialog\skins\icons\face-smile.png" />
+    <Content Include="Manage\JS\artDialog\skins\icons\loading.gif" />
+    <Content Include="Manage\JS\artDialog\skins\icons\question.png" />
+    <Content Include="Manage\JS\artDialog\skins\icons\succeed.png" />
+    <Content Include="Manage\JS\artDialog\skins\icons\warning.png" />
+    <Content Include="Manage\JS\artDialog\ui-dialog.css" />
+    <Content Include="Manage\JS\common.js" />
+    <Content Include="Manage\JS\FunctionJS.js" />
+    <Content Include="Manage\JS\laymain.js" />
+    <Content Include="Manage\JS\uploader.js" />
+    <Content Include="Manage\Management\Management_Add.aspx" />
+    <Content Include="Manage\Management\Management_List.aspx" />
+    <Content Include="Manage\Management\Management_Modify.aspx" />
+    <Content Include="Manage\Management\Management_Show.aspx" />
+    <Content Include="Manage\MeetingActivity\ActiveAuditDetail.aspx" />
+    <Content Include="Manage\MeetingActivity\ActiveAuditEdit.aspx" />
+    <Content Include="Manage\MeetingActivity\ActiveAuditList.aspx" />
+    <Content Include="Manage\MeetingActivity\ActiveDetail.aspx" />
+    <Content Include="Manage\MeetingActivity\ActiveEdit.aspx" />
+    <Content Include="Manage\MeetingActivity\ActiveList.aspx" />
+    <Content Include="Manage\Organization\OrganizationEdit.aspx" />
+    <Content Include="Manage\Organization\OrganizationList.aspx" />
+    <Content Include="Manage\Policy\PolicySearch_List.aspx" />
+    <Content Include="Manage\Policy\Policy_Show.aspx" />
+    <Content Include="Manage\ProjectFinancing\ProjectFinancingListPublish.aspx" />
+    <Content Include="Manage\ProjectFinancing\ProjectFinancingModifyPublish.aspx" />
+    <Content Include="Manage\ProjectFinancing\ProjectFinancingShowPublish.aspx" />
+    <Content Include="Manage\ProjectFinancing\ProjectFinancingAddPublish.aspx" />
+    <Content Include="Manage\ProjectFinancing\ProjectFinancing_List.aspx" />
+    <Content Include="Manage\ProjectFinancing\ProjectFinancing_Modify.aspx" />
+    <Content Include="Manage\ProjectFinancing\ProjectFinancing_Show.aspx" />
+    <Content Include="Manage\Roadshow\RoadshowAuditList.aspx" />
+    <Content Include="Manage\Roadshow\RoadshowAuditModify.aspx" />
+    <Content Include="Manage\Roadshow\RoadshowAuditShow.aspx" />
+    <Content Include="Manage\Roadshow\Roadshow_Add.aspx" />
+    <Content Include="Manage\Roadshow\Roadshow_List.aspx" />
+    <Content Include="Manage\Roadshow\Roadshow_Modify.aspx" />
+    <Content Include="Manage\Roadshow\Roadshow_Show.aspx" />
+    <Content Include="Manage\Settings\MailTemplateEdit.aspx" />
+    <Content Include="Manage\Settings\MailTemplateList.aspx" />
+    <Content Include="Manage\Settings\NavEdit.aspx" />
+    <Content Include="Manage\Settings\NavList.aspx" />
+    <Content Include="Manage\Settings\SysConfig.aspx" />
+    <Content Include="Manage\skin\default\logo.jpg" />
+    <Content Include="Manage\SoftConsultingS\SCSAuditEdit.aspx" />
+    <Content Include="Manage\SoftConsultingS\SCSAuditList.aspx" />
+    <Content Include="Manage\SoftConsultingS\SCSAuditShow.aspx" />
+    <Content Include="Manage\SoftConsultingS\SCSEdit.aspx" />
+    <Content Include="Manage\SoftConsultingS\SCSList.aspx" />
+    <Content Include="Manage\SoftConsultingS\SCSShow.aspx" />
+    <Content Include="Manage\SoftwareService\SSAuditDetail.aspx" />
+    <Content Include="Manage\SoftwareService\SSAuditEdit.aspx" />
+    <Content Include="Manage\SoftwareService\SSAuditList.aspx" />
+    <Content Include="Manage\SoftwareService\SSDetail.aspx" />
+    <Content Include="Manage\SoftwareService\SSEdit.aspx" />
+    <Content Include="Manage\SoftwareService\SSList.aspx" />
+    <Content Include="Manage\TalentService\TalentServiceAuditEdit.aspx" />
+    <Content Include="Manage\TalentService\TalentServiceAuditList.aspx" />
+    <Content Include="Manage\TalentService\TalentServiceAuditModify.aspx" />
+    <Content Include="Manage\TalentService\TalentServiceAuditShow.aspx" />
+    <Content Include="Manage\TechnicalService\TechnicalServiceAuditList.aspx" />
+    <Content Include="Manage\TechnicalService\TechnicalServiceAuditModify.aspx" />
+    <Content Include="Manage\TechnicalService\TechnicalServiceAuditShow.aspx" />
+    <Content Include="Manage\UserManage\UserEdit.aspx" />
+    <Content Include="Manage\UserManage\UserList.aspx" />
+    <Content Include="Manage\skin\base.css" />
+    <Content Include="Manage\skin\default\nav\home.png" />
+    <Content Include="Manage\skin\default\nav\sys.png" />
+    <Content Include="Manage\skin\default\nav\user.png" />
+    <Content Include="Manage\skin\default\skin_icons.png" />
+    <Content Include="Manage\skin\default\style.css" />
+    <Content Include="Manage\skin\default\valid_icons.png" />
+    <Content Include="Manage\skin\layout.css" />
+    <Content Include="Manage\SysManage\ManagerEdit.aspx" />
+    <Content Include="Manage\SysManage\ManagerList.aspx" />
+    <Content Include="Manage\SysManage\ManagerLog.aspx" />
+    <Content Include="Manage\SysManage\ManagerPassword.aspx" />
+    <Content Include="Manage\SysManage\RoleEdit.aspx" />
+    <Content Include="Manage\SysManage\RoleList.aspx" />
+    <Content Include="Manage\TalentService\TalentService_Add.aspx" />
+    <Content Include="Manage\TalentService\TalentService_List.aspx" />
+    <Content Include="Manage\TalentService\TalentService_Modify.aspx" />
+    <Content Include="Manage\TalentService\TalentService_Show.aspx" />
+    <Content Include="Manage\TechnicalInformation\Examine.aspx" />
+    <Content Include="Manage\TechnicalService\TechnicalService_Add.aspx" />
+    <Content Include="Manage\TechnicalService\TechnicalService_List.aspx" />
+    <Content Include="Manage\TechnicalService\TechnicalService_Modify.aspx" />
+    <Content Include="Manage\TechnicalService\TechnicalService_Show.aspx" />
+    <Content Include="Manage\UserManage\UserLog.aspx" />
+    <Content Include="My97DatePicker\calendar.js" />
+    <Content Include="My97DatePicker\lang\en.js" />
+    <Content Include="My97DatePicker\lang\zh-cn.js" />
+    <Content Include="My97DatePicker\lang\zh-tw.js" />
+    <Content Include="My97DatePicker\skin\datePicker.gif" />
+    <Content Include="My97DatePicker\skin\default\datepicker.css" />
+    <Content Include="My97DatePicker\skin\default\img.gif" />
+    <Content Include="My97DatePicker\skin\WdatePicker.css" />
+    <Content Include="My97DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="My97DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="My97DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="My97DatePicker\WdatePicker.js" />
+    <Content Include="My97DatePicker\开发包\lang\en.js" />
+    <Content Include="My97DatePicker\开发包\lang\zh-cn.js" />
+    <Content Include="My97DatePicker\开发包\lang\zh-tw.js" />
+    <Content Include="My97DatePicker\开发包\readme.txt" />
+    <Content Include="My97DatePicker\开发包\skin\datePicker.gif" />
+    <Content Include="My97DatePicker\开发包\skin\default\datepicker.css" />
+    <Content Include="My97DatePicker\开发包\skin\default\img.gif" />
+    <Content Include="My97DatePicker\开发包\skin\WdatePicker.css" />
+    <Content Include="My97DatePicker\开发包\skin\whyGreen\bg.jpg" />
+    <Content Include="My97DatePicker\开发包\skin\whyGreen\datepicker.css" />
+    <Content Include="My97DatePicker\开发包\skin\whyGreen\img.gif" />
+    <Content Include="Scripts\css\bootstrap.css" />
+    <Content Include="Scripts\css\swipe.css" />
+    <Content Include="Scripts\datepicker\calendar.js" />
+    <Content Include="Scripts\datepicker\css\jquery.dateselect.css" />
+    <Content Include="Scripts\datepicker\js\jquery-1.12.3.min.js" />
+    <Content Include="Scripts\datepicker\js\jquery.dateselect.js" />
+    <Content Include="Scripts\datepicker\js\jquery.dateselect.min.js" />
+    <Content Include="Scripts\datepicker\js\jquery.mousewheel.js" />
+    <Content Include="Scripts\datepicker\lang\en.js" />
+    <Content Include="Scripts\datepicker\lang\zh-cn.js" />
+    <Content Include="Scripts\datepicker\lang\zh-tw.js" />
+    <Content Include="Scripts\datepicker\skin\datePicker.gif" />
+    <Content Include="Scripts\datepicker\skin\default\datepicker.css" />
+    <Content Include="Scripts\datepicker\skin\default\img.gif" />
+    <Content Include="Scripts\datepicker\skin\WdatePicker.css" />
+    <Content Include="Scripts\datepicker\skin\whyGreen\bg.jpg" />
+    <Content Include="Scripts\datepicker\skin\whyGreen\datepicker.css" />
+    <Content Include="Scripts\datepicker\skin\whyGreen\img.gif" />
+    <Content Include="Scripts\datepicker\WdatePicker.js" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\jquery-3.1.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
+    <Content Include="Scripts\jquery\jquery-1.11.2.min.js" />
+    <Content Include="Scripts\jquery\jquery.form.min.js" />
+    <Content Include="Scripts\jquery\jquery.jcrop.min.js" />
+    <Content Include="Scripts\jquery\jquery.jqzoom.js" />
+    <Content Include="Scripts\jquery\jquery.lazyload.min.js" />
+    <Content Include="Scripts\jquery\jquery.nicescroll.js" />
+    <Content Include="Scripts\jquery\jquery.pagination.js" />
+    <Content Include="Scripts\jquery\PCASClass.js" />
+    <Content Include="Scripts\jquery\Validform_v5.3.2_min.js" />
+    <Content Include="Scripts\js\ajaxfileupload.js" />
+    <Content Include="Scripts\js\bootstrap.min.js" />
+    <Content Include="Scripts\js\swipe.js" />
+    <Content Include="Scripts\js\swipe.min.js" />
+    <Content Include="Scripts\kindeditor-4.1.7\asp.net\bin\LitJSON.dll" />
+    <Content Include="Scripts\kindeditor-4.1.7\asp.net\demo.aspx" />
+    <Content Include="Scripts\kindeditor-4.1.7\asp.net\README.txt" />
+    <Content Include="Scripts\kindeditor-4.1.7\asp\demo.asp" />
+    <Content Include="Scripts\kindeditor-4.1.7\asp\file_manager_json.asp" />
+    <Content Include="Scripts\kindeditor-4.1.7\asp\JSON_2.0.4.asp" />
+    <Content Include="Scripts\kindeditor-4.1.7\asp\UpLoad_Class.asp" />
+    <Content Include="Scripts\kindeditor-4.1.7\asp\upload_json.asp" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\auto-height.html" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\colorpicker.html" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\custom-plugin.html" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\custom-theme.html" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\default.html" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\dialog.html" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\dynamic-load.html" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\file-dialog.html" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\file-manager.html" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\filter-mode.html" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\image-dialog.html" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\index.css" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\index.html" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\jquery-ui.html" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\jquery-ui\css\smoothness\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\jquery-ui\css\smoothness\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\jquery-ui\css\smoothness\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\jquery-ui\css\smoothness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\jquery-ui\css\smoothness\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\jquery-ui\css\smoothness\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\jquery-ui\css\smoothness\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\jquery-ui\css\smoothness\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\jquery-ui\css\smoothness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\jquery-ui\css\smoothness\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\jquery-ui\css\smoothness\images\ui-icons_454545_256x240.png" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\jquery-ui\css\smoothness\images\ui-icons_888888_256x240.png" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\jquery-ui\css\smoothness\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\jquery-ui\css\smoothness\jquery-ui-1.9.2.custom.css" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\jquery-ui\css\smoothness\jquery-ui-1.9.2.custom.min.css" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\jquery-ui\js\jquery-ui-1.9.2.custom.js" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\jquery-ui\js\jquery-ui-1.9.2.custom.min.js" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\jquery.html" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\jquery.js" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\multi-image-dialog.html" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\multi-language.html" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\newline.html" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\node.html" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\paste-type.html" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\qqstyle.html" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\readonly.html" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\simple.html" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\uploadbutton.html" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\url-type.html" />
+    <Content Include="Scripts\kindeditor-4.1.7\examples\word-count.html" />
+    <Content Include="Scripts\kindeditor-4.1.7\jsp\lib\commons-fileupload-1.2.1.jar" />
+    <Content Include="Scripts\kindeditor-4.1.7\jsp\lib\commons-io-1.4.jar" />
+    <Content Include="Scripts\kindeditor-4.1.7\jsp\lib\json_simple-1.1.jar" />
+    <Content Include="Scripts\kindeditor-4.1.7\jsp\README.txt" />
+    <Content Include="Scripts\kindeditor-4.1.7\kindeditor-all-min.js" />
+    <Content Include="Scripts\kindeditor-4.1.7\kindeditor-all.js" />
+    <Content Include="Scripts\kindeditor-4.1.7\kindeditor-min.js" />
+    <Content Include="Scripts\kindeditor-4.1.7\kindeditor.js" />
+    <Content Include="Scripts\kindeditor-4.1.7\lang\ar.js" />
+    <Content Include="Scripts\kindeditor-4.1.7\lang\en.js" />
+    <Content Include="Scripts\kindeditor-4.1.7\lang\ko.js" />
+    <Content Include="Scripts\kindeditor-4.1.7\lang\zh_CN.js" />
+    <Content Include="Scripts\kindeditor-4.1.7\lang\zh_TW.js" />
+    <Content Include="Scripts\kindeditor-4.1.7\license.txt" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\anchor\anchor.js" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\autoheight\autoheight.js" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\baidumap\baidumap.js" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\baidumap\index.html" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\baidumap\map.html" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\clearhtml\clearhtml.js" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\code\code.js" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\code\prettify.css" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\code\prettify.js" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\emoticons.js" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\0.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\1.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\10.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\100.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\101.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\102.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\103.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\104.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\105.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\106.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\107.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\108.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\109.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\11.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\110.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\111.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\112.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\113.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\114.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\115.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\116.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\117.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\118.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\119.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\12.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\120.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\121.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\122.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\123.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\124.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\125.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\126.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\127.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\128.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\129.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\13.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\130.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\131.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\132.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\133.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\134.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\14.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\15.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\16.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\17.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\18.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\19.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\2.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\20.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\21.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\22.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\23.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\24.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\25.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\26.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\27.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\28.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\29.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\3.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\30.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\31.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\32.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\33.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\34.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\35.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\36.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\37.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\38.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\39.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\4.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\40.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\41.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\42.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\43.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\44.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\45.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\46.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\47.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\48.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\49.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\5.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\50.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\51.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\52.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\53.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\54.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\55.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\56.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\57.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\58.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\59.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\6.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\60.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\61.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\62.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\63.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\64.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\65.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\66.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\67.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\68.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\69.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\7.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\70.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\71.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\72.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\73.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\74.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\75.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\76.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\77.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\78.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\79.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\8.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\80.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\81.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\82.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\83.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\84.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\85.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\86.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\87.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\88.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\89.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\9.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\90.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\91.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\92.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\93.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\94.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\95.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\96.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\97.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\98.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\99.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\emoticons\images\static.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\filemanager\filemanager.js" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\filemanager\images\file-16.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\filemanager\images\file-64.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\filemanager\images\folder-16.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\filemanager\images\folder-64.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\filemanager\images\go-up.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\flash\flash.js" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\image\image.js" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\image\images\align_left.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\image\images\align_right.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\image\images\align_top.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\image\images\refresh.png" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\insertfile\insertfile.js" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\lineheight\lineheight.js" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\link\link.js" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\map\map.html" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\map\map.js" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\media\media.js" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\multiimage\images\image.png" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\multiimage\images\select-files-en.png" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\multiimage\images\select-files-zh_CN.png" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\multiimage\images\swfupload.swf" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\multiimage\multiimage.js" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\pagebreak\pagebreak.js" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\plainpaste\plainpaste.js" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\preview\preview.js" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\quickformat\quickformat.js" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\table\table.js" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\template\html\1.html" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\template\html\2.html" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\template\html\3.html" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\template\template.js" />
+    <Content Include="Scripts\kindeditor-4.1.7\plugins\wordpaste\wordpaste.js" />
+    <Content Include="Scripts\kindeditor-4.1.7\themes\common\anchor.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\themes\common\blank.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\themes\common\flash.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\themes\common\loading.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\themes\common\media.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\themes\common\rm.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\themes\default\background.png" />
+    <Content Include="Scripts\kindeditor-4.1.7\themes\default\default.css" />
+    <Content Include="Scripts\kindeditor-4.1.7\themes\default\default.png" />
+    <Content Include="Scripts\kindeditor-4.1.7\themes\qq\editor.gif" />
+    <Content Include="Scripts\kindeditor-4.1.7\themes\qq\qq.css" />
+    <Content Include="Scripts\kindeditor-4.1.7\themes\simple\simple.css" />
+    <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="Web\skin_v2\CssF\css\base.css" />
+    <Content Include="Web\skin_v2\CssF\css\bootstrap.min.css" />
+    <Content Include="Web\skin_v2\CssF\css\font-awesome.min.css" />
+    <Content Include="Web\skin_v2\CssF\css\global.css" />
+    <Content Include="Web\skin_v2\CssF\css\page.css" />
+    <Content Include="Web\skin_v2\CssF\css\responsive.min.css" />
+    <Content Include="Web\skin_v2\CssF\css\topic.css" />
+    <Content Include="Web\skin_v2\CssF\JQpage\jquery.pagination.js" />
+    <Content Include="Web\skin_v2\CssF\js\base.js" />
+    <Content Include="Web\skin_v2\CssF\js\bootstrap.min.js" />
+    <Content Include="Web\skin_v2\CssF\js\global.js" />
+    <Content Include="Web\skin_v2\CssF\js\jquery.js" />
+    <Content Include="Web\skin_v2\CssF\js\niuge.confirm.js" />
+    <Content Include="Web\skin_v2\CssF\js\niuge.fromat_time.js" />
+    <Content Include="Web\skin_v2\CssF\js\responsive.min.js" />
+    <Content Include="Web\skin_v2\CssF\umeditor\editor_api.js" />
+    <Content Include="Web\skin_v2\CssF\umeditor\umeditor.config.js" />
+    <Content Include="Ueditor\dialogs\anchor\anchor.html" />
+    <Content Include="Ueditor\dialogs\attachment\attachment.css" />
+    <Content Include="Ueditor\dialogs\attachment\attachment.html" />
+    <Content Include="Ueditor\dialogs\attachment\attachment.js" />
+    <Content Include="Ueditor\dialogs\attachment\fileTypeImages\icon_chm.gif" />
+    <Content Include="Ueditor\dialogs\attachment\fileTypeImages\icon_default.png" />
+    <Content Include="Ueditor\dialogs\attachment\fileTypeImages\icon_doc.gif" />
+    <Content Include="Ueditor\dialogs\attachment\fileTypeImages\icon_exe.gif" />
+    <Content Include="Ueditor\dialogs\attachment\fileTypeImages\icon_jpg.gif" />
+    <Content Include="Ueditor\dialogs\attachment\fileTypeImages\icon_mp3.gif" />
+    <Content Include="Ueditor\dialogs\attachment\fileTypeImages\icon_mv.gif" />
+    <Content Include="Ueditor\dialogs\attachment\fileTypeImages\icon_pdf.gif" />
+    <Content Include="Ueditor\dialogs\attachment\fileTypeImages\icon_ppt.gif" />
+    <Content Include="Ueditor\dialogs\attachment\fileTypeImages\icon_psd.gif" />
+    <Content Include="Ueditor\dialogs\attachment\fileTypeImages\icon_rar.gif" />
+    <Content Include="Ueditor\dialogs\attachment\fileTypeImages\icon_txt.gif" />
+    <Content Include="Ueditor\dialogs\attachment\fileTypeImages\icon_xls.gif" />
+    <Content Include="Ueditor\dialogs\attachment\images\alignicon.gif" />
+    <Content Include="Ueditor\dialogs\attachment\images\alignicon.png" />
+    <Content Include="Ueditor\dialogs\attachment\images\bg.png" />
+    <Content Include="Ueditor\dialogs\attachment\images\file-icons.gif" />
+    <Content Include="Ueditor\dialogs\attachment\images\file-icons.png" />
+    <Content Include="Ueditor\dialogs\attachment\images\icons.gif" />
+    <Content Include="Ueditor\dialogs\attachment\images\icons.png" />
+    <Content Include="Ueditor\dialogs\attachment\images\image.png" />
+    <Content Include="Ueditor\dialogs\attachment\images\progress.png" />
+    <Content Include="Ueditor\dialogs\attachment\images\success.gif" />
+    <Content Include="Ueditor\dialogs\attachment\images\success.png" />
+    <Content Include="Ueditor\dialogs\background\background.css" />
+    <Content Include="Ueditor\dialogs\background\background.html" />
+    <Content Include="Ueditor\dialogs\background\background.js" />
+    <Content Include="Ueditor\dialogs\background\images\bg.png" />
+    <Content Include="Ueditor\dialogs\background\images\success.png" />
+    <Content Include="Ueditor\dialogs\charts\chart.config.js" />
+    <Content Include="Ueditor\dialogs\charts\charts.css" />
+    <Content Include="Ueditor\dialogs\charts\charts.html" />
+    <Content Include="Ueditor\dialogs\charts\charts.js" />
+    <Content Include="Ueditor\dialogs\charts\images\charts0.png" />
+    <Content Include="Ueditor\dialogs\charts\images\charts1.png" />
+    <Content Include="Ueditor\dialogs\charts\images\charts2.png" />
+    <Content Include="Ueditor\dialogs\charts\images\charts3.png" />
+    <Content Include="Ueditor\dialogs\charts\images\charts4.png" />
+    <Content Include="Ueditor\dialogs\charts\images\charts5.png" />
+    <Content Include="Ueditor\dialogs\emotion\emotion.css" />
+    <Content Include="Ueditor\dialogs\emotion\emotion.html" />
+    <Content Include="Ueditor\dialogs\emotion\emotion.js" />
+    <Content Include="Ueditor\dialogs\emotion\images\0.gif" />
+    <Content Include="Ueditor\dialogs\emotion\images\bface.gif" />
+    <Content Include="Ueditor\dialogs\emotion\images\cface.gif" />
+    <Content Include="Ueditor\dialogs\emotion\images\fface.gif" />
+    <Content Include="Ueditor\dialogs\emotion\images\jxface2.gif" />
+    <Content Include="Ueditor\dialogs\emotion\images\neweditor-tab-bg.png" />
+    <Content Include="Ueditor\dialogs\emotion\images\tface.gif" />
+    <Content Include="Ueditor\dialogs\emotion\images\wface.gif" />
+    <Content Include="Ueditor\dialogs\emotion\images\yface.gif" />
+    <Content Include="Ueditor\dialogs\gmap\gmap.html" />
+    <Content Include="Ueditor\dialogs\help\help.css" />
+    <Content Include="Ueditor\dialogs\help\help.html" />
+    <Content Include="Ueditor\dialogs\help\help.js" />
+    <Content Include="Ueditor\dialogs\image\image.css" />
+    <Content Include="Ueditor\dialogs\image\image.html" />
+    <Content Include="Ueditor\dialogs\image\image.js" />
+    <Content Include="Ueditor\dialogs\image\images\alignicon.jpg" />
+    <Content Include="Ueditor\dialogs\image\images\bg.png" />
+    <Content Include="Ueditor\dialogs\image\images\icons.gif" />
+    <Content Include="Ueditor\dialogs\image\images\icons.png" />
+    <Content Include="Ueditor\dialogs\image\images\image.png" />
+    <Content Include="Ueditor\dialogs\image\images\progress.png" />
+    <Content Include="Ueditor\dialogs\image\images\success.gif" />
+    <Content Include="Ueditor\dialogs\image\images\success.png" />
+    <Content Include="Ueditor\dialogs\insertframe\insertframe.html" />
+    <Content Include="Ueditor\dialogs\internal.js" />
+    <Content Include="Ueditor\dialogs\link\link.html" />
+    <Content Include="Ueditor\dialogs\map\map.html" />
+    <Content Include="Ueditor\dialogs\map\show.html" />
+    <Content Include="Ueditor\dialogs\music\music.css" />
+    <Content Include="Ueditor\dialogs\music\music.html" />
+    <Content Include="Ueditor\dialogs\music\music.js" />
+    <Content Include="Ueditor\dialogs\preview\preview.html" />
+    <Content Include="Ueditor\dialogs\scrawl\images\addimg.png" />
+    <Content Include="Ueditor\dialogs\scrawl\images\brush.png" />
+    <Content Include="Ueditor\dialogs\scrawl\images\delimg.png" />
+    <Content Include="Ueditor\dialogs\scrawl\images\delimgH.png" />
+    <Content Include="Ueditor\dialogs\scrawl\images\empty.png" />
+    <Content Include="Ueditor\dialogs\scrawl\images\emptyH.png" />
+    <Content Include="Ueditor\dialogs\scrawl\images\eraser.png" />
+    <Content Include="Ueditor\dialogs\scrawl\images\redo.png" />
+    <Content Include="Ueditor\dialogs\scrawl\images\redoH.png" />
+    <Content Include="Ueditor\dialogs\scrawl\images\scale.png" />
+    <Content Include="Ueditor\dialogs\scrawl\images\scaleH.png" />
+    <Content Include="Ueditor\dialogs\scrawl\images\size.png" />
+    <Content Include="Ueditor\dialogs\scrawl\images\undo.png" />
+    <Content Include="Ueditor\dialogs\scrawl\images\undoH.png" />
+    <Content Include="Ueditor\dialogs\scrawl\scrawl.css" />
+    <Content Include="Ueditor\dialogs\scrawl\scrawl.html" />
+    <Content Include="Ueditor\dialogs\scrawl\scrawl.js" />
+    <Content Include="Ueditor\dialogs\searchreplace\searchreplace.html" />
+    <Content Include="Ueditor\dialogs\searchreplace\searchreplace.js" />
+    <Content Include="Ueditor\dialogs\snapscreen\snapscreen.html" />
+    <Content Include="Ueditor\dialogs\spechars\spechars.html" />
+    <Content Include="Ueditor\dialogs\spechars\spechars.js" />
+    <Content Include="Ueditor\dialogs\table\dragicon.png" />
+    <Content Include="Ueditor\dialogs\table\edittable.css" />
+    <Content Include="Ueditor\dialogs\table\edittable.html" />
+    <Content Include="Ueditor\dialogs\table\edittable.js" />
+    <Content Include="Ueditor\dialogs\table\edittd.html" />
+    <Content Include="Ueditor\dialogs\table\edittip.html" />
+    <Content Include="Ueditor\dialogs\template\config.js" />
+    <Content Include="Ueditor\dialogs\template\images\bg.gif" />
+    <Content Include="Ueditor\dialogs\template\images\pre0.png" />
+    <Content Include="Ueditor\dialogs\template\images\pre1.png" />
+    <Content Include="Ueditor\dialogs\template\images\pre2.png" />
+    <Content Include="Ueditor\dialogs\template\images\pre3.png" />
+    <Content Include="Ueditor\dialogs\template\images\pre4.png" />
+    <Content Include="Ueditor\dialogs\template\template.css" />
+    <Content Include="Ueditor\dialogs\template\template.html" />
+    <Content Include="Ueditor\dialogs\template\template.js" />
+    <Content Include="Ueditor\dialogs\video\images\bg.png" />
+    <Content Include="Ueditor\dialogs\video\images\center_focus.jpg" />
+    <Content Include="Ueditor\dialogs\video\images\file-icons.gif" />
+    <Content Include="Ueditor\dialogs\video\images\file-icons.png" />
+    <Content Include="Ueditor\dialogs\video\images\icons.gif" />
+    <Content Include="Ueditor\dialogs\video\images\icons.png" />
+    <Content Include="Ueditor\dialogs\video\images\image.png" />
+    <Content Include="Ueditor\dialogs\video\images\left_focus.jpg" />
+    <Content Include="Ueditor\dialogs\video\images\none_focus.jpg" />
+    <Content Include="Ueditor\dialogs\video\images\progress.png" />
+    <Content Include="Ueditor\dialogs\video\images\right_focus.jpg" />
+    <Content Include="Ueditor\dialogs\video\images\success.gif" />
+    <Content Include="Ueditor\dialogs\video\images\success.png" />
+    <Content Include="Ueditor\dialogs\video\video.css" />
+    <Content Include="Ueditor\dialogs\video\video.html" />
+    <Content Include="Ueditor\dialogs\video\video.js" />
+    <Content Include="Ueditor\dialogs\webapp\webapp.html" />
+    <Content Include="Ueditor\dialogs\wordimage\fClipboard_ueditor.swf" />
+    <Content Include="Ueditor\dialogs\wordimage\imageUploader.swf" />
+    <Content Include="Ueditor\dialogs\wordimage\tangram.js" />
+    <Content Include="Ueditor\dialogs\wordimage\wordimage.html" />
+    <Content Include="Ueditor\dialogs\wordimage\wordimage.js" />
+    <Content Include="Ueditor\index.html" />
+    <Content Include="Ueditor\lang\en\en.js" />
+    <Content Include="Ueditor\lang\en\images\addimage.png" />
+    <Content Include="Ueditor\lang\en\images\alldeletebtnhoverskin.png" />
+    <Content Include="Ueditor\lang\en\images\alldeletebtnupskin.png" />
+    <Content Include="Ueditor\lang\en\images\background.png" />
+    <Content Include="Ueditor\lang\en\images\button.png" />
+    <Content Include="Ueditor\lang\en\images\copy.png" />
+    <Content Include="Ueditor\lang\en\images\deletedisable.png" />
+    <Content Include="Ueditor\lang\en\images\deleteenable.png" />
+    <Content Include="Ueditor\lang\en\images\listbackground.png" />
+    <Content Include="Ueditor\lang\en\images\localimage.png" />
+    <Content Include="Ueditor\lang\en\images\music.png" />
+    <Content Include="Ueditor\lang\en\images\rotateleftdisable.png" />
+    <Content Include="Ueditor\lang\en\images\rotateleftenable.png" />
+    <Content Include="Ueditor\lang\en\images\rotaterightdisable.png" />
+    <Content Include="Ueditor\lang\en\images\rotaterightenable.png" />
+    <Content Include="Ueditor\lang\en\images\upload.png" />
+    <Content Include="Ueditor\lang\zh-cn\images\copy.png" />
+    <Content Include="Ueditor\lang\zh-cn\images\localimage.png" />
+    <Content Include="Ueditor\lang\zh-cn\images\music.png" />
+    <Content Include="Ueditor\lang\zh-cn\images\upload.png" />
+    <Content Include="Ueditor\lang\zh-cn\zh-cn.js" />
+    <Content Include="Ueditor\net\Bin\Newtonsoft.Json.dll" />
+    <Content Include="Ueditor\net\Bin\Newtonsoft.Json.pdb" />
+    <Content Include="Ueditor\net\Bin\Newtonsoft.Json.xml" />
+    <Content Include="Ueditor\net\net.sln" />
+    <Content Include="Ueditor\net\upload\image\20170215\6362276902028883773445203.jpg" />
+    <Content Include="Ueditor\net\upload\image\20170215\6362277031148168979343644.jpg" />
+    <Content Include="Ueditor\net\upload\image\20170215\6362277031153369275329552.jpg" />
+    <Content Include="Ueditor\net\upload\image\20170215\6362277031155569398558797.jpg" />
+    <Content Include="Ueditor\net\upload\image\20170215\6362277514395809152775319.jpg" />
+    <Content Include="Ueditor\net\upload\image\20170216\6362284985302993562391728.jpg" />
+    <Content Include="Ueditor\net\upload\image\20170216\6362285031605041886923478.jpg" />
+    <Content Include="Ueditor\net\upload\image\20170216\6362285413757299742985320.jpg" />
+    <Content Include="Ueditor\net\upload\image\20170216\6362285482852051742941149.png" />
+    <Content Include="Ueditor\net\upload\image\20170216\6362285485124481711556600.png" />
+    <Content Include="Ueditor\net\upload\image\20170216\6362285485708515123249392.png" />
+    <Content Include="Ueditor\net\upload\image\20170216\6362285494620824878952708.jpg" />
+    <Content Include="Ueditor\net\upload\image\20170216\6362285495028448197093795.jpg" />
+    <Content Include="Ueditor\net\upload\image\20170216\6362285503096009637141000.jpg" />
+    <Content Include="Ueditor\net\upload\image\20170216\6362285503696343969020761.jpg" />
+    <Content Include="Ueditor\net\upload\image\20170216\6362286024353323841751918.jpg" />
+    <Content Include="Ueditor\net\upload\image\20170216\6362286025286677228103723.jpg" />
+    <Content Include="Ueditor\net\upload\image\20170216\6362286056422458092619812.png" />
+    <Content Include="Ueditor\net\upload\image\20170216\6362286056964489091613843.png" />
+    <Content Include="Ueditor\net\upload\image\20170216\6362286058145956674498661.png" />
+    <Content Include="Ueditor\net\upload\image\20170216\6362286126955492358736042.jpg" />
+    <Content Include="Ueditor\net\upload\image\20170216\6362286314260005554734097.jpg" />
+    <Content Include="Ueditor\net\upload\image\20170216\6362286365055410889688317.jpg" />
+    <Content Include="Ueditor\net\upload\image\20170216\6362286478913123173903588.jpg" />
+    <Content Include="Ueditor\net\upload\image\20170216\6362286529425312305896023.jpg" />
+    <Content Include="Ueditor\net\upload\image\20170216\6362286529854836877737403.jpg" />
+    <Content Include="Ueditor\net\upload\image\20170216\6362286534995930928320648.jpg" />
+    <Content Include="Ueditor\net\upload\image\20170216\6362286552757046802855643.jpg" />
+    <Content Include="Ueditor\net\upload\image\20170216\6362286568904370388907777.jpg" />
+    <Content Include="Ueditor\net\upload\image\20170217\6362292737237165638568632.jpg" />
+    <Content Include="Ueditor\net\upload\image\20170217\6362292743848208545213633.jpg" />
+    <Content Include="Ueditor\net\upload\image\20170217\6362292745255501405632996.jpg" />
+    <Content Include="Ueditor\net\upload\image\20170217\6362292854109826465103875.jpg" />
+    <Content Include="Ueditor\net\upload\image\20170217\6362292855741519798828539.jpg" />
+    <Content Include="Ueditor\net\upload\image\20170217\6362293753774498589411693.png" />
+    <Content Include="Ueditor\net\upload\image\20170217\6362293754185531913538688.png" />
+    <Content Include="Ueditor\net\upload\image\20170217\6362293754594085256381602.jpg" />
+    <Content Include="Ueditor\net\upload\image\20170217\6362294125742009757731218.png" />
+    <Content Include="Ueditor\net\upload\image\20170220\6362317876265543336396823.jpg" />
+    <Content Include="Ueditor\net\upload\image\20170220\6362317878970498054312145.jpg" />
+    <Content Include="Ueditor\net\upload\image\20170220\6362317879772243907269495.jpg" />
+    <Content Include="Ueditor\net\upload\image\20170220\6362317880726298473619766.png" />
+    <Content Include="Ueditor\net\upload\image\20170220\6362317881484841868176528.jpg" />
+    <Content Include="Ueditor\net\upload\image\20170220\6362320791279135479110132.png" />
+    <Content Include="Ueditor\net\upload\image\20170220\6362320909148577215763333.jpg" />
+    <Content Include="Ueditor\net\upload\image\20170220\6362321293313950217637625.jpg" />
+    <Content Include="Ueditor\net\upload\image\20170221\6362328052513505529411506.jpg" />
+    <Content Include="Ueditor\net\upload\image\20170221\6362328053044286623135550.jpg" />
+    <Content Include="Ueditor\net\upload\image\20170221\6362328073893209285201069.jpg" />
+    <Content Include="Ueditor\net\upload\image\20170221\6362328076811640885449876.jpg" />
+    <Content Include="Ueditor\net\upload\image\20170221\6362328077523247771253042.jpg" />
+    <Content Include="Ueditor\net\upload\image\20170221\6362328079952713722949149.jpg" />
+    <Content Include="Ueditor\net\upload\image\20170222\6362335600475242302154261.jpg" />
+    <Content Include="Ueditor\net\upload\image\20170222\6362335627972815072875806.jpg" />
+    <Content Include="Ueditor\themes\default\css\ueditor.css" />
+    <Content Include="Ueditor\themes\default\css\ueditor.min.css" />
+    <Content Include="Ueditor\themes\default\dialogbase.css" />
+    <Content Include="Ueditor\themes\default\images\anchor.gif" />
+    <Content Include="Ueditor\themes\default\images\arrow.png" />
+    <Content Include="Ueditor\themes\default\images\arrow_down.png" />
+    <Content Include="Ueditor\themes\default\images\arrow_up.png" />
+    <Content Include="Ueditor\themes\default\images\button-bg.gif" />
+    <Content Include="Ueditor\themes\default\images\cancelbutton.gif" />
+    <Content Include="Ueditor\themes\default\images\charts.png" />
+    <Content Include="Ueditor\themes\default\images\cursor_h.gif" />
+    <Content Include="Ueditor\themes\default\images\cursor_h.png" />
+    <Content Include="Ueditor\themes\default\images\cursor_v.gif" />
+    <Content Include="Ueditor\themes\default\images\cursor_v.png" />
+    <Content Include="Ueditor\themes\default\images\dialog-title-bg.png" />
+    <Content Include="Ueditor\themes\default\images\filescan.png" />
+    <Content Include="Ueditor\themes\default\images\highlighted.gif" />
+    <Content Include="Ueditor\themes\default\images\icons-all.gif" />
+    <Content Include="Ueditor\themes\default\images\icons.gif" />
+    <Content Include="Ueditor\themes\default\images\icons.png" />
+    <Content Include="Ueditor\themes\default\images\loaderror.png" />
+    <Content Include="Ueditor\themes\default\images\loading.gif" />
+    <Content Include="Ueditor\themes\default\images\lock.gif" />
+    <Content Include="Ueditor\themes\default\images\neweditor-tab-bg.png" />
+    <Content Include="Ueditor\themes\default\images\pagebreak.gif" />
+    <Content Include="Ueditor\themes\default\images\scale.png" />
+    <Content Include="Ueditor\themes\default\images\sortable.png" />
+    <Content Include="Ueditor\themes\default\images\spacer.gif" />
+    <Content Include="Ueditor\themes\default\images\sparator_v.png" />
+    <Content Include="Ueditor\themes\default\images\table-cell-align.png" />
+    <Content Include="Ueditor\themes\default\images\tangram-colorpicker.png" />
+    <Content Include="Ueditor\themes\default\images\toolbar_bg.png" />
+    <Content Include="Ueditor\themes\default\images\unhighlighted.gif" />
+    <Content Include="Ueditor\themes\default\images\upload.png" />
+    <Content Include="Ueditor\themes\default\images\videologo.gif" />
+    <Content Include="Ueditor\themes\default\images\word.gif" />
+    <Content Include="Ueditor\themes\default\images\wordpaste.png" />
+    <Content Include="Ueditor\themes\iframe.css" />
+    <Content Include="Ueditor\third-party\codemirror\codemirror.css" />
+    <Content Include="Ueditor\third-party\codemirror\codemirror.js" />
+    <Content Include="Ueditor\third-party\highcharts\adapters\mootools-adapter.js" />
+    <Content Include="Ueditor\third-party\highcharts\adapters\mootools-adapter.src.js" />
+    <Content Include="Ueditor\third-party\highcharts\adapters\prototype-adapter.js" />
+    <Content Include="Ueditor\third-party\highcharts\adapters\prototype-adapter.src.js" />
+    <Content Include="Ueditor\third-party\highcharts\adapters\standalone-framework.js" />
+    <Content Include="Ueditor\third-party\highcharts\adapters\standalone-framework.src.js" />
+    <Content Include="Ueditor\third-party\highcharts\highcharts-more.js" />
+    <Content Include="Ueditor\third-party\highcharts\highcharts-more.src.js" />
+    <Content Include="Ueditor\third-party\highcharts\highcharts.js" />
+    <Content Include="Ueditor\third-party\highcharts\highcharts.src.js" />
+    <Content Include="Ueditor\third-party\highcharts\modules\annotations.js" />
+    <Content Include="Ueditor\third-party\highcharts\modules\annotations.src.js" />
+    <Content Include="Ueditor\third-party\highcharts\modules\canvas-tools.js" />
+    <Content Include="Ueditor\third-party\highcharts\modules\canvas-tools.src.js" />
+    <Content Include="Ueditor\third-party\highcharts\modules\data.js" />
+    <Content Include="Ueditor\third-party\highcharts\modules\data.src.js" />
+    <Content Include="Ueditor\third-party\highcharts\modules\drilldown.js" />
+    <Content Include="Ueditor\third-party\highcharts\modules\drilldown.src.js" />
+    <Content Include="Ueditor\third-party\highcharts\modules\exporting.js" />
+    <Content Include="Ueditor\third-party\highcharts\modules\exporting.src.js" />
+    <Content Include="Ueditor\third-party\highcharts\modules\funnel.js" />
+    <Content Include="Ueditor\third-party\highcharts\modules\funnel.src.js" />
+    <Content Include="Ueditor\third-party\highcharts\modules\heatmap.js" />
+    <Content Include="Ueditor\third-party\highcharts\modules\heatmap.src.js" />
+    <Content Include="Ueditor\third-party\highcharts\modules\map.js" />
+    <Content Include="Ueditor\third-party\highcharts\modules\map.src.js" />
+    <Content Include="Ueditor\third-party\highcharts\modules\no-data-to-display.js" />
+    <Content Include="Ueditor\third-party\highcharts\modules\no-data-to-display.src.js" />
+    <Content Include="Ueditor\third-party\highcharts\themes\dark-blue.js" />
+    <Content Include="Ueditor\third-party\highcharts\themes\dark-green.js" />
+    <Content Include="Ueditor\third-party\highcharts\themes\gray.js" />
+    <Content Include="Ueditor\third-party\highcharts\themes\grid.js" />
+    <Content Include="Ueditor\third-party\highcharts\themes\skies.js" />
+    <Content Include="Ueditor\third-party\jquery-1.10.2.js" />
+    <Content Include="Ueditor\third-party\jquery-1.10.2.min.js" />
+    <Content Include="Ueditor\third-party\snapscreen\UEditorSnapscreen.exe" />
+    <Content Include="Ueditor\third-party\SyntaxHighlighter\shCore.js" />
+    <Content Include="Ueditor\third-party\SyntaxHighlighter\shCoreDefault.css" />
+    <Content Include="Ueditor\third-party\video-js\font\vjs.svg" />
+    <Content Include="Ueditor\third-party\video-js\video-js.css" />
+    <Content Include="Ueditor\third-party\video-js\video-js.min.css" />
+    <Content Include="Ueditor\third-party\video-js\video-js.swf" />
+    <Content Include="Ueditor\third-party\video-js\video.dev.js" />
+    <Content Include="Ueditor\third-party\video-js\video.js" />
+    <Content Include="Ueditor\third-party\webuploader\Uploader.swf" />
+    <Content Include="Ueditor\third-party\webuploader\webuploader.css" />
+    <Content Include="Ueditor\third-party\webuploader\webuploader.custom.js" />
+    <Content Include="Ueditor\third-party\webuploader\webuploader.custom.min.js" />
+    <Content Include="Ueditor\third-party\webuploader\webuploader.flashonly.js" />
+    <Content Include="Ueditor\third-party\webuploader\webuploader.flashonly.min.js" />
+    <Content Include="Ueditor\third-party\webuploader\webuploader.html5only.js" />
+    <Content Include="Ueditor\third-party\webuploader\webuploader.html5only.min.js" />
+    <Content Include="Ueditor\third-party\webuploader\webuploader.js" />
+    <Content Include="Ueditor\third-party\webuploader\webuploader.min.js" />
+    <Content Include="Ueditor\third-party\webuploader\webuploader.withoutimage.js" />
+    <Content Include="Ueditor\third-party\webuploader\webuploader.withoutimage.min.js" />
+    <Content Include="Ueditor\third-party\xss.min.js" />
+    <Content Include="Ueditor\third-party\zeroclipboard\ZeroClipboard.js" />
+    <Content Include="Ueditor\third-party\zeroclipboard\ZeroClipboard.min.js" />
+    <Content Include="Ueditor\third-party\zeroclipboard\ZeroClipboard.swf" />
+    <Content Include="Ueditor\ueditor.all.js" />
+    <Content Include="Ueditor\ueditor.all.min.js" />
+    <Content Include="Ueditor\ueditor.config.js" />
+    <Content Include="Ueditor\ueditor.parse.js" />
+    <Content Include="Ueditor\ueditor.parse.min.js" />
+    <Content Include="Uploadify\browse.jpg" />
+    <Content Include="Uploadify\cancel.png" />
+    <Content Include="Uploadify\expressInstall.swf" />
+    <Content Include="Uploadify\jquery-1.4.2.min.js" />
+    <Content Include="Uploadify\jquery.uploadify.v2.1.4.js" />
+    <Content Include="Uploadify\jquery.uploadify.v2.1.4.min.js" />
+    <Content Include="Uploadify\swfobject.js" />
+    <Content Include="Uploadify\uploadify.allglyphs.swf" />
+    <Content Include="Uploadify\uploadify.css" />
+    <Content Include="Uploadify\uploadify.swf" />
+    <Content Include="video\font\vjs.svg" />
+    <Content Include="video\video-js.css" />
+    <Content Include="video\video-js.min.css" />
+    <Content Include="video\video-js.swf" />
+    <Content Include="video\video.dev.js" />
+    <Content Include="video\video.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Manage\Notice\Notice_Add.aspx" />
+    <Content Include="Manage\Notice\Notice_List.aspx" />
+    <Content Include="Manage\Notice\Notice_Modify.aspx" />
+    <Content Include="Web\Ariticle\Ariticle_List.aspx" />
+    <Content Include="Web\Ariticle\Ariticle_Show.aspx" />
+    <Content Include="Web\CSS\075164029c450604c632bc43bf813389.css" />
+    <Content Include="Web\CSS\2e48e8de0c96d4c87c57f954eb4d94c6.css" />
+    <Content Include="Web\CSS\8c06a6ae51572b94394358b86d29a185.css" />
+    <Content Include="Web\CSS\avatar\239.png" />
+    <Content Include="Web\CSS\bootstrap.min.css" />
+    <Content Include="Web\CSS\dizhi.png" />
+    <Content Include="Web\CSS\ECss\base.css" />
+    <Content Include="Web\CSS\ECss\bootstrap.min.css" />
+    <Content Include="Web\CSS\ECss\font-awesome.min.css" />
+    <Content Include="Web\CSS\ECss\foundation-datepicker.css" />
+    <Content Include="Web\CSS\ECss\global.css" />
+    <Content Include="Web\CSS\ECss\page.css" />
+    <Content Include="Web\CSS\ECss\responsive.min.css" />
+    <Content Include="Web\CSS\ECss\space.css" />
+    <Content Include="Web\CSS\EImg\1460302531807418.jpg" />
+    <Content Include="Web\CSS\EImg\1460302561433899.jpg" />
+    <Content Include="Web\CSS\EImg\1460302584541151.jpg" />
+    <Content Include="Web\CSS\EImg\1460302599556510.jpg" />
+    <Content Include="Web\CSS\EImg\1460864413512842.jpg" />
+    <Content Include="Web\CSS\EImg\bodyBg.jpg" />
+    <Content Include="Web\CSS\EImg\bodyBg2.jpg" />
+    <Content Include="Web\CSS\EImg\bodyBg3.jpg" />
+    <Content Include="Web\CSS\EImg\copyright_logo.png" />
+    <Content Include="Web\CSS\EImg\CustomBlackClose.gif" />
+    <Content Include="Web\CSS\EImg\CustomBlackNext.gif" />
+    <Content Include="Web\CSS\EImg\CustomBlackPrevious.gif" />
+    <Content Include="Web\CSS\EImg\ico.jpg" />
+    <Content Include="Web\CSS\EImg\icon_360.png" />
+    <Content Include="Web\CSS\EImg\icon_line_downright.png" />
+    <Content Include="Web\CSS\EImg\icon_line_topleft.png" />
+    <Content Include="Web\CSS\EImg\kv-bg.png" />
+    <Content Include="Web\CSS\EImg\kv1.jpg" />
+    <Content Include="Web\CSS\EImg\kv2.jpg" />
+    <Content Include="Web\CSS\EImg\kv3.jpg" />
+    <Content Include="Web\CSS\EImg\kv4.jpg" />
+    <Content Include="Web\CSS\EImg\logo-b.png" />
+    <Content Include="Web\CSS\EImg\logo-w.png" />
+    <Content Include="Web\CSS\EImg\marker_red_sprite.png" />
+    <Content Include="Web\CSS\EImg\weixincode.png" />
+    <Content Include="Web\CSS\EImg\入驻.png" />
+    <Content Include="Web\CSS\EImg\特色.png" />
+    <Content Include="Web\CSS\EJs\arttemplate.js" />
+    <Content Include="Web\CSS\EJs\base.js" />
+    <Content Include="Web\CSS\EJs\bootstrap.min.js" />
+    <Content Include="Web\CSS\EJs\foundation-datepicker.js" />
+    <Content Include="Web\CSS\EJs\foundation-datepicker.zh-CN.js" />
+    <Content Include="Web\CSS\EJs\function.js" />
+    <Content Include="Web\CSS\EJs\jquery.fileupload.js" />
+    <Content Include="Web\CSS\EJs\jquery.iframe-transport.js" />
+    <Content Include="Web\CSS\EJs\jquery.js" />
+    <Content Include="Web\CSS\EJs\jquery.ui.widget.js" />
+    <Content Include="Web\CSS\EJs\mediabox.js" />
+    <Content Include="Web\CSS\EJs\mootools-core.js" />
+    <Content Include="Web\CSS\EJs\niuge.confirm.js" />
+    <Content Include="Web\CSS\EJs\niuge.vform.js" />
+    <Content Include="Web\CSS\EJs\responsive.min.js" />
+    <Content Include="Web\CSS\font-awesome.min.css" />
+    <Content Include="Web\CSS\gjc.png" />
+    <Content Include="Web\CSS\Heard\base.css" />
+    <Content Include="Web\CSS\Heard\css.css" />
+    <Content Include="Web\CSS\Heard\main.css" />
+    <Content Include="Web\CSS\search.png" />
+    <Content Include="Web\CSS\Show\075164029c450604c632bc43bf813389.css" />
+    <Content Include="Web\CSS\Show\a25a1f64519e64482c550a31805c2083.css" />
+    <Content Include="Web\CSS\Show\base.css" />
+    <Content Include="Web\CSS\Show\bootstrap.css" />
+    <Content Include="Web\CSS\Show\bq.png" />
+    <Content Include="Web\CSS\Show\d041d9b77b9b2e7f292b6493d290ddb3.css" />
+    <Content Include="Web\CSS\Show\dz.png" />
+    <Content Include="Web\CSS\Show\jiathis_share.css" />
+    <Content Include="Web\CSS\Show\lx.png" />
+    <Content Include="Web\CSS\Show\share_style0_16.css" />
+    <Content Include="Web\CSS\tutor.css" />
+    <Content Include="Web\CSS\xingxing.png" />
+    <Content Include="Web\EnterIncubating\ApplyForm.aspx" />
+    <Content Include="Web\EnterIncubating\EIDetail.aspx" />
+    <Content Include="Web\EnterIncubating\EIIndex.aspx" />
+    <Content Include="Web\EnterIncubating\VisitBooking.aspx" />
+    <Content Include="Web\EnterpriseRegistration\EnterpriseRegistration_List.aspx" />
+    <Content Include="Web\EnterpriseRegistration\EnterpriseRegistration_Show.aspx" />
+    <Content Include="Web\Fiscal\Fiscal_List.aspx" />
+    <Content Include="Web\Fiscal\Fiscal_Show.aspx" />
+    <Content Include="Web\index.html" />
+    <Content Include="Web\Intellectual\Intellectual_List.aspx" />
+    <Content Include="Web\Intellectual\Intellectual_Show.aspx" />
+    <Content Include="Web\MeetingActivity\MeetingActiveDetail.aspx" />
+    <Content Include="Web\MeetingActivity\MeetingActiveList.aspx" />
+    <Content Include="Web\Notice\Notice_Show.aspx" />
+    <Content Include="Manage\TechnicalInformation\TechnicalInformation_Add.aspx" />
+    <Content Include="Manage\TechnicalInformation\TechnicalInformation_List.aspx" />
+    <Content Include="Manage\TechnicalInformation\TechnicalInformation_Modify.aspx" />
+    <Content Include="Web\PolicyHall\PHDetail.aspx" />
+    <Content Include="Web\PolicyHall\PHList.aspx" />
+    <Content Include="Web\ProjectFinancing\ProjectFinancing_List.aspx" />
+    <Content Include="Web\ProjectFinancing\ProjectFinancing_Show.aspx" />
+    <Content Include="Web\Roadshow\Roadshow_List.aspx" />
+    <Content Include="Web\Roadshow\Roadshow_Show.aspx" />
+    <Content Include="Web\Scripts\jquery-1.8.0.min.js" />
+    <Content Include="Web\Scripts\jquery.SuperSlide.2.1.1.js" />
+    <Content Include="Web\Scripts\public.js" />
+    <Content Include="Web\ServiceTerms.html" />
+    <Content Include="Web\Service\Ajax\InsertReply.aspx" />
+    <Content Include="Web\Service\ServiceMange\ServiceDetail.aspx" />
+    <Content Include="Web\Service\ServiceMange\ServiceMange.aspx" />
+    <Content Include="Web\skin_v2\css\ad.css" />
+    <Content Include="Web\skin_v2\css\base.css" />
+    <Content Include="Web\skin_v2\css\bootstrap-theme.css" />
+    <Content Include="Web\skin_v2\css\bootstrap-theme.min.css" />
+    <Content Include="Web\skin_v2\css\bootstrap.css" />
+    <Content Include="Web\skin_v2\css\bootstrap.min.css" />
+    <Content Include="Web\skin_v2\css\font-awesome.min.css" />
+    <Content Include="Web\skin_v2\css\font.css" />
+    <Content Include="Web\skin_v2\css\global.css" />
+    <Content Include="Web\skin_v2\css\index.css" />
+    <Content Include="Web\skin_v2\css\main.css" />
+    <Content Include="Web\skin_v2\css\page.css" />
+    <Content Include="Web\skin_v2\css\responsive.min.css" />
+    <Content Include="Web\skin_v2\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Web\skin_v2\images\close.gif" />
+    <Content Include="Web\skin_v2\images\max.gif" />
+    <Content Include="Web\skin_v2\images\min.gif" />
+    <Content Include="Web\skin_v2\images\title_bg.gif" />
+    <Content Include="Web\skin_v2\image\close.png" />
+    <Content Include="Web\skin_v2\image\index\4_bg.png" />
+    <Content Include="Web\skin_v2\image\index\icon_1.png" />
+    <Content Include="Web\skin_v2\image\index\icon_2.png" />
+    <Content Include="Web\skin_v2\image\index\icon_3.png" />
+    <Content Include="Web\skin_v2\image\index\kv.jpg" />
+    <Content Include="Web\skin_v2\image\logo-w.png" />
+    <Content Include="Web\skin_v2\js\ad.js" />
+    <Content Include="Web\skin_v2\js\base.js" />
+    <Content Include="Web\skin_v2\js\bootstrap.js" />
+    <Content Include="Web\skin_v2\js\bootstrap.min.js" />
+    <Content Include="Web\skin_v2\js\global.js" />
+    <Content Include="Web\skin_v2\js\index.js" />
+    <Content Include="Web\skin_v2\js\jquery.js" />
+    <Content Include="Web\skin_v2\js\jquery.min.js" />
+    <Content Include="Web\skin_v2\js\niuge.confirm.js" />
+    <Content Include="Web\skin_v2\js\npm.js" />
+    <Content Include="Web\skin_v2\js\responsive.min.js" />
+    <Content Include="Web\skin_v2\js\scroll.js" />
+    <Content Include="Web\SoftWareS\List.aspx" />
+    <Content Include="Web\SoftWareS\ShowDetail.aspx" />
+    <Content Include="Web\TalentService\TalentService_List.aspx" />
+    <Content Include="Web\TalentService\TalentService_Show.aspx" />
+    <Content Include="Web\User\css\common.css" />
+    <Content Include="Web\User\css\index.css" />
+    <Content Include="Web\User\css\member_style.css" />
+    <Content Include="Web\User\css\member_style1.css" />
+    <Content Include="Web\User\css\style.css" />
+    <Content Include="Web\User\images\icon_home.png" />
+    <Content Include="Web\User\images\sucess.png" />
+    <Content Include="Web\User\Login.aspx" />
+    <Content Include="Web\User\ModifyPassword.aspx" />
+    <Content Include="Web\User\ModifyPassword.html" />
+    <Content Include="Web\User\newLogin.aspx" />
+    <Content Include="Web\User\NewRegister.html" />
+    <Content Include="Web\User\Register.aspx" />
+    <Content Include="Web\User\resources\images\arrow-p.png" />
+    <Content Include="Web\User\resources\images\arrow.png" />
+    <Content Include="Web\User\resources\images\bg.png" />
+    <Content Include="Web\User\resources\images\btn.png" />
+    <Content Include="Web\User\resources\images\canvas-bg.png" />
+    <Content Include="Web\User\resources\images\choice.png" />
+    <Content Include="Web\User\resources\images\date.png" />
+    <Content Include="Web\User\resources\images\download.png" />
+    <Content Include="Web\User\resources\images\female-gray.png" />
+    <Content Include="Web\User\resources\images\female.png" />
+    <Content Include="Web\User\resources\images\homebg.png" />
+    <Content Include="Web\User\resources\images\icon-45.png" />
+    <Content Include="Web\User\resources\images\icon-tips.png" />
+    <Content Include="Web\User\resources\images\icon.png" />
+    <Content Include="Web\User\resources\images\img.png" />
+    <Content Include="Web\User\resources\images\loading.gif" />
+    <Content Include="Web\User\resources\images\logo-a.png" />
+    <Content Include="Web\User\resources\images\logo-gray.png" />
+    <Content Include="Web\User\resources\images\male-gray.png" />
+    <Content Include="Web\User\resources\images\male.png" />
+    <Content Include="Web\User\resources\images\menu-icon.png" />
+    <Content Include="Web\User\resources\images\not.png" />
+    <Content Include="Web\User\resources\images\sequence.gif" />
+    <Content Include="Web\User\resources\images\steps.png" />
+    <Content Include="Web\User\resources\images\subimg.png" />
+    <Content Include="Web\User\resources\images\switch.png" />
+    <Content Include="Web\User\resources\images\tbg.png" />
+    <Content Include="Web\User\resources\images\unknown-gray.png" />
+    <Content Include="Web\User\resources\images\unknown.png" />
+    <Content Include="Web\User\resources\js\DD_belatedPNG_0.0.8a-min.js" />
+    <Content Include="Web\User\resources\js\html5.js" />
+    <Content Include="Web\User\resources\js\jquery-ui-1.10.3.custom.js" />
+    <Content Include="Web\User\resources\js\jquery.cookie.js" />
+    <Content Include="Web\User\resources\js\jquery.i18n.properties-1.0.9.js" />
+    <Content Include="Web\User\resources\js\jquery.js" />
+    <Content Include="Web\User\resources\js\jquery.validate.js" />
+    <Content Include="Web\User\resources\js\md5.js" />
+    <Content Include="Web\User\resources\js\page_regist.js" />
+    <Content Include="Web\User\resources\style\style.css" />
+    <Content Include="Web\User\RetrievePassword.aspx" />
+    <Content Include="Web\User\RetrievePassword.html" />
+    <Content Include="xmlconfig\site.config" />
+    <Content Include="xmlconfig\user.config" />
+    <Content Include="WebService\ManageAjaxHandler.ashx" />
+    <Content Include="WebService\SubmitAjaxHandler.ashx" />
+    <Content Include="WebService\UploadAjaxHandler.ashx" />
+    <Content Include="WebService\UpdateHandler.ashx" />
+    <Content Include="xmlconfig\mail.config" />
+    <Content Include="WebService\Uploadify.ashx" />
+    <Content Include="Web\skin_v2\css\bootstrap-theme.css.map" />
+    <Content Include="Web\skin_v2\css\bootstrap.css.map" />
+    <Content Include="Web\skin_v2\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Web\skin_v2\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Web\skin_v2\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Web\skin_v2\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Web\skin_v2\fonts\iconfont.ttf" />
+    <Content Include="Web\CSS\Eapi\api" />
+    <Content Include="Web\CSS\Eapi\getscript" />
+    <Content Include="Web\CSS\Eapi\saved_resource" />
+    <Content Include="Web\CSS\Eapi\saved_resource%281%29" />
+    <Content Include="Web\CSS\Eapi\saved_resource%2810%29" />
+    <Content Include="Web\CSS\Eapi\saved_resource%2811%29" />
+    <Content Include="Web\CSS\Eapi\saved_resource%2812%29" />
+    <Content Include="Web\CSS\Eapi\saved_resource%2813%29" />
+    <Content Include="Web\CSS\Eapi\saved_resource%282%29" />
+    <Content Include="Web\CSS\Eapi\saved_resource%283%29" />
+    <Content Include="Web\CSS\Eapi\saved_resource%284%29" />
+    <Content Include="Web\CSS\Eapi\saved_resource%285%29" />
+    <Content Include="Web\CSS\Eapi\saved_resource%286%29" />
+    <Content Include="Web\CSS\Eapi\saved_resource%287%29" />
+    <Content Include="Web\CSS\Eapi\saved_resource%288%29" />
+    <Content Include="Web\CSS\Eapi\saved_resource%289%29" />
+    <Content Include="WebService\Regist.ashx" />
+    <Content Include="WebService\RetrievePassword.ashx" />
+    <Content Include="WebService\VerifyUsername.ashx" />
+    <Content Include="WebService\Activation.ashx" />
+    <Content Include="WebService\ModifyPassword.ashx" />
+    <Content Include="WebService\login.ashx" />
+    <Content Include="WebService\JudgeSess.ashx" />
+    <Content Include="WebService\MeetingActiveAddHandler.ashx" />
+    <Content Include="WebService\Report.ashx" />
+    <Content Include="Web\skin_v2\images\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\ShowMsgHelper.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Ariticle\AriticleAuditShow.aspx.cs">
+      <DependentUpon>AriticleAuditShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Ariticle\AriticleAuditShow.aspx.designer.cs">
+      <DependentUpon>AriticleAuditShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Ariticle\AriticleAuditList.aspx.cs">
+      <DependentUpon>AriticleAuditList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Ariticle\AriticleAuditList.aspx.designer.cs">
+      <DependentUpon>AriticleAuditList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Ariticle\AriticleAuditModify.aspx.cs">
+      <DependentUpon>AriticleAuditModify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Ariticle\AriticleAuditModify.aspx.designer.cs">
+      <DependentUpon>AriticleAuditModify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Ariticle\AriticleShow.aspx.cs">
+      <DependentUpon>AriticleShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Ariticle\AriticleShow.aspx.designer.cs">
+      <DependentUpon>AriticleShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Ariticle\Ariticle_Add.aspx.cs">
+      <DependentUpon>Ariticle_Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Ariticle\Ariticle_Add.aspx.designer.cs">
+      <DependentUpon>Ariticle_Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Ariticle\Ariticle_List.aspx.cs">
+      <DependentUpon>Ariticle_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Ariticle\Ariticle_List.aspx.designer.cs">
+      <DependentUpon>Ariticle_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Ariticle\Ariticle_Modify.aspx.cs">
+      <DependentUpon>Ariticle_Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Ariticle\Ariticle_Modify.aspx.designer.cs">
+      <DependentUpon>Ariticle_Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\BookingInfo\VisitBDetail.aspx.cs">
+      <DependentUpon>VisitBDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\BookingInfo\VisitBDetail.aspx.designer.cs">
+      <DependentUpon>VisitBDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\BookingInfo\VisitBList.aspx.cs">
+      <DependentUpon>VisitBList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\BookingInfo\VisitBList.aspx.designer.cs">
+      <DependentUpon>VisitBList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Center.aspx.cs">
+      <DependentUpon>Center.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Center.aspx.designer.cs">
+      <DependentUpon>Center.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Crawler\CrawlerEdit.aspx.cs">
+      <DependentUpon>CrawlerEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Crawler\CrawlerEdit.aspx.designer.cs">
+      <DependentUpon>CrawlerEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Crawler\CrawlerKeyEdit.aspx.cs">
+      <DependentUpon>CrawlerKeyEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Crawler\CrawlerKeyEdit.aspx.designer.cs">
+      <DependentUpon>CrawlerKeyEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Crawler\CrawlerKeyList.aspx.cs">
+      <DependentUpon>CrawlerKeyList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Crawler\CrawlerKeyList.aspx.designer.cs">
+      <DependentUpon>CrawlerKeyList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Crawler\CrawlerList.aspx.cs">
+      <DependentUpon>CrawlerList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Crawler\CrawlerList.aspx.designer.cs">
+      <DependentUpon>CrawlerList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\EnterIncubating\EIDetail.aspx.cs">
+      <DependentUpon>EIDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\EnterIncubating\EIDetail.aspx.designer.cs">
+      <DependentUpon>EIDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\EnterIncubating\EIList.aspx.cs">
+      <DependentUpon>EIList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\EnterIncubating\EIList.aspx.designer.cs">
+      <DependentUpon>EIList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\EnterpriseRegistration\EnterpriseRegistrationAuditList.aspx.cs">
+      <DependentUpon>EnterpriseRegistrationAuditList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\EnterpriseRegistration\EnterpriseRegistrationAuditList.aspx.designer.cs">
+      <DependentUpon>EnterpriseRegistrationAuditList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\EnterpriseRegistration\EnterpriseRegistrationAuditModify.aspx.cs">
+      <DependentUpon>EnterpriseRegistrationAuditModify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\EnterpriseRegistration\EnterpriseRegistrationAuditModify.aspx.designer.cs">
+      <DependentUpon>EnterpriseRegistrationAuditModify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\EnterpriseRegistration\EnterpriseRegistrationAuditShow.aspx.cs">
+      <DependentUpon>EnterpriseRegistrationAuditShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\EnterpriseRegistration\EnterpriseRegistrationAuditShow.aspx.designer.cs">
+      <DependentUpon>EnterpriseRegistrationAuditShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\EnterpriseRegistration\EnterpriseRegistration_Add.aspx.cs">
+      <DependentUpon>EnterpriseRegistration_Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\EnterpriseRegistration\EnterpriseRegistration_Add.aspx.designer.cs">
+      <DependentUpon>EnterpriseRegistration_Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\EnterpriseRegistration\EnterpriseRegistration_List.aspx.cs">
+      <DependentUpon>EnterpriseRegistration_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\EnterpriseRegistration\EnterpriseRegistration_List.aspx.designer.cs">
+      <DependentUpon>EnterpriseRegistration_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\EnterpriseRegistration\EnterpriseRegistration_Modify.aspx.cs">
+      <DependentUpon>EnterpriseRegistration_Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\EnterpriseRegistration\EnterpriseRegistration_Modify.aspx.designer.cs">
+      <DependentUpon>EnterpriseRegistration_Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\EnterpriseRegistration\EnterpriseRegistration_Show.aspx.cs">
+      <DependentUpon>EnterpriseRegistration_Show.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\EnterpriseRegistration\EnterpriseRegistration_Show.aspx.designer.cs">
+      <DependentUpon>EnterpriseRegistration_Show.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Fiscal\FiscalAuditList.aspx.cs">
+      <DependentUpon>FiscalAuditList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Fiscal\FiscalAuditList.aspx.designer.cs">
+      <DependentUpon>FiscalAuditList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Fiscal\FiscalAuditModify.aspx.cs">
+      <DependentUpon>FiscalAuditModify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Fiscal\FiscalAuditModify.aspx.designer.cs">
+      <DependentUpon>FiscalAuditModify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Fiscal\FiscalAuditShow.aspx.cs">
+      <DependentUpon>FiscalAuditShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Fiscal\FiscalAuditShow.aspx.designer.cs">
+      <DependentUpon>FiscalAuditShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Fiscal\Fiscal_Add.aspx.cs">
+      <DependentUpon>Fiscal_Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Fiscal\Fiscal_Add.aspx.designer.cs">
+      <DependentUpon>Fiscal_Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Fiscal\Fiscal_List.aspx.cs">
+      <DependentUpon>Fiscal_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Fiscal\Fiscal_List.aspx.designer.cs">
+      <DependentUpon>Fiscal_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Fiscal\Fiscal_Modify.aspx.cs">
+      <DependentUpon>Fiscal_Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Fiscal\Fiscal_Modify.aspx.designer.cs">
+      <DependentUpon>Fiscal_Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Fiscal\Fiscal_Show.aspx.cs">
+      <DependentUpon>Fiscal_Show.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Fiscal\Fiscal_Show.aspx.designer.cs">
+      <DependentUpon>Fiscal_Show.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\HSEConsulting\HSECAuditEdit.aspx.cs">
+      <DependentUpon>HSECAuditEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\HSEConsulting\HSECAuditEdit.aspx.designer.cs">
+      <DependentUpon>HSECAuditEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\HSEConsulting\HSECAuditList.aspx.cs">
+      <DependentUpon>HSECAuditList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\HSEConsulting\HSECAuditList.aspx.designer.cs">
+      <DependentUpon>HSECAuditList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\HSEConsulting\HSECAuditShow.aspx.cs">
+      <DependentUpon>HSECAuditShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\HSEConsulting\HSECAuditShow.aspx.designer.cs">
+      <DependentUpon>HSECAuditShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\HSEConsulting\HSECEdit.aspx.cs">
+      <DependentUpon>HSECEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\HSEConsulting\HSECEdit.aspx.designer.cs">
+      <DependentUpon>HSECEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\HSEConsulting\HSECList.aspx.cs">
+      <DependentUpon>HSECList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\HSEConsulting\HSECList.aspx.designer.cs">
+      <DependentUpon>HSECList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\HSEConsulting\HSECShow.aspx.cs">
+      <DependentUpon>HSECShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\HSEConsulting\HSECShow.aspx.designer.cs">
+      <DependentUpon>HSECShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\ImageCodePage.aspx.cs">
+      <DependentUpon>ImageCodePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\ImageCodePage.aspx.designer.cs">
+      <DependentUpon>ImageCodePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Intellectual\IntellectualAuditList.aspx.cs">
+      <DependentUpon>IntellectualAuditList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Intellectual\IntellectualAuditList.aspx.designer.cs">
+      <DependentUpon>IntellectualAuditList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Intellectual\IntellectualAuditModify.aspx.cs">
+      <DependentUpon>IntellectualAuditModify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Intellectual\IntellectualAuditModify.aspx.designer.cs">
+      <DependentUpon>IntellectualAuditModify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Intellectual\IntellectualAuditShow.aspx.cs">
+      <DependentUpon>IntellectualAuditShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Intellectual\IntellectualAuditShow.aspx.designer.cs">
+      <DependentUpon>IntellectualAuditShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Intellectual\Intellectual_Add.aspx.cs">
+      <DependentUpon>Intellectual_Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Intellectual\Intellectual_Add.aspx.designer.cs">
+      <DependentUpon>Intellectual_Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Intellectual\Intellectual_List.aspx.cs">
+      <DependentUpon>Intellectual_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Intellectual\Intellectual_List.aspx.designer.cs">
+      <DependentUpon>Intellectual_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Intellectual\Intellectual_Modify.aspx.cs">
+      <DependentUpon>Intellectual_Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Intellectual\Intellectual_Modify.aspx.designer.cs">
+      <DependentUpon>Intellectual_Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Intellectual\Intellectual_Show.aspx.cs">
+      <DependentUpon>Intellectual_Show.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Intellectual\Intellectual_Show.aspx.designer.cs">
+      <DependentUpon>Intellectual_Show.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Management\Management_Add.aspx.cs">
+      <DependentUpon>Management_Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Management\Management_Add.aspx.designer.cs">
+      <DependentUpon>Management_Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Management\Management_List.aspx.cs">
+      <DependentUpon>Management_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Management\Management_List.aspx.designer.cs">
+      <DependentUpon>Management_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Management\Management_Modify.aspx.cs">
+      <DependentUpon>Management_Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Management\Management_Modify.aspx.designer.cs">
+      <DependentUpon>Management_Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Management\Management_Show.aspx.cs">
+      <DependentUpon>Management_Show.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Management\Management_Show.aspx.designer.cs">
+      <DependentUpon>Management_Show.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\MeetingActivity\ActiveAuditDetail.aspx.cs">
+      <DependentUpon>ActiveAuditDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\MeetingActivity\ActiveAuditDetail.aspx.designer.cs">
+      <DependentUpon>ActiveAuditDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\MeetingActivity\ActiveAuditEdit.aspx.cs">
+      <DependentUpon>ActiveAuditEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\MeetingActivity\ActiveAuditEdit.aspx.designer.cs">
+      <DependentUpon>ActiveAuditEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\MeetingActivity\ActiveAuditList.aspx.cs">
+      <DependentUpon>ActiveAuditList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\MeetingActivity\ActiveAuditList.aspx.designer.cs">
+      <DependentUpon>ActiveAuditList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\MeetingActivity\ActiveDetail.aspx.cs">
+      <DependentUpon>ActiveDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\MeetingActivity\ActiveDetail.aspx.designer.cs">
+      <DependentUpon>ActiveDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\MeetingActivity\ActiveEdit.aspx.cs">
+      <DependentUpon>ActiveEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\MeetingActivity\ActiveEdit.aspx.designer.cs">
+      <DependentUpon>ActiveEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\MeetingActivity\ActiveList.aspx.cs">
+      <DependentUpon>ActiveList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\MeetingActivity\ActiveList.aspx.designer.cs">
+      <DependentUpon>ActiveList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Office\OfficeList.aspx.cs">
+      <DependentUpon>OfficeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Office\OfficeList.aspx.designer.cs">
+      <DependentUpon>OfficeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Organization\OrganizationEdit.aspx.cs">
+      <DependentUpon>OrganizationEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Organization\OrganizationEdit.aspx.designer.cs">
+      <DependentUpon>OrganizationEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Organization\OrganizationList.aspx.cs">
+      <DependentUpon>OrganizationList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Organization\OrganizationList.aspx.designer.cs">
+      <DependentUpon>OrganizationList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Policy\PolicySearch_List.aspx.cs">
+      <DependentUpon>PolicySearch_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Policy\PolicySearch_List.aspx.designer.cs">
+      <DependentUpon>PolicySearch_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Policy\Policy_Show.aspx.cs">
+      <DependentUpon>Policy_Show.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Policy\Policy_Show.aspx.designer.cs">
+      <DependentUpon>Policy_Show.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\ProjectFinancing\ProjectFinancingListPublish.aspx.cs">
+      <DependentUpon>ProjectFinancingListPublish.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\ProjectFinancing\ProjectFinancingListPublish.aspx.designer.cs">
+      <DependentUpon>ProjectFinancingListPublish.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\ProjectFinancing\ProjectFinancingModifyPublish.aspx.cs">
+      <DependentUpon>ProjectFinancingModifyPublish.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\ProjectFinancing\ProjectFinancingModifyPublish.aspx.designer.cs">
+      <DependentUpon>ProjectFinancingModifyPublish.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\ProjectFinancing\ProjectFinancingShowPublish.aspx.cs">
+      <DependentUpon>ProjectFinancingShowPublish.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\ProjectFinancing\ProjectFinancingShowPublish.aspx.designer.cs">
+      <DependentUpon>ProjectFinancingShowPublish.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\ProjectFinancing\ProjectFinancingAddPublish.aspx.cs">
+      <DependentUpon>ProjectFinancingAddPublish.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\ProjectFinancing\ProjectFinancingAddPublish.aspx.designer.cs">
+      <DependentUpon>ProjectFinancingAddPublish.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\ProjectFinancing\ProjectFinancing_List.aspx.cs">
+      <DependentUpon>ProjectFinancing_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\ProjectFinancing\ProjectFinancing_List.aspx.designer.cs">
+      <DependentUpon>ProjectFinancing_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\ProjectFinancing\ProjectFinancing_Modify.aspx.cs">
+      <DependentUpon>ProjectFinancing_Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\ProjectFinancing\ProjectFinancing_Modify.aspx.designer.cs">
+      <DependentUpon>ProjectFinancing_Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\ProjectFinancing\ProjectFinancing_Show.aspx.cs">
+      <DependentUpon>ProjectFinancing_Show.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\ProjectFinancing\ProjectFinancing_Show.aspx.designer.cs">
+      <DependentUpon>ProjectFinancing_Show.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Roadshow\RoadshowAuditList.aspx.cs">
+      <DependentUpon>RoadshowAuditList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Roadshow\RoadshowAuditList.aspx.designer.cs">
+      <DependentUpon>RoadshowAuditList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Roadshow\RoadshowAuditModify.aspx.cs">
+      <DependentUpon>RoadshowAuditModify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Roadshow\RoadshowAuditModify.aspx.designer.cs">
+      <DependentUpon>RoadshowAuditModify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Roadshow\RoadshowAuditShow.aspx.cs">
+      <DependentUpon>RoadshowAuditShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Roadshow\RoadshowAuditShow.aspx.designer.cs">
+      <DependentUpon>RoadshowAuditShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Roadshow\Roadshow_Add.aspx.cs">
+      <DependentUpon>Roadshow_Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Roadshow\Roadshow_Add.aspx.designer.cs">
+      <DependentUpon>Roadshow_Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Roadshow\Roadshow_List.aspx.cs">
+      <DependentUpon>Roadshow_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Roadshow\Roadshow_List.aspx.designer.cs">
+      <DependentUpon>Roadshow_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Roadshow\Roadshow_Modify.aspx.cs">
+      <DependentUpon>Roadshow_Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Roadshow\Roadshow_Modify.aspx.designer.cs">
+      <DependentUpon>Roadshow_Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Roadshow\Roadshow_Show.aspx.cs">
+      <DependentUpon>Roadshow_Show.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Roadshow\Roadshow_Show.aspx.designer.cs">
+      <DependentUpon>Roadshow_Show.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Settings\MailTemplateEdit.aspx.cs">
+      <DependentUpon>MailTemplateEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Settings\MailTemplateEdit.aspx.designer.cs">
+      <DependentUpon>MailTemplateEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Settings\MailTemplateList.aspx.cs">
+      <DependentUpon>MailTemplateList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Settings\MailTemplateList.aspx.designer.cs">
+      <DependentUpon>MailTemplateList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Settings\NavEdit.aspx.cs">
+      <DependentUpon>NavEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Settings\NavEdit.aspx.designer.cs">
+      <DependentUpon>NavEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Settings\NavList.aspx.cs">
+      <DependentUpon>NavList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Settings\NavList.aspx.designer.cs">
+      <DependentUpon>NavList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Settings\SysConfig.aspx.cs">
+      <DependentUpon>SysConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Settings\SysConfig.aspx.designer.cs">
+      <DependentUpon>SysConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\SoftConsultingS\SCSAuditEdit.aspx.cs">
+      <DependentUpon>SCSAuditEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\SoftConsultingS\SCSAuditEdit.aspx.designer.cs">
+      <DependentUpon>SCSAuditEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\SoftConsultingS\SCSAuditList.aspx.cs">
+      <DependentUpon>SCSAuditList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\SoftConsultingS\SCSAuditList.aspx.designer.cs">
+      <DependentUpon>SCSAuditList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\SoftConsultingS\SCSAuditShow.aspx.cs">
+      <DependentUpon>SCSAuditShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\SoftConsultingS\SCSAuditShow.aspx.designer.cs">
+      <DependentUpon>SCSAuditShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\SoftConsultingS\SCSEdit.aspx.cs">
+      <DependentUpon>SCSEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\SoftConsultingS\SCSEdit.aspx.designer.cs">
+      <DependentUpon>SCSEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\SoftConsultingS\SCSList.aspx.cs">
+      <DependentUpon>SCSList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\SoftConsultingS\SCSList.aspx.designer.cs">
+      <DependentUpon>SCSList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\SoftConsultingS\SCSShow.aspx.cs">
+      <DependentUpon>SCSShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\SoftConsultingS\SCSShow.aspx.designer.cs">
+      <DependentUpon>SCSShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\SoftwareService\SSAuditDetail.aspx.cs">
+      <DependentUpon>SSAuditDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\SoftwareService\SSAuditDetail.aspx.designer.cs">
+      <DependentUpon>SSAuditDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\SoftwareService\SSAuditEdit.aspx.cs">
+      <DependentUpon>SSAuditEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\SoftwareService\SSAuditEdit.aspx.designer.cs">
+      <DependentUpon>SSAuditEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\SoftwareService\SSAuditList.aspx.cs">
+      <DependentUpon>SSAuditList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\SoftwareService\SSAuditList.aspx.designer.cs">
+      <DependentUpon>SSAuditList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\SoftwareService\SSDetail.aspx.cs">
+      <DependentUpon>SSDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\SoftwareService\SSDetail.aspx.designer.cs">
+      <DependentUpon>SSDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\SoftwareService\SSEdit.aspx.cs">
+      <DependentUpon>SSEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\SoftwareService\SSEdit.aspx.designer.cs">
+      <DependentUpon>SSEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\SoftwareService\SSList.aspx.cs">
+      <DependentUpon>SSList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\SoftwareService\SSList.aspx.designer.cs">
+      <DependentUpon>SSList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\SysManage\Report_List.aspx.cs">
+      <DependentUpon>Report_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\SysManage\Report_List.aspx.designer.cs">
+      <DependentUpon>Report_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\SysManage\TypeAdd.aspx.cs">
+      <DependentUpon>TypeAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\SysManage\TypeAdd.aspx.designer.cs">
+      <DependentUpon>TypeAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\SysManage\TypeEdit.aspx.cs">
+      <DependentUpon>TypeEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\SysManage\TypeEdit.aspx.designer.cs">
+      <DependentUpon>TypeEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\SysManage\TypeList.aspx.cs">
+      <DependentUpon>TypeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\SysManage\TypeList.aspx.designer.cs">
+      <DependentUpon>TypeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\TalentService\TalentServiceAuditEdit.aspx.cs">
+      <DependentUpon>TalentServiceAuditEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\TalentService\TalentServiceAuditEdit.aspx.designer.cs">
+      <DependentUpon>TalentServiceAuditEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\TalentService\TalentServiceAuditList.aspx.cs">
+      <DependentUpon>TalentServiceAuditList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\TalentService\TalentServiceAuditList.aspx.designer.cs">
+      <DependentUpon>TalentServiceAuditList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\TalentService\TalentServiceAuditModify.aspx.cs">
+      <DependentUpon>TalentServiceAuditModify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\TalentService\TalentServiceAuditModify.aspx.designer.cs">
+      <DependentUpon>TalentServiceAuditModify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\TalentService\TalentServiceAuditShow.aspx.cs">
+      <DependentUpon>TalentServiceAuditShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\TalentService\TalentServiceAuditShow.aspx.designer.cs">
+      <DependentUpon>TalentServiceAuditShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\TechnicalService\TechnicalServiceAuditList.aspx.cs">
+      <DependentUpon>TechnicalServiceAuditList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\TechnicalService\TechnicalServiceAuditList.aspx.designer.cs">
+      <DependentUpon>TechnicalServiceAuditList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\TechnicalService\TechnicalServiceAuditModify.aspx.cs">
+      <DependentUpon>TechnicalServiceAuditModify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\TechnicalService\TechnicalServiceAuditModify.aspx.designer.cs">
+      <DependentUpon>TechnicalServiceAuditModify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\TechnicalService\TechnicalServiceAuditShow.aspx.cs">
+      <DependentUpon>TechnicalServiceAuditShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\TechnicalService\TechnicalServiceAuditShow.aspx.designer.cs">
+      <DependentUpon>TechnicalServiceAuditShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\UserManage\UserEdit.aspx.cs">
+      <DependentUpon>UserEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\UserManage\UserEdit.aspx.designer.cs">
+      <DependentUpon>UserEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\UserManage\UserList.aspx.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\UserManage\UserList.aspx.designer.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\SysManage\ManagerEdit.aspx.cs">
+      <DependentUpon>ManagerEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\SysManage\ManagerEdit.aspx.designer.cs">
+      <DependentUpon>ManagerEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\SysManage\ManagerList.aspx.cs">
+      <DependentUpon>ManagerList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\SysManage\ManagerList.aspx.designer.cs">
+      <DependentUpon>ManagerList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\SysManage\ManagerLog.aspx.cs">
+      <DependentUpon>ManagerLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\SysManage\ManagerLog.aspx.designer.cs">
+      <DependentUpon>ManagerLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\SysManage\ManagerPassword.aspx.cs">
+      <DependentUpon>ManagerPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\SysManage\ManagerPassword.aspx.designer.cs">
+      <DependentUpon>ManagerPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\SysManage\RoleEdit.aspx.cs">
+      <DependentUpon>RoleEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\SysManage\RoleEdit.aspx.designer.cs">
+      <DependentUpon>RoleEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\SysManage\RoleList.aspx.cs">
+      <DependentUpon>RoleList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\SysManage\RoleList.aspx.designer.cs">
+      <DependentUpon>RoleList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\TalentService\TalentService_Add.aspx.cs">
+      <DependentUpon>TalentService_Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\TalentService\TalentService_Add.aspx.designer.cs">
+      <DependentUpon>TalentService_Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\TalentService\TalentService_List.aspx.cs">
+      <DependentUpon>TalentService_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\TalentService\TalentService_List.aspx.designer.cs">
+      <DependentUpon>TalentService_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\TalentService\TalentService_Modify.aspx.cs">
+      <DependentUpon>TalentService_Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\TalentService\TalentService_Modify.aspx.designer.cs">
+      <DependentUpon>TalentService_Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\TalentService\TalentService_Show.aspx.cs">
+      <DependentUpon>TalentService_Show.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\TalentService\TalentService_Show.aspx.designer.cs">
+      <DependentUpon>TalentService_Show.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\TechnicalInformation\Examine.aspx.cs">
+      <DependentUpon>Examine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\TechnicalInformation\Examine.aspx.designer.cs">
+      <DependentUpon>Examine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\TechnicalService\TechnicalService_Add.aspx.cs">
+      <DependentUpon>TechnicalService_Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\TechnicalService\TechnicalService_Add.aspx.designer.cs">
+      <DependentUpon>TechnicalService_Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\TechnicalService\TechnicalService_List.aspx.cs">
+      <DependentUpon>TechnicalService_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\TechnicalService\TechnicalService_List.aspx.designer.cs">
+      <DependentUpon>TechnicalService_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\TechnicalService\TechnicalService_Modify.aspx.cs">
+      <DependentUpon>TechnicalService_Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\TechnicalService\TechnicalService_Modify.aspx.designer.cs">
+      <DependentUpon>TechnicalService_Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\TechnicalService\TechnicalService_Show.aspx.cs">
+      <DependentUpon>TechnicalService_Show.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\TechnicalService\TechnicalService_Show.aspx.designer.cs">
+      <DependentUpon>TechnicalService_Show.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\UserManage\UserLog.aspx.cs">
+      <DependentUpon>UserLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\UserManage\UserLog.aspx.designer.cs">
+      <DependentUpon>UserLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ueditor\net\App_Code\Config.cs" />
+    <Compile Include="Ueditor\net\App_Code\ConfigHandler.cs" />
+    <Compile Include="Ueditor\net\App_Code\CrawlerHandler.cs" />
+    <Compile Include="Ueditor\net\App_Code\Handler.cs" />
+    <Compile Include="Ueditor\net\App_Code\ListFileHandler.cs" />
+    <Compile Include="Ueditor\net\App_Code\NotSupportedHandler.cs" />
+    <Compile Include="Ueditor\net\App_Code\PathFormater.cs" />
+    <Compile Include="Ueditor\net\App_Code\UploadHandler.cs" />
+    <Compile Include="WebService\Activation.ashx.cs">
+      <DependentUpon>Activation.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\IsLoginAjax.aspx.cs">
+      <DependentUpon>IsLoginAjax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebService\IsLoginAjax.aspx.designer.cs">
+      <DependentUpon>IsLoginAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\JudgeSess.ashx.cs">
+      <DependentUpon>JudgeSess.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\login.ashx.cs">
+      <DependentUpon>login.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\ManageAjaxHandler.ashx.cs">
+      <DependentUpon>ManageAjaxHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\MeetingActiveAddHandler.ashx.cs">
+      <DependentUpon>MeetingActiveAddHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\ModifyPassword.ashx.cs">
+      <DependentUpon>ModifyPassword.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\Regist.ashx.cs">
+      <DependentUpon>Regist.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\Report.ashx.cs">
+      <DependentUpon>Report.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\RetrievePassword.ashx.cs">
+      <DependentUpon>RetrievePassword.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\SubmitAjaxHandler.ashx.cs">
+      <DependentUpon>SubmitAjaxHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\UpdateHandler.ashx.cs">
+      <DependentUpon>UpdateHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\UploadAjaxHandler.ashx.cs">
+      <DependentUpon>UploadAjaxHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\Uploadify.ashx.cs">
+      <DependentUpon>Uploadify.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Notice\Notice_Add.aspx.cs">
+      <DependentUpon>Notice_Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Notice\Notice_Add.aspx.designer.cs">
+      <DependentUpon>Notice_Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Notice\Notice_List.aspx.cs">
+      <DependentUpon>Notice_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Notice\Notice_List.aspx.designer.cs">
+      <DependentUpon>Notice_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Notice\Notice_Modify.aspx.cs">
+      <DependentUpon>Notice_Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Notice\Notice_Modify.aspx.designer.cs">
+      <DependentUpon>Notice_Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\VerifyUsername.ashx.cs">
+      <DependentUpon>VerifyUsername.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Ariticle\Ariticle_List.aspx.cs">
+      <DependentUpon>Ariticle_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Ariticle\Ariticle_List.aspx.designer.cs">
+      <DependentUpon>Ariticle_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Ariticle\Ariticle_Show.aspx.cs">
+      <DependentUpon>Ariticle_Show.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Ariticle\Ariticle_Show.aspx.designer.cs">
+      <DependentUpon>Ariticle_Show.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\EnterIncubating\ApplyForm.aspx.cs">
+      <DependentUpon>ApplyForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\EnterIncubating\ApplyForm.aspx.designer.cs">
+      <DependentUpon>ApplyForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\EnterIncubating\EIDetail.aspx.cs">
+      <DependentUpon>EIDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\EnterIncubating\EIDetail.aspx.designer.cs">
+      <DependentUpon>EIDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\EnterIncubating\EIIndex.aspx.cs">
+      <DependentUpon>EIIndex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\EnterIncubating\EIIndex.aspx.designer.cs">
+      <DependentUpon>EIIndex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\EnterIncubating\VisitBooking.aspx.cs">
+      <DependentUpon>VisitBooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\EnterIncubating\VisitBooking.aspx.designer.cs">
+      <DependentUpon>VisitBooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\EnterpriseRegistration\EnterpriseRegistration_List.aspx.cs">
+      <DependentUpon>EnterpriseRegistration_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\EnterpriseRegistration\EnterpriseRegistration_List.aspx.designer.cs">
+      <DependentUpon>EnterpriseRegistration_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\EnterpriseRegistration\EnterpriseRegistration_Show.aspx.cs">
+      <DependentUpon>EnterpriseRegistration_Show.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\EnterpriseRegistration\EnterpriseRegistration_Show.aspx.designer.cs">
+      <DependentUpon>EnterpriseRegistration_Show.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Fiscal\Fiscal_List.aspx.cs">
+      <DependentUpon>Fiscal_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Fiscal\Fiscal_List.aspx.designer.cs">
+      <DependentUpon>Fiscal_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Fiscal\Fiscal_Show.aspx.cs">
+      <DependentUpon>Fiscal_Show.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Fiscal\Fiscal_Show.aspx.designer.cs">
+      <DependentUpon>Fiscal_Show.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Intellectual\Intellectual_List.aspx.cs">
+      <DependentUpon>Intellectual_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Intellectual\Intellectual_List.aspx.designer.cs">
+      <DependentUpon>Intellectual_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Intellectual\Intellectual_Show.aspx.cs">
+      <DependentUpon>Intellectual_Show.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Intellectual\Intellectual_Show.aspx.designer.cs">
+      <DependentUpon>Intellectual_Show.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\MeetingActivity\MeetingActiveAdd.aspx.cs">
+      <DependentUpon>MeetingActiveAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\MeetingActivity\MeetingActiveAdd.aspx.designer.cs">
+      <DependentUpon>MeetingActiveAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\MeetingActivity\MeetingActiveDetail.aspx.cs">
+      <DependentUpon>MeetingActiveDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\MeetingActivity\MeetingActiveDetail.aspx.designer.cs">
+      <DependentUpon>MeetingActiveDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\MeetingActivity\MeetingActiveList.aspx.cs">
+      <DependentUpon>MeetingActiveList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\MeetingActivity\MeetingActiveList.aspx.designer.cs">
+      <DependentUpon>MeetingActiveList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Notice\Notice_Show.aspx.cs">
+      <DependentUpon>Notice_Show.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Notice\Notice_Show.aspx.designer.cs">
+      <DependentUpon>Notice_Show.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\TechnicalInformation\TechnicalInformation_Add.aspx.cs">
+      <DependentUpon>TechnicalInformation_Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\TechnicalInformation\TechnicalInformation_Add.aspx.designer.cs">
+      <DependentUpon>TechnicalInformation_Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\TechnicalInformation\TechnicalInformation_List.aspx.cs">
+      <DependentUpon>TechnicalInformation_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\TechnicalInformation\TechnicalInformation_List.aspx.designer.cs">
+      <DependentUpon>TechnicalInformation_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\TechnicalInformation\TechnicalInformation_Modify.aspx.cs">
+      <DependentUpon>TechnicalInformation_Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\TechnicalInformation\TechnicalInformation_Modify.aspx.designer.cs">
+      <DependentUpon>TechnicalInformation_Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\PolicyHall\PHDetail.aspx.cs">
+      <DependentUpon>PHDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\PolicyHall\PHDetail.aspx.designer.cs">
+      <DependentUpon>PHDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\PolicyHall\PHList.aspx.cs">
+      <DependentUpon>PHList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\PolicyHall\PHList.aspx.designer.cs">
+      <DependentUpon>PHList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\ProjectFinancing\ProjectFinancing_List.aspx.cs">
+      <DependentUpon>ProjectFinancing_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\ProjectFinancing\ProjectFinancing_List.aspx.designer.cs">
+      <DependentUpon>ProjectFinancing_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\ProjectFinancing\ProjectFinancing_Show.aspx.cs">
+      <DependentUpon>ProjectFinancing_Show.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\ProjectFinancing\ProjectFinancing_Show.aspx.designer.cs">
+      <DependentUpon>ProjectFinancing_Show.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Roadshow\Roadshow_List.aspx.cs">
+      <DependentUpon>Roadshow_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Roadshow\Roadshow_List.aspx.designer.cs">
+      <DependentUpon>Roadshow_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Roadshow\Roadshow_Show.aspx.cs">
+      <DependentUpon>Roadshow_Show.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Roadshow\Roadshow_Show.aspx.designer.cs">
+      <DependentUpon>Roadshow_Show.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Service\Ajax\InsertReply.aspx.cs">
+      <DependentUpon>InsertReply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Service\Ajax\InsertReply.aspx.designer.cs">
+      <DependentUpon>InsertReply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Service\ServiceMange\ServiceDetail.aspx.cs">
+      <DependentUpon>ServiceDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Service\ServiceMange\ServiceDetail.aspx.designer.cs">
+      <DependentUpon>ServiceDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Service\ServiceMange\ServiceMange.aspx.cs">
+      <DependentUpon>ServiceMange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Service\ServiceMange\ServiceMange.aspx.designer.cs">
+      <DependentUpon>ServiceMange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\SoftWareS\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\SoftWareS\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\SoftWareS\ShowDetail.aspx.cs">
+      <DependentUpon>ShowDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\SoftWareS\ShowDetail.aspx.designer.cs">
+      <DependentUpon>ShowDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\TalentService\TalentService_List.aspx.cs">
+      <DependentUpon>TalentService_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\TalentService\TalentService_List.aspx.designer.cs">
+      <DependentUpon>TalentService_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\TalentService\TalentService_Show.aspx.cs">
+      <DependentUpon>TalentService_Show.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\TalentService\TalentService_Show.aspx.designer.cs">
+      <DependentUpon>TalentService_Show.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\User\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\User\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\User\ModifyPassword.aspx.cs">
+      <DependentUpon>ModifyPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\User\ModifyPassword.aspx.designer.cs">
+      <DependentUpon>ModifyPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\User\newLogin.aspx.cs">
+      <DependentUpon>newLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\User\newLogin.aspx.designer.cs">
+      <DependentUpon>newLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\User\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\User\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\User\RetrievePassword.aspx.cs">
+      <DependentUpon>RetrievePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\User\RetrievePassword.aspx.designer.cs">
+      <DependentUpon>RetrievePassword.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Ueditor\net\config.json" />
+    <Content Include="Ueditor\net\controller.ashx" />
+    <Content Include="Ueditor\net\README.md" />
+    <Content Include="Ueditor\net\upload\image\20170215\6362277673353701038639055.826619" />
+    <Content Include="Ueditor\net\Web.config" />
+    <Content Include="Ueditor\third-party\jquery-1.10.2.min.map" />
+    <Content Include="Ueditor\third-party\video-js\font\vjs.eot" />
+    <Content Include="Ueditor\third-party\video-js\font\vjs.ttf" />
+    <Content Include="Ueditor\third-party\video-js\font\vjs.woff" />
+    <Content Include="Scripts\kindeditor-4.1.7\asp.net\file_manager_json.ashx" />
+    <Content Include="Scripts\kindeditor-4.1.7\asp.net\upload_json.ashx" />
+    <Content Include="Scripts\kindeditor-4.1.7\jsp\demo.jsp" />
+    <Content Include="Scripts\kindeditor-4.1.7\jsp\file_manager_json.jsp" />
+    <Content Include="Scripts\kindeditor-4.1.7\jsp\upload_json.jsp" />
+    <Content Include="Scripts\kindeditor-4.1.7\php\demo.php" />
+    <Content Include="Scripts\kindeditor-4.1.7\php\file_manager_json.php" />
+    <Content Include="Scripts\kindeditor-4.1.7\php\JSON.php" />
+    <Content Include="Scripts\kindeditor-4.1.7\php\upload_json.php" />
+    <Content Include="Uploadify\uploadify.fla" />
+    <Content Include="video\font\vjs.eot" />
+    <Content Include="video\font\vjs.ttf" />
+    <Content Include="video\font\vjs.woff" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="aspx\" />
+    <Folder Include="Properties\PublishProfiles\" />
+    <Folder Include="Scripts\kindeditor-4.1.7\attached\" />
+    <Folder Include="skin_v2\arttemplate\" />
+    <Folder Include="skin_v2\css\" />
+    <Folder Include="skin_v2\image\" />
+    <Folder Include="skin_v2\JQpage\" />
+    <Folder Include="skin_v2\js\" />
+    <Folder Include="skin_v2\umeditor\" />
+    <Folder Include="Templates\" />
+    <Folder Include="Web\skin_v2\CssF\image\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HN863Soft.ISS.BLL\HN863Soft.ISS.BLL.csproj">
+      <Project>{cf649369-e07f-44cd-86f2-55ef032927b1}</Project>
+      <Name>HN863Soft.ISS.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HN863Soft.ISS.Common\HN863Soft.ISS.Common.csproj">
+      <Project>{c8f70a11-5127-409e-8419-6208099fe2e4}</Project>
+      <Name>HN863Soft.ISS.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HN863Soft.ISS.DBUtility\HN863Soft.ISS.DBUtility.csproj">
+      <Project>{0498a87d-dafb-48b8-bb39-a51937a22f7d}</Project>
+      <Name>HN863Soft.ISS.DBUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HN863Soft.ISS.Model\HN863Soft.ISS.Model.csproj">
+      <Project>{139238ad-1ff7-4d1f-a515-1b7c5aa03e06}</Project>
+      <Name>HN863Soft.ISS.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HN863Soft.ISS.Web.Core\HN863Soft.ISS.Web.Core.csproj">
+      <Project>{b3c3bc8e-dcfb-46d7-bdfc-f49cf152c162}</Project>
+      <Name>HN863Soft.ISS.Web.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>39093</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:10414/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

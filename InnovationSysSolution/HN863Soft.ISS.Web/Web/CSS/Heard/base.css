@@ -1,0 +1,115 @@
+/* basic-css */
+/* 基本元素重置 */
+html {
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    font-size: 12px;
+    font-family: "Microsoft YaHei",SimSun,SimHei;
+    color: #686868;
+    background-color: #FFF;
+}
+
+img {
+    border: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #404242;
+    outline: none;
+}
+
+div {
+    margin: 0px auto;
+}
+
+li, dl, dt, dd {
+    list-style-type: none;
+}
+
+input, textarea, select, option, em, h1, h2, h3, h4, h4, h6, strong, span, li, dl, dt, td {
+    font-size: 12px;
+}
+
+h1, h2, h3, h4, h5, h6, em, i {
+    font-style: normal;
+    font-weight: 400;
+    outline: none;
+}
+
+/* 重用类样式 */
+.f_l {
+    float: left !important;
+}
+
+.f_r {
+    float: right !important;
+}
+
+.no_margin {
+    margin: 0px !important;
+}
+
+.no_border {
+    border: 0px !important;
+}
+
+.no_bg {
+    background: none !important;
+}
+
+.clear_both {
+    clear: both !important;
+}
+
+.display_block {
+    display: block !important;
+}
+
+.text_over {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -moz-binding: url('ellipsis.xml#ellipsis');
+}
+
+
+/* 重用自定义样式 */
+.w_100 {
+    width: 100%;
+}
+
+.w_95 {
+    width: 95%;
+}
+
+.indextx {
+    width: 980px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background: #FFFFFF;
+}
+
+.w_min_width {
+    min-width: 1200px;
+}
+
+.w_1200 {
+    width: 1200px;
+}
+
+.w_1067 {
+    width: 1067px;
+}
+
+.w_980 {
+    width: 980px;
+}

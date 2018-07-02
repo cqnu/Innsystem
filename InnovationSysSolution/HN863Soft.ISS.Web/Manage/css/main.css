@@ -1,0 +1,142 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+ body{
+	font-family:Microsoft Yahei,Arial, Helvetica, sans-serif; 
+	font-size:14px; 
+	color:#666666;
+   	background:#f4f3f1; 
+	}
+	.clear{
+	clear:both; 
+	}
+	body,div,ul,ol,li,form,p,input,fieldset,h1,h2,h3,h4,h5,h6,dl,dt,dd{
+
+		margin:0;
+		padding:0;
+		list-style:none;
+			}
+	table{ border-collapse:collapse;border-spacing:0;}
+	fieldset,img{
+	border:none;
+	}
+
+ul li a{
+	text-decoration:none;
+	color: ;}
+	ul li a:hover{
+	color: ;}
+
+.h100 { height:100px;}	
+.wid70 { width:70%;}
+.wid95 { width:95%;}
+.wid { width:100%;}
+.wid324 { width:324px; height:auto;}
+.wid650 { width:650px;}
+.wid780 { width:780px;}
+.wid1024 { width:1024px;}
+.disb{ display:block;}
+.disib{ display:inline-block;}
+.disi{ display:inline;}
+.fl{ float:left;}
+.fr{ float:right;}
+.tac{ text-align:center;}
+.tar{ text-align:right;}
+.vam{ vertical-align:middle;}
+.m0 { margin:0 auto;}
+.mt5 { margin-top:5px;}
+.mt6{ margin-top:6px;}
+.mt10 { margin-top:10px;}
+.mt15{ margin-top:15px;}
+.mt20 { margin-top:20px;}
+.mt25 { margin-top:25px;}
+.mt35 { margin-top:35px;}
+.mt40{ margin-top:40px;}
+.mb2 { margin-bottom:2px;}
+.mb15{ margin-bottom:15px;}
+.ml15{ margin-left:15px;}
+.ml35{ margin-left:35px;}
+.ml80{ margin-left:80px;}
+.ml95{ margin-left:95px;}
+.ml105{ margin-left:105px;}
+.ml120 { margin-left:120px;}
+.ml315 { margin-left:315px;}
+.mr15{ margin-right:15px;}
+.mr10{ margin-right:10px;}
+.mr25{ margin-right:25px;}
+.mr120 { margin-right:120px;}
+.mr80{ margin-right:80px;}
+.mr120 { margin-right:120px;}
+.padlr5{ padding:0 10px 15px 10px;}
+.pad15 { padding:15px;}
+.pl30 { padding-left:30px;}
+.rongqi{ width:1024px; height:inherit; margin:0 auto;}
+.button { background:#FFF;}	
+.lh45 { line-height:45px;}
+.lh24{ line-height:24px; height:24px;}
+
+
+.beijingtu{
+	background:url(../images/beijingtu.png) no-repeat;
+	background-size:100%;
+	width:100%;
+	height:100%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*放在最后*/
+@media (max-width:768px) { 
+}
+@media (min-width: 768px) and (max-width: 992px) {
+	 }
+@media (min-width: 992px) and (max-width: 1200px) {
+	 }
+@media (min-width: 1200px) { 
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

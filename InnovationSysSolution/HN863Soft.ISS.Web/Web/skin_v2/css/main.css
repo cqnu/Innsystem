@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+/*整体样式*/
+ body{
+	font-family:Microsoft Yahei,Arial, Helvetica, sans-serif; 
+	font-size:14px; 
+	color:#666666;
+   	background:#f4f3f1; 
+	}
+	.clear{
+	clear:both; 
+	}
+	body,div,ul,ol,li,form,p,input,fieldset,h1,h2,h3,h4,h5,h6,dl,dt,dd{
+
+		margin:0;
+		padding:0;
+		list-style:none;
+			}
+	table{ border-collapse:collapse;border-spacing:0;}
+	fieldset,img{
+	border:none;
+	}
+
+a{text-decoration:none;}
+a:hover,a:active{text-decoration:none;}
+	
+/*通用样式*/
+.clearfix{*+height:1%;}
+.clearfix:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+.clearfix{*zoom:1;}
+.mt10{ margin-top:10px;}
+
+
+/*放在最后*/
+@media (max-width:768px) { 
+}
+@media (min-width: 768px) and (max-width: 992px) {
+	 }
+@media (min-width: 992px) and (max-width: 1200px) {
+	 }
+@media (min-width: 1200px) { 
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

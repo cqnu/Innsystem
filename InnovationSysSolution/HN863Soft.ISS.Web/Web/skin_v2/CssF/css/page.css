@@ -1,0 +1,31 @@
+﻿.niui-page-box{padding:20px;background:#fff;float:left;margin-top:20px;width:760px;}
+.page a,
+.page span{
+	cursor: pointer;
+	display: inline-block;
+	overflow: hidden;
+	width: 30px;
+	line-height: 30px;
+	border: 1px solid #679CD2;
+	color: #727272;
+	background:#fff;
+	text-align: center;
+	font-size: 12px;
+	margin-left: 5px;
+	float:left;
+	border-radius: 2px;
+}
+.page a{border:1px #ddd solid;color:#666}
+.page a:hover{border:1px #679CD2 solid;color:#679CD2;}
+.page .current{
+	background: #679CD2;
+	color: #fff;
+}
+
+
+.page span.prev,.page span.next{
+	width: 80px;
+}
+.page a.prev,.page a.next{
+	width: 80px;
+}

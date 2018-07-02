@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* CSS Document */
+body,html{}
+a{ color:#666;}
+a:hover{ color:#1baf5d;}
+.city_choice{ float:left; border-left:solid 1px #eee; width:80px; height:52px; line-height:52px; position:relative; padding-left:10px; margin-left:10px;}
+.city_choice .city_xl{ background:url(../images/city_xl.jpg) no-repeat; width:14px; height:9px; position:relative; left:55px; top:22px; position:absolute;}
+.city_choice a{ font-size:20px;}
+/*-主导航样式-*/
+.main_menu{ float:right; font-size:16px; margin:12px 0;}
+.main_menu .nav_item{
+	border-radius: 3px;
+    display: block;
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    margin-left: 20px;
+    position: relative;
+    text-align: center;
+    width: 80px;
+}
+.main_menu .current{ background-color:#1baf5d;}
+.main_menu .current a{ color:#fff;}
+.bg_content{ width:100%;}
+.dzsell_title{ text-align:center; font-size:34px; height:60px; line-height:60px; padding:10px 0;}
+.txt_green{ color:#1baf5d;}
+.form_box{ background-color:#fff; border:solid 1px #eee; padding:20px;}
+.form_box .mk_title{ font-size:18px; height:40px; line-height:40px; color:#333;}
+.dz_sp{ padding:20px 0;}
+.dz_sp li{ float:left; margin:0 16px; height:150px;}
+.dz_sp li a{width:102px; display:block; font-size:16px;}
+.dz_sp li a .sp_title{ text-align:center; margin-top:18px; width:102px; display:inline-block;}
+.lx_box{ margin:20px 0;}
+.lx_xx{ float:left; font-size:16px; width:280px; position:relative; height:70px;}
+.lx_xx .lx_radio{ float:left; padding:4px 10px;}
+.lx_xx .jifen_mx{ position:absolute; background-color:#1baf5d; font-size:12px; color:#fff; border-radius:3px; padding:2px 4px; left:30px; top:24px;}
+
+.sc_pic .sc_item a img{ width:200px; height:150px;}
+.sc_pic li{ float:left; margin:0 20px; }
+.sc_pic li a{ display:block;  border:solid 1px #eee; width:200px; height:150px;}
+.sc_pic .add_pic{background-color:#f6f6f6; text-align:center}
+.sc_pic .add_pic a img{ margin-top:46px;}
+
+.dzcell_order{ margin:30px 0; text-align:center;}
+
+.zc_title{font-size:20px; height:30px; line-height:30px; padding-top:20px;}
+.zc_box{ background-color:#fff; border:solid 1px #eee; border-top:solid 2px #1baf5d}
+.first_tab{background-color:#fafafa; height:40px; border-bottom:solid 1px #eee;}
+.first_tab .zc_item{ float:left; border-right: solid 1px #eee;}
+.first_tab .zc_item a{ font-size:16px; height:40px; line-height:40px; padding:0 20px;}
+.first_tab .zc_hover{ background-color:#fff; border-bottom:solid 1px #fff;}
+.first_tab .zc_hover a{ color:#1baf5d;}
+.cd_more{ border-bottom:solid 1px #eee; padding:0 20px;}
+.cd_more .cd_title{ float:left; height:50px; line-height:50px; display:inline-block; font-size:14px; position:relative; width:90px; color:#333;}
+.cd_more .cd_title i{ background-image:url(../images/tab_jt.jpg); width:8px; height:10px; position:absolute; right:0; top:20px;}
+.cd_more .second_cd{ float:left; line-height:50px; width:840px;}
+.cd_more .second_cd li{ display:inline-block; padding-left:20px;}
+.cd_more .second_cd li .filter_item{ font-size:14px; padding:2px 6px;}
+.cd_more .second_cd li .filter_active{border-radius:3px; color:#fff; background-color:#1baf5d;}
+.choice_lx{border-radius:5px; color:#fff; background-color:#1baf5d; height:30px; line-height:30px; font-size:20px; display:inline-block; padding:0 10px; margin:20px;}
+.phone_appointment{ float:left; margin:4px 20px; position:relative;}
+.phone_appointment label{ float:left; margin:5px}
+.phone_number{ display:block; background-image:url(../images/num.jpg); width:138px; height:22px; position:absolute; top:0; left:120px;}
+.address{ clear:both; margin-left:130px;}
+.yz_box{ background-color:#fff; border:solid 1px #eee;}
+.yz_message{ height:40px; line-height:40px; background-color:#1baf5d; padding-left:10px; font-size:14px; color:#fff;}
+.yz_dx{ border-bottom:solid 2px #f6f6f6; height:40px; margin:30px 60px;}
+.dx_txt{ border-bottom:solid 2px #1baf5d; display:inline-block; height:40px; width:120px; font-size:16px; text-align:center; line-height:40px; float:left;}
+.address_open .edit{ display:inline-block; float:right; margin-right:10px; padding-top:20px;}
+.address_open .edit a{text-decoration:underline;}
+.next_bz{ margin-left:270px;}
+.next_bz a{font-size:24px; text-decoration:underline;}
+.address_form{ background-color:#f6f6f6; margin:0 60px; padding:10px 0;}
+.address_look{ background-color:#fff; margin:0 60px; padding:10px 0;}
+.address_look input,.address_look select{ border:solid 1px #eee; background-color:#f6f6f6;}
+
+.prompt{ background-color:#d2f0e3; margin-top:60px; padding:20px;}
+.ts_title{ color:#1baf5d; font-size:16px; height:30px; line-height:30px; padding-left:20px;}
+.prompt p{ height:30px; line-height:30px;}
+
+

@@ -1,0 +1,12 @@
+F:\公司项目\InnovationSysSolution\CrawlerConsole\bin\Debug\CrawlerConsole.exe.config
+F:\公司项目\InnovationSysSolution\CrawlerConsole\bin\Debug\CrawlerConsole.exe
+F:\公司项目\InnovationSysSolution\CrawlerConsole\bin\Debug\CrawlerConsole.pdb
+F:\公司项目\InnovationSysSolution\CrawlerConsole\bin\Debug\HN863Soft.ISS.Common.dll
+F:\公司项目\InnovationSysSolution\CrawlerConsole\bin\Debug\HN863Soft.ISS.CrawlerCommon.dll
+F:\公司项目\InnovationSysSolution\CrawlerConsole\bin\Debug\MyXls.SL2.dll
+F:\公司项目\InnovationSysSolution\CrawlerConsole\bin\Debug\ICSharpCode.SharpZipLib.dll
+F:\公司项目\InnovationSysSolution\CrawlerConsole\bin\Debug\HN863Soft.ISS.Common.pdb
+F:\公司项目\InnovationSysSolution\CrawlerConsole\bin\Debug\HN863Soft.ISS.CrawlerCommon.pdb
+F:\公司项目\InnovationSysSolution\CrawlerConsole\obj\Debug\CrawlerConsole.csprojResolveAssemblyReference.cache
+F:\公司项目\InnovationSysSolution\CrawlerConsole\obj\Debug\CrawlerConsole.exe
+F:\公司项目\InnovationSysSolution\CrawlerConsole\obj\Debug\CrawlerConsole.pdb

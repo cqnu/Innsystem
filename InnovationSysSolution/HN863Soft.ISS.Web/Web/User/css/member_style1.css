@@ -1,0 +1,199 @@
+@charset "utf-8";
+/* CSS Document */
+body{ background-color:#f6f6f6; font-size:14px;}
+a:hover,a:focus{ color:#1baf5d;}
+.hy_content{ border-bottom:solid 1px #ddd;}
+.hy_menu {
+    background-color: #1baf5d;
+    height: 50px;
+    width: 100%;
+}
+.hy_menu .nav {
+    display: block;
+    float: left;
+    left: 0;
+    margin: 0 10px 0 40px;
+    position: relative;
+}
+.hy_menu .brand {
+    display: block;
+    float: left;
+    padding: 5px 10px;
+}
+.hy_menu .nav {
+    display: block;
+    float: left;
+    left: 0;
+    margin: 0 10px 0 40px;
+    position: relative;
+}
+.hy_menu .nav li{ float:left;}
+.hy_menu .nav li a {
+	display:block;
+	font-size:16px;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 30px;
+}
+.row-fluid{ background: #fff url(../images/cleft_bg.png) repeat-y; 	border-right:solid 1px #ddd;}
+.hy_sidebar{padding:0 1px; width:248px; float:left;}
+.hy_sidebar dl{ margin-bottom:20px;}
+.mod-ucenter-dl dt {
+    background: #f3f3f3 none repeat scroll 0 0;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    height: 38px;
+    line-height: 38px;
+    padding-left: 20px;
+}
+.mod-ucenter-dl dd{ display:block;}
+.mod-ucenter-dl li a {
+    background: rgba(0, 0, 0, 0) url("/static/passpc-security/img/ucenter/ucenternav_bg.png?v=aee55dd9.png") no-repeat scroll 0 0;
+    border-bottom: 1px dotted #dcdcdc;
+    color: #666;
+    float: left;
+    line-height: 50px;
+    padding-left: 44px;
+    position: relative;
+    width: 204px;
+}
+.mod-ucenter-cright {
+    float: left;
+	padding:20px;
+	width:910px;
+	background-color:#fff;
+
+}
+.mod-account {
+    padding: 20px 0 0 20px;
+}
+.mod-account-avatar {
+    background-position: 0 0;
+    float: left;
+    height: 80px;
+    padding: 4px 8px 11px 9px;
+    width: 80px;
+}
+.mod-account-info {
+    float: right;
+    height: 70px;
+    overflow: hidden;
+    position: relative;
+    width: 125px;
+}
+.mod-personal-name {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    width: 120px;
+    word-break: break-all;
+    word-wrap: break-word;
+    z-index: 10;
+}
+.mod-ucenter-dl li a.active{
+   background:url(../images/hymenu_bg.jpg) no-repeat left top;
+   color:#333;
+   font-weight:700;
+}
+.mod-ucenter-dl li a:hover{
+	background:url(../images/hymenu_bg.jpg) no-repeat left -50px;
+	color:#333;
+	font-weight:700;
+}
+.mod-account-avatar .account-avatar-edit {
+    background: rgba(64, 64, 64, 0.5) none repeat scroll 0 0;
+    bottom: 0;
+    color: #ccc;
+    display: block;
+    height: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    width: 100%;
+}
+.mod-account-avatar .account-avatar-panel {
+    display: block;
+    position: relative;
+}
+.mod-account-avatar .account-avatar-panel:hover .account-avatar-edit {
+    height: 20px;
+}
+.mod-personal-edit{ margin-top:10px; font-size:14px;}
+.setting-profile-title {
+    border-bottom: 2px solid #f2f2f2;
+    color: #999;
+    font-size: 20px;
+    line-height: 1;
+    padding: 10px 0;
+}
+/*-tab页样式-*/
+.pass-portrait-nav {
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 14px;
+    height: 36px;
+    position: relative;
+}
+.pass-portrait-nav li {
+    background: #fff none repeat scroll 0 0;
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 3px solid #fff;
+    cursor: pointer;
+    height: 33px;
+    left: 0;
+    line-height: 33px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 118px;
+}
+.pass-portrait-nav li.pass-portrait-navright {
+    left: 120px;
+}
+.pass-portrait-nav li.pass-portrait-current {
+    border-color: #1baf5d #e5e5e5 #fff;
+    border-style: solid;
+    border-width: 3px 1px 1px;
+    font-weight: bold;
+}
+.pass-portrait-content {
+    overflow: hidden;
+    padding: 20px 0 0 20px;
+    text-align: left;
+}
+.hy_search{
+	border-bottom:solid 1px #f2f2f2;
+	}
+/*-会员中心表格-*/
+.hy_table tr{
+    font-size: 12px;
+    height: 30px;
+    text-align: center;
+}
+.login-histroy-title{
+    background: #f3f3f3 none repeat scroll 0 0;
+}
+.login-histroy-title th {
+	border-top: 1px solid #e5e5e5;
+    color: #666;
+}
+.login-histroy-more td{
+    border-bottom: 0 none;
+    border-top: 1px solid #e5e5e5;
+    padding-right: 10px;
+}
+/*-认证样式-*/
+.rz_list{ border-bottom:solid 1px #f2f2f2; padding:20px;}
+.list_zt{ float:left; height:44px; width:150px; line-height:44px; text-align:center; font-size:16px; background:url(../images/rz.png) no-repeat;}
+.zt_grey{ background-position: center top;}
+.zt_yellow{ background-position: center -44px;}
+.zt_red{ background-position: center -88px;}
+.zt_green{ background-position: center -132px;}
+.rz_name{ float:left; margin:10px 0 0 20px; font-size:16px; width:120px;}
+.rz_ms{ float:left; margin:14px 0 0 20px; font-size:12px; color:#999; width:400px;}
+.rz_button{ width:120px; margin:14px 0 0 20px; float:right;}
+.rz_button a{ font-size:16px; color:#1baf5d; text-decoration:underline; margin:0 6px;}

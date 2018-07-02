@@ -1,0 +1,487 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*-左侧竖向菜单样式-*/
+a:hover{ color:#1baf5d;}
+.goods {
+    height: 40px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 150px;
+}
+.goods .title {
+    background: #d25400 none repeat scroll 0 0;
+}
+.goods h2 a, .goods .title {
+    color: #fff;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+}
+.goods h2 a:hover {
+    text-decoration: none;
+}
+.nav-list {
+    height: 40px;
+}
+.nav-list li {
+    float: left;
+    margin-right: 1px;
+}
+.nav-list a {
+    color: #fff;
+    display: block;
+    float: left;
+    font: bold 15px/40px "microsoft yahei";
+    height: 40px;
+    padding: 0 15px;
+    text-align: center;
+    text-decoration: none;
+}
+.nav-list a:hover {
+    background: #d25400 none repeat scroll 0 0;
+    text-decoration: none;
+}
+.nav-list a.on {
+    background: #d25400 none repeat scroll 0 0;
+}
+.all-goods {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.22);
+    height: 360px;
+    left: 0;
+    overflow: visible;
+    position: absolute;
+    top: 0;
+    width: 180px;
+    z-index: 999;
+}
+.all-goods .pqitem {
+    border-top: 1px solid #e0e0e0;
+    height: 36px;
+    width: 180px;
+}
+.all-goods .btnone {
+    border-top: medium none;
+}
+.all-goods .pqitem .product {
+    position: absolute;
+    width: 180px;
+    z-index: 999;
+}
+.all-goods .pqitem .product h3 {
+    border-width: 1px 0;
+    font-weight: normal;
+    height: 60px;
+    line-height: 50px;
+    padding-left: 28px;
+    width: 154px;
+}
+.all-goods .pqitem .product h3 a {
+    color: #666666;
+    font-size: 16px;
+}
+.all-goods .pqitem .product h3 a:hover {
+    text-decoration: none;
+}
+.all-goods .pqitem .product s {
+    background: rgba(0, 0, 0, 0) url("../images/indexSprite.png") no-repeat scroll 0 0;
+    display: block;
+    height: 9px;
+    left: 161px;
+    position: absolute;
+    top: 22px;
+    width: 6px;
+}
+.all-goods .active .product h3 {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #fff;
+    background-position: -12px -185px;
+    border-color: #16d36a;
+    border-image: none;
+    border-style: solid;
+    border-width: 2px 0;
+    line-height: 50px;
+    width: 154px;
+}
+.all-goods .active .product h3 a {
+    color: #1baf5d;
+}
+.all-goods .pqitem {
+    height: 60px;
+}
+.all-goods .product-wrap {
+    background: #fff none repeat scroll 0 0;
+    border: 2px solid #16d36a;
+    display: none;
+    padding: 10px 40px 30px;
+    position: absolute;
+    width: 600px;
+    z-index: 99;
+}
+.all-goods .product-wrap p {
+    color: #999999;
+}
+.all-goods .pos01 {
+    left: 180px;
+    top: 0;
+}
+.all-goods .pos02 {
+    left: 180px;
+    top: 61px;
+}
+.all-goods .pos03 {
+    left: 180px;
+    top: 122px;
+}
+.all-goods .pos04 {
+    left: 180px;
+    top: 183px;
+}
+.all-goods .pos05 {
+    left: 180px;
+    top: 244px;
+}
+.all-goods .pos06 {
+    left: 180px;
+    top: 305px;
+}
+.all-goods .pos07 {
+    bottom: -2px;
+    left:180px;
+}
+.all-goods .pos08 {
+    bottom: -2px;
+    left: 180px;
+}
+.all-goods .pos09 {
+    bottom: -2px;
+    left: 180px;
+}
+.all-goods .pos10 {
+    bottom: -2px;
+    left: 180px;
+}
+.all-goods .product-wrap h2 {
+    color: #333;
+    font-size: 16px;
+    padding-top: 10px;
+}
+.all-goods .product-wrap h2 a {
+    color: #333;
+    height: auto;
+    line-height: 30px;
+    padding-left: 0;
+}
+.all-goods .product-wrap ul {
+    border-top: 1px solid #e0e0e0;
+}
+.all-goods .product-wrap ul li {
+    display: inline;
+    float: left;
+    margin-right: 15px;
+    margin-top: 15px;
+    white-space: nowrap;
+}
+.all-goods .product-wrap ul li a {
+    color: #666666;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+}
+.all-goods .product-wrap ul li a:hover {
+
+    color: #ff6600;
+    text-decoration: none;
+}
+.wd240{width:240px;}
+.wd252{width:590px;}
+.ht399{height:399px;}
+.ht14{height:14px;}
+.lh33{line-height:33px;}
+.lh23{line-height:23px;}
+.lh12{line-height:12px;}
+.pb10{padding-bottom:10px;}
+.pb20{padding-bottom:20px;}
+.pr20{padding-right:20px;}
+.wd204{width:204px;}
+.wd443{width:443px;}
+.wd185{width:185px;}
+
+.banner_bg {
+    position: absolute;
+    width: 100%;
+	text-align:center;
+	 background-color:#ebe6e2;
+}
+.zc_fl{ height:360px;}
+.notice {
+    background: #f6f6f6 none repeat scroll 0 0;
+    font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 30px;
+}
+.notice .icon {
+	background-image:url(../images/advice.png);
+    display: inline-block;
+    height: 18px;
+    vertical-align: middle;
+    width: 24px;
+}
+.notice .name {
+    color: #5e5e5e;
+    padding-left: 7px;
+}
+.notice a {
+    color: #5e5e5e;
+    margin: 0 10px;
+}
+.notice a:hover {
+	color:#1baf5d;
+
+}
+.notice i {
+    color: #e6e6e6;
+    font-style: normal;
+}
+/*-固定宽度内容区样式-*/
+.container{ width:980px; margin:0 auto; position:relative;}
+#first_floor,#second_floor{ height:350px; overflow:hidden;}
+#third_floor,#four_floor{ height:490px; overflow:hidden;}
+#five_floor{ height:320px; overflow:hidden;}
+.floor{ margin-bottom:30px;}
+.floor .mt {
+    border-bottom: 1px solid #1baf5d;
+    overflow: visible;
+    position: relative;
+}
+.floor .mt .tab {
+    margin-top: 1px;
+	float:right;
+	display:inline;
+}
+.floor .tab-item {
+    display: inline;
+    float: left;
+    height: 34px;
+    position: relative;
+    z-index: 2;
+}
+.floor .tab-item a {
+    background: #fff none repeat scroll 0 0;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    float: left;
+    height: 34px;
+    line-height: 34px;
+    overflow: hidden;
+    padding: 0 16px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.floor .tab-item span {
+    background: #ccc none repeat scroll 0 0;
+    height: 14px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 1px;
+}
+.floor .tab-selected a {
+    border-left: 1px solid #1baf5d;
+    border-right: 1px solid #1baf5d;
+    border-top: 3px solid #1baf5d;
+    color: #1baf5d;
+    height: 33px;
+    left: -1px;
+    line-height: 30px;
+    position: absolute;
+    text-indent: 1px;
+    top: -1px;
+	right:0;
+    white-space: nowrap;
+}
+.floor .tab-selected span {
+    display: none;
+}
+.floor img {
+    vertical-align: top;
+}
+.floor h2 {
+	float:left;
+    color: #333;
+    position: relative;
+	font-size:22px;
+	height:34px; 
+	line-height:34px;
+}
+.floor h2 i {
+    color: #1baf5d;
+	font-weight:300;
+    padding-right: 10px;
+}
+.floor .tab {
+	border:solid 1px #ededed;
+	border-bottom:none;
+    height: 34px;
+    line-height: 34px;
+    z-index: 1;
+}
+/*-1F/2F样式-*/
+.showcase {
+    background: #fff none repeat scroll 0 0;
+    height: 282px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.financial-table {
+    background: #fff none repeat scroll 0 0;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.showcase .showcase-list {
+    width: 980px;
+}
+.showcase .showcase-list .floor_item {
+    background: #f6f6f6 none repeat scroll 0 0;
+    float: left;
+    height: 232px;
+    margin-right: 3px;
+    position: relative;
+    width: 232px;
+	border:solid 5px #f6f6f6;
+}
+.showcase .showcase-list .floor_item:hover {
+	border:solid 5px #e6e6e6;
+}
+.floor_item h3{ font-size:18px; padding:20px 10px 0 10px; }
+.floor_item .item_lb{ display:inline-block; padding:4px 10px; background-color:#fff; color:#fdbc52; border:solid 1px #fdbc52; margin:10px 10px 20px 10px;}
+.floor_item p{ height:24px; line-height:24px; margin:0 10px; color:#999;}
+.firstfloor_btn{ margin:10px 10px 0 10px;}
+.floor_bottom{ margin-top:4px; height:30px; line-height:30px;}
+.floor_bottom .fbottom_left{ float:left;}
+.floor_bottom .fbottom_left a{ color:#1baf5d; font-size:18px;}
+.floor_bottom .list_more{ float:right;}
+.floor_bottom .list_more a{ font-size:12px; color:#999;}
+
+/*-表格样式-*/
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.financial-table table {
+    font-size: 14px;
+    table-layout: fixed;
+    width: 100%;
+}
+.financial-table table thead th {
+    background: #f6f6f6 none repeat scroll 0 0;
+    color: #323232;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 40px;
+}
+.financial-table table .fore1 {
+    text-align: left;
+}
+.financial-table table .fore2, 
+.financial-table table .fore3, 
+.financial-table table .fore4, 
+.financial-table table .fore5, 
+.financial-table table .fore6,
+.financial-table table .fore7,
+.financial-table table .fore8,
+.financial-table table .fore9{
+    text-align: center;
+}
+.financial-table table tr:hover{
+	background-color:#f6f6f6;
+}
+.financial-table table thead .fore1 {
+    padding-left: 30px;
+}
+.financial-table table tbody td {
+    line-height: 58px;
+}
+.financial-table table tbody .table_item {
+    border-bottom: 1px solid #f6f6f6;
+}
+.financial-table table tbody .name {
+    color: #5e5e5e;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 200px;
+}
+.financial-table table tbody .ck {
+    color: #5e5e5e;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 280px;
+	display:inline-block;
+}
+.financial-table table tbody .name:hover {
+    color: #ff5256;
+}
+.financial-table table tbody .fore1 .table_item {
+    margin-left: 20px;
+    padding-left: 10px;
+}
+.zs_btn{ display:inline-block; background:url(../images/zs_pic.jpg) no-repeat center center; width:53px; height:58px;}
+.financial-table table .fore7 .ui-button {
+    background-color: #fff;
+    background-image: none;
+    border-color: #fff;
+    color: #5e5e5e;
+    filter: none;
+	height:32px;
+}
+
+.zx_one{ float:left; width:340px;}
+.zx_list{ width:280px; float:left; margin-left:40px;}
+.zx_list li{height:28px; line-height:28px;}
+.zx_list li a{ display:block; width:280px; overflow:hidden; white-space:nowrap; text-overflow: ellipsis;}
+
+.zc_company{ background-color:#f6f6f6; padding:20px;} 
+.zc_company h3{ font-size:22px;}
+
+
+
+.Q-tpWrap {
+	margin-top:10px;
+}
+.Q-tpWrap .pic {
+	display: inline;
+    float: left;
+    margin-right: 10px;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 5px;
+}
+.Q-tpWrap em {
+    font-family: "微软雅黑","黑体";
+    height: 26px;
+    line-height: 26px;
+    overflow: hidden;
+}
+.Q-tpWrap em a {
+    color: #222;
+}
+.Q-tpWrap em a:hover {
+    color: #1baf5d;
+}
+.Q-tpWrap .pic  img {
+    border: 1px solid #cbcbcb;
+    display: block;
+}
